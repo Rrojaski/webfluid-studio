@@ -71,10 +71,10 @@ function Services() {
     return (
       <section className="content-container">
         <Box className="services-header-content-content">
-          <Container variant="lg">
+          <Container maxWidth="lg">
             <Box className="services-header-content-wrapper">
               <Box className="services-header-content">
-                <Typography className="services-subtitle" variant="h7" mb={2} fontWeight={600}>
+                <Typography className="services-subtitle" variant="h6" mb={2} fontWeight={600}>
                   WE GOT THIS
                 </Typography>
                 <Typography variant="h3" fontWeight={700}>

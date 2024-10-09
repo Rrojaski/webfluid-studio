@@ -1,9 +1,9 @@
 import "./Service.css";
 import { Box, Typography } from "@mui/material";
 export interface ServiceData {
-  inverted: boolean;
-  isHero: boolean;
-  color: string;
+  inverted?: boolean;
+  isHero?: boolean;
+  color?: string;
   serviceType: { label: string; description: string };
 }
 function Service(data: ServiceData) {

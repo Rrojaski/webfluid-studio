@@ -1,11 +1,13 @@
 import "./DisplayWidget.css";
 import { Box, Typography } from "@mui/material";
 export interface DisplayWidgetData {
+  isHero: boolean;
+  data: { companyName: string; title: string };
   color: string;
-  small: boolean;
-  route: boolean;
-  companyName: string;
-  year: string;
+  small?: boolean;
+  route: string;
+  companyName?: string;
+  year?: string;
 }
 
 function DisplayWidget(data: DisplayWidgetData) {
