@@ -1,7 +1,9 @@
 import "./Testimonial.css";
 import { Box, Button, Card, CardContent, Typography } from "@mui/material";
-
-function Testimonial(data: any) {
+export interface TestimonialData {
+  testimonial: { name: string; testimonial: string; image: string };
+}
+function Testimonial(data: TestimonialData) {
   return (
     <Card id="testimonial-container">
       <CardContent id="testimonial-content">

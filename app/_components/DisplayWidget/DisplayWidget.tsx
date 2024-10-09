@@ -1,7 +1,13 @@
 import "./DisplayWidget.css";
 import { Box, Typography } from "@mui/material";
+export interface DisplayWidgetData {
+  color: string;
+  small: boolean;
+  route: boolean;
+  companyName: string;
+}
 
-function DisplayWidget(data: any) {
+function DisplayWidget(data: DisplayWidgetData) {
   return (
     <Box className={"display-widget " + data.color + (data.small ? " display-widget-small" : "") + (data.route ? " display-widget-routable" : "")}>
       <Box className="display-widget-label">
