@@ -1,0 +1,153 @@
+.services-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 400px;
+}
+
+.services-box-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.hero-service-box-display {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.services-box-container-2-container {
+  margin-bottom: 200px;
+}
+
+.services-box-container-2-warapper {
+  display: flex;
+  justify-content: center;
+}
+
+.services-box-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.services-box-container-2,
+.services-call-to-action {
+  max-width: 1270px;
+}
+
+.services-call-to-action {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.services-box-wrapper-2 {
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.services-box-blue {
+  color: #fff;
+  background: #0035e2;
+}
+
+.services-subtitle {
+  color: #616161;
+}
+
+.services-header-content:first-of-type {
+  flex: 0 0 calc(40% - 40px);
+}
+
+.services-header-content:last-of-type {
+  flex: 0 0 calc(60% - 40px);
+}
+.services-  der {
+  margin: 0 40px !important;
+  border-color: rgba(0, 0, 0, 1) !important;
+}
+
+.services-header-content-wrapper {
+  display: flex;
+}
+
+.services-header-content-content {
+  margin-top: 160px;
+  margin-bottom: 120px;
+}
+
+@media (max-width: 1300px) {
+  .services-box-wrapper-2 {
+    max-width: 550px;
+  }
+  .services-box-container-2 {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 960px) {
+  .services-box-wrapper:nth-child(2) {
+    padding-left: 0;
+  }
+
+  .services-box-wrapper-2 {
+    text-align: center;
+    gap: 10px;
+    grid-gap: 10px;
+    max-width: 300px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 899px) {
+  .hero-services-container {
+    text-align: center;
+  }
+
+  .services-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* .services-box-wrapper {
+    max-width: 320px;
+    justify-content: center;
+  } */
+  .services-box-wrapper:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .services-devider {
+    display: none;
+  }
+  .services-header-content {
+    flex: unset;
+    text-align: center;
+  }
+
+  .services-header-content-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .services-subtitle:last-of-type {
+    color: unset;
+  }
+
+  .services-box-container-2-container {
+    margin-bottom: 100px;
+  }
+
+  .services-header-content-content {
+    margin-bottom: 100px;
+  }
+}

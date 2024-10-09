@@ -1,0 +1,47 @@
+.case-studies-header-content {
+  flex: 0 0 calc(50% - 40px);
+}
+.case-studies-devider {
+  margin: 0 40px !important;
+  border-color: rgba(0, 0, 0, 1) !important;
+}
+
+.case-studies-header-content-wrapper {
+  display: flex;
+}
+
+.case-studies-header-content img {
+  width: 100%;
+}
+
+.case-studies-header {
+  margin-top: 160px;
+  margin-bottom: 120px;
+} 
+
+.hero-case-studies-content {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 899px) {
+  .hero-case-studies-container {
+    text-align: center;
+  }
+
+  .case-studies-devider {
+    display: none;
+  }
+  .case-studies-header-content {
+    flex: unset;
+    text-align: center;
+  }
+
+  .case-studies-header-content-wrapper {
+    flex-direction: column-reverse;
+    gap: 60px;
+    align-items: center;
+  }
+  .case-studies-header {
+    margin-bottom: 50px;
+  }
+}

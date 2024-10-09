@@ -1,0 +1,45 @@
+#cta-whatsapp {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#cta-whatsapp-text {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  grid-gap: 100px;
+}
+
+#cta-whatsapp-code-wrapper {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+}
+
+#cta-whatsapp-text-highlight {
+  color: #1672ec;
+}
+
+@media (max-width: 1200px) {
+  #cta-whatsapp {
+    justify-content: center;
+    gap: 150px;
+    grid-gap: 150px;
+  }
+  #cta-whatsapp-text,
+  #cta-whatsapp-code {
+    flex: unset;
+  }
+
+  #cta-whatsapp-text {
+    text-align: center;
+  }
+
+  #cta-whatsapp-team {
+    display: none;
+  }
+}

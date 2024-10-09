@@ -1,0 +1,80 @@
+.service-container:not(.service-container-hero) {
+  max-width: 400px;
+  min-width: 270px;
+  min-height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.service-container {
+  padding: 0 20px;
+}
+
+.service-container-hero {
+  padding: 0 10px;
+}
+
+.service-container svg {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #0035e2;
+}
+
+.service-label {
+  margin-bottom: 10px !important;
+}
+
+.service-container.service-container-yellow svg {
+  background-color: #fdda0d;
+}
+
+.service-container.service-container-black svg {
+  background-color: #000;
+}
+
+.service-container.service-container-blue svg {
+  background-color: #fff;
+  color: #0035e2;
+}
+
+.service-container.service-container-purple svg {
+  background-color: #7c00dd;
+  color: #fff;
+}
+
+.service-container p {
+  text-align: center;
+  font-size: 12px;
+  width: 200px;
+}
+
+@media (max-width: 900px) {
+  .service-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .service-container-hero {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 460px) {
+  .service-container {
+    min-width: 390px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 410px) {
+  .service-container {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 330px) {
+  .service-container {
+    min-width: 270px;
+  }
+}

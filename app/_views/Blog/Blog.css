@@ -1,0 +1,8 @@
+@media (max-width: 460px) {
+  .recent-posts-container {
+    padding: 0 !important;
+  }
+}
+.selected-label {
+  background: #ebebeb !important;
+}

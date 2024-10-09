@@ -1,0 +1,16 @@
+.avatar {
+  border-radius: 4px;
+  max-width: 184px;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 220px;
+  height: 184px;
+}
+
+.employee-description-sub {
+  color: #c6c6c6;
+}

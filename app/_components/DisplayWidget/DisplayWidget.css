@@ -1,0 +1,69 @@
+.display-widget {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Decorative-Elements-PNG/Paint_Stain_Dark_Blue_PNG_Clipart.png?m=1629830911);
+  justify-content: space-between;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 40%;
+  background-repeat: no-repeat;
+  background-size: calc(70%);
+  text-decoration: none;
+  color: #000 !important;
+  cursor: unset;
+}
+
+.display-widget-routable {
+  cursor: pointer;
+}
+
+.display-widget.display-widget-small {
+  height: 220px;
+  width: 220px;
+}
+
+.blue {
+  background-color: #0035e2;
+  background-image: url(https://images.webfluid.studio/websites.svg);
+  color: #fff !important;
+}
+.purple {
+  background-color: #7c00dd;
+  background-image: url(https://images.webfluid.studio/marketing.png);
+  color: #fff !important;
+}
+.yellow {
+  background-color: #fdda0d;
+  background-image: url(https://images.webfluid.studio/looking-glass.webp);
+}
+
+.green {
+  background-color: #00ffb9;
+  background-image: url(https://images.webfluid.studio/agile.webp);
+}
+
+.black {
+  background-color: #1e2028;
+  background-image: url(https://images.webfluid.studio/accessible.png);
+  color: #fff !important;
+}
+
+.black-2 {
+  background-color: #1e2028;
+  background-image: url(https://images.webfluid.studio/developer.png);
+  color: #fff !important;
+}
+
+.display-widget-label {
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}

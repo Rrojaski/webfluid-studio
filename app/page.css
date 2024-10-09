@@ -242,7 +242,7 @@ a:hover {
 @media (max-width: 840px) {
   .desktop-menu-items {
     display: none !important;
-  }   
+  }
 }
 
 @media (min-width: 370px) {

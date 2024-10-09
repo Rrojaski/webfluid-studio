@@ -1,0 +1,38 @@
+#testimonials {
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
+}
+.slide {
+  min-width: 300px;
+  min-height: 400px;
+}
+
+.testimonial {
+  max-width: 800px;
+  display: block;
+  margin: 0 auto 20px auto !important;
+}
+
+#dot-container {
+  padding-top: 60px;
+}
+
+.dot {
+  box-sizing: border-box;
+  margin: 0 10px;
+  border: none;
+  border-radius: 50%;
+  border: 2px solid blue;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.dot:disabled {
+  background-color: blue;
+}
+
+.testimonial-image {
+  width: 100px;
+  border-radius: 50%;
+}

@@ -1,0 +1,41 @@
+.footer-container {
+  width: 100%;
+  background: radial-gradient(
+      89.7% 115.09% at 3.43% 2.75%,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      79.69% 102.24% at 100% 100.11%,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0)
+    ),
+    #002395;
+  background-blend-mode: overlay, overlay, normal;
+  color: #fff;
+}
+
+.footer-header {
+  margin-bottom: 15px;
+}
+
+.footer-phone a,
+.footer-whatsapp a,
+.footer-email a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 5px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+#blog-button {
+  color: #fff;
+  text-decoration: unset;
+}
+
+#blog-button:hover {
+  color: #737a82;
+}

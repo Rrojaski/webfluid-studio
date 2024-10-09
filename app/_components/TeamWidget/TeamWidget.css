@@ -1,0 +1,33 @@
+#team-widget {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#team-widget-employee-list {
+  display: flex;
+  width: 200px;
+}
+
+#team-widget-text {
+  width: 200px;
+}
+
+.team-widget-employee {
+  width: 50px;
+}
+
+.team-widget-employee:nth-child(1) {
+  z-index: 3;
+}
+.team-widget-employee:nth-child(2) {
+  z-index: 2;
+}
+.team-widget-employee:nth-child(3) {
+  z-index: 1;
+}
+
+.team-widget-employee-avatar {
+  width: 68px;
+  border-radius: 50%;
+}

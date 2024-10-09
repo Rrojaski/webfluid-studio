@@ -1,0 +1,53 @@
+#welcome-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 750px;
+  width: 90vw;
+  padding: 40px 40px 30px 40px;
+  background: #0035e2;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#welcome-modal-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #fff;
+}
+
+#welcome-modal-header {
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
+#welcome-modal-sub-header {
+  margin-bottom: 20px;
+}
+
+#welcome-modal-button {
+  margin-bottom: 20px;
+}
+
+#welcome-modal-image {
+  max-width: 400px;
+  width: 80%;
+}
+
+@media (max-width: 460px) {
+  #welcome-modal {
+    padding: 20px;
+  }
+  #welcome-modal-header {
+    font-size: 30px;
+  }
+  #welcome-modal-image {
+    display: none;
+  }
+}
