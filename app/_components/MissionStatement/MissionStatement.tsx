@@ -9,7 +9,7 @@ function MissionStatement() {
       <Box id="mission-statement-content">
         <Box id="mission-statement-content-text">
           <Typography variant="h4">
-            We don&apos;'t just build <span className="text-blue">websites</span> — we bring your vision to life
+            We don&apos;t just build <span className="text-blue">websites</span> — we bring your vision to life
           </Typography>
           <Typography id="mission-statement-content-text-description" variant="h6">
             At Webfluid Studio, we turn ideas into impactful digital experiences. Our team is committed to developing high-quality projects that meet your
