@@ -1,6 +1,6 @@
 import { faCode, faVial, faSearch, faUniversalAccess, faGlobe, faCommentDollar } from "@fortawesome/free-solid-svg-icons";
 
-export default function getIcon(serviceType) {
+export default function getIcon(serviceType: string) {
   switch (serviceType.toLowerCase()) {
     case "development":
       return faCode;
