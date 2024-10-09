@@ -3,7 +3,7 @@ export const Label = {
   TipsTricks: "Tips & Tricks",
   Security: "Security",
 };
-const post = (id, title, label, image, content, html) => {
+const post = (id: string, title: string, label: string, image: string, content: string, html: string) => {
   return {
     id,
     title,
