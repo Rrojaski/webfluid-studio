@@ -4,9 +4,10 @@ import { Box, Container, Typography } from "@mui/material";
 import { employees } from "@/app/_utils/constants/Emloyees";
 import EmployeeDesciption from "@/app/_components/EmployeeDesciption/EmployeeDesciption";
 import CallToAction from "@/app/_components/CallToAction/CallToAction";
+import "./AboutUs.css";
 
 function AboutUs() {
-  const isHero = false;
+  const isHero = true;
   if (isHero) {
     return (
       <Box id="hero-about-us-container">

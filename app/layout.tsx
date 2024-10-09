@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
+import "./layout.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import { ThemeProvider } from "@mui/material";
 import theme from "@/theme";
@@ -23,7 +23,7 @@ export default function RootLayout({
   const appBarFixed = true;
   const allowInvisableHeader = true;
   const whiteHeader = false;
-  const scroll = false;
+  const scroll = true;
   const open = false;
   return (
     <html lang="en">

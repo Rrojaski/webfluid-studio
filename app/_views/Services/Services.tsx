@@ -8,7 +8,7 @@ import Service from "@/app/_components/Service/Service";
 import CallToAction from "@/app/_components/CallToAction/CallToAction";
 
 function Services() {
-  const isHero = false;
+  const isHero = true;
   if (isHero) {
     return (
       <Box className="hero-services-container">
