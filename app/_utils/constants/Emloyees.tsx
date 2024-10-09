@@ -1,4 +1,4 @@
-const generateEmployee = (id: string, name: string, position: string, avatar: string) => {
+const generateEmployee = (id: number, name: string, position: string, avatar: string) => {
   return {
     id,
     name,
