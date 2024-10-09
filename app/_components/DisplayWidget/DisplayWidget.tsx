@@ -5,6 +5,7 @@ export interface DisplayWidgetData {
   small: boolean;
   route: boolean;
   companyName: string;
+  year: string;
 }
 
 function DisplayWidget(data: DisplayWidgetData) {
