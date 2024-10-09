@@ -7,8 +7,8 @@ function TeamWidget() {
   return (
     <Box id="team-widget">
       <Box id="team-widget-employee-list">
-        {employees.map((employee) => (
-          <Box className="team-widget-employee">
+        {employees.map((employee, index) => (
+          <Box key={index} className="team-widget-employee">
             <img className="team-widget-employee-avatar" src={employee.avatar} alt={employee.name} />
           </Box>
         ))}

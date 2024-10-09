@@ -45,8 +45,9 @@ function CallToAction() {
               width: "100%",
               maxWidth: "400px",
             }}>
-            {appList.slice(0, 4).map((x) => (
+            {appList.slice(0, 4).map((x, index) => (
               <Card
+                key={index}
                 sx={{
                   background: "#fff",
                   borderRadius: "10px",
