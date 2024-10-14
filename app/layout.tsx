@@ -104,7 +104,7 @@ export default function RootLayout({
                 href="https://api.whatsapp.com/send?phone=7868562000"
                 rel="noreferrer"
                 target="_blank">
-                <img id="whatsapp-icon" alt="Whatsapp logo" />
+                <img id="whatsapp-icon" alt="Whatsapp logo" src="./assets/svg/whatsapp.svg" />
               </Fab>
             </div>
           </ThemeProvider>

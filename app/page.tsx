@@ -22,7 +22,7 @@ export default function Home() {
           </div>
           <img className="laptop" src="https://images.webfluid.studio/laptop-guy.png" alt="laptop" />
         </div>
-        <img id="home-wave-2" className="wave-image" src={Wave2} alt="Wave border" loading="eager"></img>
+        <img id="home-wave-2" className="wave-image" src="/assets/svg/wave-2.svg" alt="Wave border" loading="eager"></img>
       </div>
       <Box className="home-content-wrapper">
         <Container maxWidth="lg" className="home-section" id="services">
