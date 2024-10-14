@@ -5,7 +5,6 @@ import AboutUs from "./_views/AboutUs/AboutUs";
 import MissionStatement from "./_components/MissionStatement/MissionStatement";
 import TestimonialList from "./_components/TestimonialList/TestimonialList";
 import CallToActionWhatsapp from "./_components/CallToActionWhatsapp/CallToActionWhatsapp";
-import Wave2 from "./_assets/svg/wave-2.svg";
 
 export default function Home() {
   return (
