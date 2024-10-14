@@ -12,7 +12,7 @@ function Testimonial(data: TestimonialData) {
           {data.testimonial.name}
         </Typography>
         <Typography id="testimonial-description" sx={{ typography: { xs: "body1" } }}>
-          <Typography className="mb-3">⭐️⭐️⭐️⭐️⭐️</Typography>
+          <span className="mb-3">⭐️⭐️⭐️⭐️⭐️</span>
           {data.testimonial.testimonial}
         </Typography>
       </CardContent>

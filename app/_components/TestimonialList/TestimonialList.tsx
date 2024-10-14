@@ -24,9 +24,9 @@ function TestimonialList() {
     <Box id="testimonial-list">
       <Typography id="testimonial-list-header" sx={{ typography: { sm: "h3", xs: "h5" } }}>
         What Our Customers Are Saying{" "}
-        <Typography id="testimonial-list-header-highlight" sx={{ typography: { sm: "h3", xs: "h5" } }}>
+        <span id="testimonial-list-header-highlight">
           About Us?
-        </Typography>
+        </span>
       </Typography>
       <Box id="testimonial-list-content">
         {testimonials.map((testimonial, index) => (

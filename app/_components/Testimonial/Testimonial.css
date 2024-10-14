@@ -29,6 +29,11 @@
   margin-bottom: 30px;
 }
 
+#testimonial-description span {
+  width: 100%;
+  display: block;
+}
+
 #testimonial-actions {
   display: flex;
   justify-content: flex-end;
@@ -46,5 +51,4 @@
   #testimonial-container {
     padding: 10px;
   }
-  
 }
