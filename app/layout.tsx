@@ -20,7 +20,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const appBarFixed = true;
+  const appBarFixed = false;
   const allowInvisableHeader = true;
   const whiteHeader = false;
   const scroll = true;
