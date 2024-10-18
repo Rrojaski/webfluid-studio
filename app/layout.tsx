@@ -4,11 +4,10 @@ import "./layout.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import { ThemeProvider } from "@mui/material";
 import theme from "@/theme";
-
-import { AppBar, Button, Drawer, Fab, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from "@mui/material";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Button, Drawer, Fab, ListItem, ListItemButton, ListItemText } from "@mui/material";
 import Footer from "./_components/Footer/Footer";
+import Link from "next/link";
+import Navigation from "./_components/Navigation/Navigation";
 
 export const metadata: Metadata = {
   title: "Webfluid Studio - Website Design Solutions",
@@ -21,81 +20,47 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const appBarFixed = false;
-  const allowInvisableHeader = true;
-  const whiteHeader = false;
-  const scroll = true;
-  const open = false;
   return (
     <html lang="en">
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <div className="App">
-              <AppBar
-                position={appBarFixed ? "fixed" : "absolute"}
-                className={"app-bar " + (scroll && allowInvisableHeader ? "invisable-header" : "") + (whiteHeader ? "white-header" : "")}>
-                <Toolbar className="app-bar">
-                  <div className="app-bar-content">
-                    <Typography id="logo-text" variant="h5" color="inherit" sx={{ flexGrow: 1 }}>
-                      <span className="normal-text">Webfluid Studio</span>
-                    </Typography>
-                    <div className="desktop-menu-items">
-                      <Button className="navigation-buttons" color="inherit">
-                        About Us
-                      </Button>
-                      <Button className="navigation-buttons" color="inherit">
-                        Services
-                      </Button>
-                      <Button className="navigation-buttons" color="inherit">
-                        Our Clients
-                      </Button>
-                      <Button
-                        className={"desktop-menu-items contact-us-button " + (whiteHeader ? "contact-us-button-blue" : "")}
-                        color="warning"
-                        variant={whiteHeader ? "outlined" : "contained"}>
-                        Contact us
-                        <span className="contact-us-extra">or Call (786) 540-8851</span>
-                      </Button>
-                    </div>
-                    <Button
-                      className="hamburger-menu"
-                      id="composition-button"
-                      aria-controls={open ? "composition-menu" : undefined}
-                      aria-expanded={open ? "true" : undefined}
-                      aria-haspopup="true">
-                      <FontAwesomeIcon color={whiteHeader ? "black" : "white"} size="2x" icon={faBars} />
-                    </Button>
-                  </div>
-                </Toolbar>
-              </AppBar>
-
+              <Navigation />
               {children}
 
               <Footer />
               <Drawer anchor="right">
                 <ListItem disablePadding>
-                  <ListItemButton>
-                    <Button color="warning" variant="contained" tabIndex={-1}>
-                      <ListItemText> Contact Us</ListItemText>
-                    </Button>
-                  </ListItemButton>
+                  <Link className="navigation-link" href="/contactUs">
+                    <ListItemButton>
+                      <Button color="warning" variant="contained" tabIndex={-1}>
+                        <ListItemText> Contact Us</ListItemText>
+                      </Button>
+                    </ListItemButton>
+                  </Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <ListItemButton>
-                    <ListItemText> About Us</ListItemText>
-                  </ListItemButton>
+                  <Link className="navigation-link" href="/aboutUs">
+                    <ListItemButton>
+                      <ListItemText> About Us</ListItemText>
+                    </ListItemButton>
+                  </Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <ListItemButton>
-                    <ListItemText>Services </ListItemText>
-                  </ListItemButton>
+                  <Link className="navigation-link" href="/services">
+                    <ListItemButton>
+                      <ListItemText>Services </ListItemText>
+                    </ListItemButton>
+                  </Link>
                 </ListItem>
 
                 <ListItem disablePadding>
-                  <ListItemButton>
-                    <ListItemText> Our Clients</ListItemText>
-                  </ListItemButton>
+                  <Link className="navigation-link" href="/caseStudies">
+                    <ListItemButton>
+                      <ListItemText> Our Clients</ListItemText>
+                    </ListItemButton>
+                  </Link>
                 </ListItem>
               </Drawer>
               <Fab

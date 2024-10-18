@@ -86,6 +86,11 @@
   font-size: 30px;
 }
 
+.navigation-link {
+  color: unset;
+  text-decoration: none;
+}
+
 .navigation-buttons:hover {
   color: rgb(231, 87, 35);
 }
