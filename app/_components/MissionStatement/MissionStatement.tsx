@@ -15,7 +15,7 @@ function MissionStatement() {
             At Webfluid Studio, we turn ideas into impactful digital experiences. Our team is committed to developing high-quality projects that meet your
             unique business needs, delivering on time and ensuring client satisfaction every step of the way.
           </Typography>
-          <Box className="w-100 d-flex justify-content-center justify-content-lg-end">
+          <Box id="mission-statement-actions">
             <Button variant="outlined" color="primary">
               Learn More
             </Button>

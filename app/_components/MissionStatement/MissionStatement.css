@@ -32,6 +32,11 @@
   max-width: 541px;
 }
 
+#mission-statement-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
 @media (max-width: 960px) {
   #mission-statement-content {
     flex-wrap: wrap-reverse;
