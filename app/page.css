@@ -61,10 +61,13 @@
 #home-wave-2 {
   bottom: -2px;
   position: absolute;
+  width: 100%;
 }
+
 .home-content-wrapper {
   width: 100%;
 }
+
 .side-nav-wrapper {
   display: block;
   position: relative;
