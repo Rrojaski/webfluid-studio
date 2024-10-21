@@ -1,13 +1,28 @@
-export const Label = {
-  DigitalTransformation: "Digital Transformation",
-  AgileTransformation: "Agile Transformation",
-  Accessibility: "Accessibility",
-  UserExperience: "User Experience",
-  ContentManagement: "Content Management",
-  ECommerce: "E-Commerce",
-};
-
-export const CaseStudyList = [
+export enum Label {
+  DigitalTransformation = "Digital Transformation",
+  AgileTransformation = "Agile Transformation",
+  Accessibility = "Accessibility",
+  UserExperience = "User Experience",
+  ContentManagement = "Content Management",
+  ECommerce = "E-Commerce",
+}
+export interface CaseStudy {
+  id: string;
+  active: boolean;
+  companyName: string;
+  year: string;
+  label: Label;
+  title: string;
+  introduction: string;
+  clientBackground: string;
+  challenges: string;
+  approach: string;
+  solution: string;
+  results: string;
+  image: string;
+  caption: string;
+}
+export const CaseStudyList: CaseStudy[] = [
   {
     id: "1",
     active: true,

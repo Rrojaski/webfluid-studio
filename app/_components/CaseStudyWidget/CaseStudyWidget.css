@@ -1,0 +1,12 @@
+.case-study-widget {
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .case-study-introduction {
+    display: none !important;
+  }
+}
