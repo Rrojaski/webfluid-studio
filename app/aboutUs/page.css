@@ -1,0 +1,68 @@
+.about-us-title {
+  margin-bottom: 32px;
+}
+.about-us-title,
+.about-us-subtext {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center;
+  max-width: 500px;
+}
+
+.about-us-subtext span {
+  color: #ed6c02;
+}
+
+.testimonial {
+  font-style: italic;
+  margin: 16px 0;
+}
+
+.values-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 260px;
+}
+
+.values-text span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#description-logo {
+  color: #ed6c02;
+}
+
+#hero-about-us-container {
+  color: #fff;
+  background: radial-gradient(89.7% 115.09% at 3.43% 2.75%, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)),
+    radial-gradient(79.69% 102.24% at 100% 100.11%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), #002395;
+  background-blend-mode: overlay, overlay, normal;
+  position: relative;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#hero-about-us-container-content {
+  max-width: 910px;
+  width: 100%;
+  padding: 77px 0;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  display: flex;
+  justify-content: center;
+}
+
+#hero-about-us-container-text {
+  max-width: 630px;
+}
+
+@media (max-width: 899px) {
+  #hero-about-us-container {
+    text-align: center;
+  }
+}
