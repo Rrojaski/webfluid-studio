@@ -1,0 +1,105 @@
+.contact-us-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-us-subheader {
+  color: #ed6c02;
+}
+.contact-us-card {
+  max-width: 550px;
+  width: 60%;
+  padding: 20px 10px;
+  border-radius: 10px !important;
+}
+
+.contact-us-card-contact-info {
+  width: 40%;
+  max-width: 550px;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-info-container-icon {
+  padding: 10px;
+  background-color: #ed6c02;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.contact-us-card-image {
+  width: 100%;
+  height: 400px;
+
+  background-image: url('https://images.webfluid.studio/person.png');
+  -webkit-background-size: cover;
+
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position-x: center;
+  background-size: 300px;
+  background-repeat: no-repeat;
+}
+
+.contactus-email {
+  color: #000;
+  text-decoration: none;
+}
+
+.contactus-email:hover {
+  color: #2196f3;
+}
+
+#whatsapp-icon-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#whatsapp-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+#whatsapp-link {
+  text-decoration: none;
+  color: #000;
+}
+
+#whatsapp-link:hover {
+  color: #2196f3;
+}
+
+#company-phone-number {
+  color: #000;
+  text-decoration: none;
+}
+
+#company-phone-number:hover {
+  color: #2196f3;
+}
+
+@media (max-width: 1032px) {
+  .contact-us-card-image {
+    display: none;
+  }
+  .contact-us-card,
+  .contact-us-card-contact-info {
+    min-width: unset;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+}
