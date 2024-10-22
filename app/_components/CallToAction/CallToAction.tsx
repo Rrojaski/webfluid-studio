@@ -4,6 +4,7 @@ import { Button, Card, CardContent, Typography } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import appList from "../../_utils/constants/AppList";
+import Link from "next/link";
 
 function CallToAction() {
   return (
@@ -26,14 +27,16 @@ function CallToAction() {
             <Typography className="call-to-action-sub" mb={3} variant="h6">
               Delivering Transformative Business Solutions through Cutting-Edge Innovations.
             </Typography>
-            <Button
-              sx={{
-                width: "fit-content",
-              }}
-              color="warning"
-              variant="contained">
-              Get Started
-            </Button>
+            <Link href="/contactUs">
+              <Button
+                sx={{
+                  width: "fit-content",
+                }}
+                color="warning"
+                variant="contained">
+                Get Started
+              </Button>
+            </Link>
           </Box>
           <Box
             sx={{
