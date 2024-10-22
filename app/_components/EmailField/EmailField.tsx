@@ -1,14 +1,14 @@
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import TextField from "@mui/material/TextField";
 
 export interface EmailFieldData {
   email: string;
-  setEmail: any;
+  setEmail: Dispatch<SetStateAction<string>>;
   emailError: boolean;
-  setEmailError: any;
-  setValidEmail: any;
+  setEmailError: Dispatch<SetStateAction<boolean>>;
+  setValidEmail: Dispatch<SetStateAction<boolean>>;
   emailTouched: boolean;
-  setEmailTouched: any;
+  setEmailTouched: Dispatch<SetStateAction<boolean>>;
 }
 
 const EmailField = (data: EmailFieldData) => {
