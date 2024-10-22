@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./Testimonial.css";
 import { Box, Button, Card, CardContent, Typography } from "@mui/material";
 export interface TestimonialData {
@@ -17,9 +18,11 @@ function Testimonial(data: TestimonialData) {
         </Typography>
       </CardContent>
       <Box id="testimonial-actions">
-        <Button id="testimonial-action" color="warning" variant="contained" size="medium">
-          learn more
-        </Button>
+        <Link href="aboutUs">
+          <Button id="testimonial-action" color="warning" variant="contained" size="medium">
+            learn more
+          </Button>
+        </Link>
       </Box>
     </Card>
   );

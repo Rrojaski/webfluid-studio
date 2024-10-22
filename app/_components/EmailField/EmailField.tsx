@@ -3,12 +3,12 @@ import TextField from "@mui/material/TextField";
 
 export interface EmailFieldData {
   email: string;
-  setEmail: Function;
+  setEmail: any;
   emailError: boolean;
-  setEmailError: Function;
-  setValidEmail: Function;
+  setEmailError: any;
+  setValidEmail: any;
   emailTouched: boolean;
-  setEmailTouched: Function;
+  setEmailTouched: any;
 }
 
 const EmailField = (data: EmailFieldData) => {

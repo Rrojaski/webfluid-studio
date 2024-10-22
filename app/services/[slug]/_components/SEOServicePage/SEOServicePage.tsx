@@ -23,7 +23,7 @@ const SEOServicePage = () => {
         <ListItem className="d-flex flex-column align-items-start">
           <Typography variant="h6">On-Page Optimization</Typography>
           <Typography variant="h6" className="text-muted">
-            We optimize your website's content, meta tags, and structure to improve its relevance and visibility on search engines.
+            We optimize your website&apos;s content, meta tags, and structure to improve its relevance and visibility on search engines.
           </Typography>
         </ListItem>
         <ListItem className="d-flex flex-column align-items-start">
@@ -41,7 +41,7 @@ const SEOServicePage = () => {
         <ListItem className="d-flex flex-column align-items-start">
           <Typography variant="h6">Performance Tracking and Reporting</Typography>
           <Typography variant="h6" className="text-muted">
-            We monitor your website’s performance and provide detailed reports, helping you understand the impact of our SEO efforts.
+            We monitor your website&apos;s performance and provide detailed reports, helping you understand the impact of our SEO efforts.
           </Typography>
         </ListItem>
       </List>
@@ -49,7 +49,7 @@ const SEOServicePage = () => {
         Our Process:
       </Typography>
       <Typography variant="h6" paragraph className="mb-5">
-        Our SEO process is designed to maximize your website's visibility and attract high-quality organic traffic.
+        Our SEO process is designed to maximize your website&apos;s visibility and attract high-quality organic traffic.
       </Typography>
       <Grid container spacing={4} justifyContent="center">
         <Grid item xs={12} sm={6}>

@@ -17,7 +17,7 @@ const DigitalMarketingPage = () => {
         <ListItem className="d-flex flex-column align-items-start">
           <Typography variant="h6">SEO and SEM</Typography>
           <Typography variant="h6" className="text-muted">
-            Our team leverages Search Engine Optimization (SEO) and Search Engine Marketing (SEM) to improve your website's visibility and drive qualified
+            Our team leverages Search Engine Optimization (SEO) and Search Engine Marketing (SEM) to improve your website&apos;s visibility and drive qualified
             traffic.
           </Typography>
         </ListItem>

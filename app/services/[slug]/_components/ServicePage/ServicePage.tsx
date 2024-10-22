@@ -11,7 +11,7 @@ const ServicePage = () => {
         <ListItem className="d-flex flex-column align-items-start">
           <Typography variant="h6">Custom Design</Typography>
           <Typography variant="h6" className="text-muted">
-            Every website we create is uniquely designed to reflect your brand's identity and meet your specific business needs.
+            Every website we create is uniquely designed to reflect your brand&apos;s identity and meet your specific business needs.
           </Typography>
         </ListItem>
         <ListItem className="d-flex flex-column align-items-start">

@@ -1,5 +1,5 @@
 import "./page.css";
-import { Box, Container, Grid, Typography, Chip, ListItem, Divider } from "@mui/material";
+import { Box, Container, Typography, Chip, ListItem, Divider } from "@mui/material";
 import { CaseStudyList, Label } from "../_utils/constants/CaseStudyList";
 import CallToAction from "../_components/CallToAction/CallToAction";
 import CaseStudyWidget from "../_components/CaseStudyWidget/CaseStudyWidget";
@@ -16,7 +16,7 @@ function CaseStudies() {
           Our Clients
         </Typography>
         <Typography variant="h6" mb={10}>
-          We're agile, adaptable, and dependable, driven by our customers' goals. Explore our Our Clients to see how our solutions deliver success.
+          We&apos;re agile, adaptable, and dependable, driven by our customers&apos; goals. Explore our Our Clients to see how our solutions deliver success.
         </Typography>
         <Box className="hero-case-studies-content">
           {/* <Grid container spacing={5} justifyContent="start">
@@ -41,7 +41,7 @@ function CaseStudies() {
                   Our Clients
                 </Typography>
                 <Typography variant="h6">
-                  Discover how our Our Clients are more than stories—they're blueprints for success. Unlock the wisdom of real-world problem solving and
+                  Discover how our Our Clients are more than stories—they&apos;re blueprints for success. Unlock the wisdom of real-world problem solving and
                   innovation within every narrative.
                 </Typography>
               </Box>
