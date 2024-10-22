@@ -14,10 +14,11 @@ function Navigation() {
   const [allowInvisableHeader, setAllowInvisableHeader] = useState(true);
 
   useEffect(() => {
-    const invisibleHeaderRoutes = ["/"];
-    const whiteHeaderRoutes = ["/aboutUs", "/services", "/services/", "/caseStudies", "/caseStudies/", "/blog", "/blog/", "/contactUs"];
-    setAllowInvisableHeader(invisibleHeaderRoutes.includes(pathName));
-    setWhiteHeader(whiteHeaderRoutes.includes(pathName));
+    const invisibleHeaderRoutes = [""];
+    const whiteHeaderRoutes = ["aboutUs", "services", "caseStudies", "blog", "contactUs"];
+    const p = pathName.split("/")[1];
+    setAllowInvisableHeader(invisibleHeaderRoutes.includes(p));
+    setWhiteHeader(whiteHeaderRoutes.includes(p));
   }, [pathName, router]);
 
   const appBarFixed = false;
