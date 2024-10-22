@@ -59,7 +59,7 @@ function ContactForm() {
       <Typography className="contact-us-subheader" variant="h6">
         Get in Touch
       </Typography>
-      <Typography variant="h4">Let's Chat, Reach Out to Us</Typography>
+      <Typography variant="h4">Let&apos;s Chat, Reach Out to Us</Typography>
       <Typography mb={3}>You can reach us anytime</Typography>
       <Divider />
       <Box
