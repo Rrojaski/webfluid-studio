@@ -12,7 +12,7 @@ export interface CaseStudyWidgetData {
     clientBackground: string;
   };
   isHero: boolean;
-  showDescription: boolean;
+  showDescription?: boolean;
 }
 function CaseStudyWidget(data: CaseStudyWidgetData) {
   const d = {

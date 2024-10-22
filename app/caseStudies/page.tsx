@@ -21,10 +21,14 @@ function CaseStudies() {
         <Box className="hero-case-studies-content">
           <Grid2 container spacing={5} justifyContent="start">
             <Grid2>
-              <CaseStudyWidget isHero={isHero} caseStudy={CaseStudyList[0]} className="case-study" />
+              <Box className="case-study">
+                <CaseStudyWidget isHero={isHero} caseStudy={CaseStudyList[0]} />
+              </Box>
             </Grid2>
             <Grid2>
-              <CaseStudyWidget isHero={isHero} caseStudy={CaseStudyList[6]} className="case-study" />
+              <Box className="case-study">
+                <CaseStudyWidget isHero={isHero} caseStudy={CaseStudyList[6]} />
+              </Box>
             </Grid2>
           </Grid2>
         </Box>
