@@ -29,7 +29,7 @@ const SEOServicePage = () => {
         <ListItem className="d-flex flex-column align-items-start">
           <Typography variant="h6">Link Building</Typography>
           <Typography variant="h6" className="text-muted">
-            Our link-building strategies help improve your website's authority, making it more likely to rank higher on search engines.
+            Our link-building strategies help improve your website&apos;s authority, making it more likely to rank higher on search engines.
           </Typography>
         </ListItem>
         <ListItem className="d-flex flex-column align-items-start">

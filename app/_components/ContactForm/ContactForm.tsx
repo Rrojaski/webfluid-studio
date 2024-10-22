@@ -18,18 +18,18 @@ function ContactForm() {
   const [nameTouched, setNameTouched] = useState(false);
   const [emailTouched, setEmailTouched] = useState(false);
 
-  const handleChange = (event: any) => {
+  const handleChange = (event: React.FocusEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   };
 
-  const handleNameBlur = (event: any) => {
+  const handleNameBlur = () => {
     setNameTouched(true);
   };
-  const handleSubmit = (event: any) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const myForm = event.target;
+    const myForm = event.target as HTMLFormElement;
     const formData = new FormData(myForm);
 
     fetch("/", {

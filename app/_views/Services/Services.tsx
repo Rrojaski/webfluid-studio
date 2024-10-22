@@ -1,11 +1,10 @@
 import "./Services.css";
 import Box from "@mui/material/Box";
-import { Container, Typography, Divider } from "@mui/material";
+import { Typography } from "@mui/material";
 import DisplayWidget from "@/app/_components/DisplayWidget/DisplayWidget";
 import { ServiceType } from "@/app/_utils/constants/ServiceType";
 import { Color } from "@/app/_utils/constants/CaseStudyWidget2Models";
 import Service from "@/app/_components/Service/Service";
-import CallToAction from "@/app/_components/CallToAction/CallToAction";
 
 function Services() {
   return (
