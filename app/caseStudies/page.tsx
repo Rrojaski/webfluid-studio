@@ -103,7 +103,9 @@ function CaseStudies() {
           <Grid2 container spacing={4}>
             {CaseStudyList.filter((x) => x.active && (!selectedLabel ? true : x.label === selectedLabel)).map((element, i) => (
               <Grid2 key={i}>
-                <CaseStudyWidget key={i} isHero={isHero} caseStudy={element} className="case-study" />
+                <Box className="case-study">
+                  <CaseStudyWidget key={i} isHero={isHero} caseStudy={element} />
+                </Box>
               </Grid2>
             ))}
           </Grid2>
