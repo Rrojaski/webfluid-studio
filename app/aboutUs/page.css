@@ -61,6 +61,39 @@
   max-width: 630px;
 }
 
+#employee-description-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  grid-gap: 25px;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+#our-vision-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#our-vision-content {
+  display: flex;
+  justify-content: center;
+  grid-gap: 45px;
+  gap: 45px;
+  flex-wrap: wrap;
+}
+
+#our-story-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 @media (max-width: 899px) {
   #hero-about-us-container {
     text-align: center;

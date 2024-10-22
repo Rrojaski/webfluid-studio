@@ -7,9 +7,9 @@ export interface EmployeeDesciptionData {
 }
 function EmployeeDesciption(data: EmployeeDesciptionData) {
   return (
-    <Box className="d-flex flex-column align-items-center">
+    <Box id="employee-description">
       <Box className="avatar-container">
-        <img className="avatar mb-3" src={data.employee.avatar} alt={data.employee.name} />
+        <img id="employee-description-image" className="avatar" src={data.employee.avatar} alt={data.employee.name} />
       </Box>
       <Typography variant="h5">{data.employee.name}</Typography>
       <Typography className="employee-description-sub" variant="subtitle1">
