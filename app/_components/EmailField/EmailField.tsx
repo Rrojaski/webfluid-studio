@@ -12,7 +12,7 @@ export interface EmailFieldData {
 }
 
 const EmailField = (data: EmailFieldData) => {
-  const handleChange = (event: any) => {
+  const handleChange = (event: React.FocusEvent<HTMLInputElement>) => {
     const { value } = event.target;
     data.setEmail(value);
     if (!value) {
@@ -30,7 +30,7 @@ const EmailField = (data: EmailFieldData) => {
     }
   };
 
-  const handleBlur = (event: any) => {
+  const handleBlur = (event: React.FocusEvent<HTMLInputElement>) => {
     data.setEmailTouched(true);
     const { value } = event.target;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
