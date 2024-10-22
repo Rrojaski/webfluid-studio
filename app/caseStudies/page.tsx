@@ -1,5 +1,5 @@
 import "./page.css";
-import { Box, Container, Typography, Chip, ListItem, Divider } from "@mui/material";
+import { Box, Container, Typography, Chip, ListItem, Divider, Grid2 } from "@mui/material";
 import { CaseStudyList, Label } from "../_utils/constants/CaseStudyList";
 import CallToAction from "../_components/CallToAction/CallToAction";
 import CaseStudyWidget from "../_components/CaseStudyWidget/CaseStudyWidget";
@@ -19,14 +19,14 @@ function CaseStudies() {
           We&apos;re agile, adaptable, and dependable, driven by our customers&apos; goals. Explore our Our Clients to see how our solutions deliver success.
         </Typography>
         <Box className="hero-case-studies-content">
-          {/* <Grid container spacing={5} justifyContent="start">
-            <Grid item sx={12} sm={12} md={4}>
+          <Grid2 container spacing={5} justifyContent="start">
+            <Grid2>
               <CaseStudyWidget isHero={isHero} caseStudy={CaseStudyList[0]} className="case-study" />
-            </Grid>
-            <Grid item sx={12} sm={12} md={4}>
+            </Grid2>
+            <Grid2>
               <CaseStudyWidget isHero={isHero} caseStudy={CaseStudyList[6]} className="case-study" />
-            </Grid>
-          </Grid> */}
+            </Grid2>
+          </Grid2>
         </Box>
       </Box>
     );
@@ -96,21 +96,13 @@ function CaseStudies() {
             </Box>
             <Typography variant="h4">Their Stories</Typography>
           </Box>
-          <Grid container spacing={4}>
+          <Grid2 container spacing={4}>
             {CaseStudyList.filter((x) => x.active && (!selectedLabel ? true : x.label === selectedLabel)).map((element, i) => (
-              <Grid
-                sx={{
-                  width: "100%",
-                }}
-                item
-                sm={12}
-                md={6}
-                lg={4}
-                key={i}>
+              <Grid2 key={i}>
                 <CaseStudyWidget key={i} isHero={isHero} caseStudy={element} className="case-study" />
-              </Grid>
+              </Grid2>
             ))}
-          </Grid>
+          </Grid2>
         </Container>
         <Box mt={20} mb={20}>
           <Container maxWidth="lg">
