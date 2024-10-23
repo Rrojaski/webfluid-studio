@@ -7,7 +7,7 @@ import CaseStudyWidget from "../_components/CaseStudyWidget/CaseStudyWidget";
 function CaseStudies() {
   const isHero = false;
   const LabelList = [...Object.values(Label)];
-  const selectedLabel = Label.Accessibility;
+  const selectedLabel: string | null = null;
 
   if (isHero) {
     return (
@@ -102,7 +102,7 @@ function CaseStudies() {
           </Box>
           <Grid2 container spacing={4}>
             {CaseStudyList.filter((x) => x.active && (!selectedLabel ? true : x.label === selectedLabel)).map((element, i) => (
-              <Grid2 key={i}>
+              <Grid2 size={{ xs: 12, md: 6, lg: 4 }} key={i}>
                 <Box className="case-study">
                   <CaseStudyWidget key={i} isHero={isHero} caseStudy={element} />
                 </Box>
