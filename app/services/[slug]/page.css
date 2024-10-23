@@ -27,3 +27,10 @@
 .service-container-view.service-view-container-purple svg {
   background-color: #7c00dd;
 }
+
+.service-view-header-content {
+  display: flex;
+  align-items: center;
+  gap: 16xpx;
+  grid-gap: 16px;
+}

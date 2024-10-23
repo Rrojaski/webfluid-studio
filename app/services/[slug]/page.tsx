@@ -48,7 +48,7 @@ function ServiceView({ params }: { params: { slug: string } }) {
   return (
     <div>
       <Box className="service-view-header" sx={{ backgroundColor: "#f5f5f5", padding: "40px 0" }}>
-        <Container maxWidth="lg" className="d-flex alig-items-center gap-3">
+        <Container maxWidth="lg" className="service-view-header-content">
           <Box className={"service-container-view service-view-container-" + color}>
             <Box className="service-view-label-wrapper">
               <FontAwesomeIcon color="white" size="2x" icon={getIcon(service.icon)} />
