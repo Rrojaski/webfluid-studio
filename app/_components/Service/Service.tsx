@@ -12,7 +12,7 @@ function Service(data: ServiceData) {
       <Typography className="service-label" variant="h5" fontWeight={700}>
         {data.serviceType.label}
       </Typography>
-      <Typography className="service-description" variant="h6">
+      <Typography className="service-description" variant="subtitle1">
         {data.serviceType.description}
       </Typography>
     </Box>

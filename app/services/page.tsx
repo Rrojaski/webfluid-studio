@@ -14,7 +14,7 @@ function Services() {
         <Container maxWidth="lg">
           <Box className="services-header-content-wrapper">
             <Box className="services-header-content">
-              <Typography className="services-subtitle" variant="h6" mb={2} fontWeight={600}>
+              <Typography className="services-subtitle" variant="subtitle1" fontWeight={600}>
                 WE GOT THIS
               </Typography>
               <Typography variant="h3" fontWeight={700}>
