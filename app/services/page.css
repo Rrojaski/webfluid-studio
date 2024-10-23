@@ -76,11 +76,19 @@
 
 .services-header-content-wrapper {
   display: flex;
+  gap: 10px;
+  grid-gap: 10px;
+  justify-content: space-between;
 }
 
 .services-header-content-content {
   margin-top: 160px;
   margin-bottom: 120px;
+}
+
+.services-header-content:last-of-type {
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1300px) {
@@ -124,7 +132,6 @@
   .services-box-wrapper:not(:last-child) {
     margin-bottom: 40px;
   }
-
   .services-devider {
     display: none;
   }
