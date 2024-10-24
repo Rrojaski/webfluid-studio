@@ -43,6 +43,20 @@ body {
   }
 }
 
+.chip {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 50px;
+  background-color: #ed6c02;
+}
+
+.chip-blue {
+  background-color: #2196f3;
+}
+
 .text-blue {
   color: #2196f3;
 }

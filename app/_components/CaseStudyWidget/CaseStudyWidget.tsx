@@ -10,6 +10,7 @@ export interface CaseStudyWidgetData {
     image: string;
     introduction: string;
     clientBackground: string;
+    slug: string;
   };
   isHero: boolean;
   showDescription?: boolean;
@@ -22,10 +23,11 @@ function CaseStudyWidget(data: CaseStudyWidgetData) {
     image: data.caseStudy.image,
     content: data.caseStudy.introduction,
     html: `<p>${data.caseStudy.clientBackground}</p>`,
+    slug: data.caseStudy.slug,
   };
   return (
     <Box className="case-study-widget">
-      <BlogWidget size="small" data={d} route={data.isHero ? "caseStudies" : ""} showShadow={false} />
+      <BlogWidget size="small" data={d} route="caseStudies" showShadow={false} />
       <Typography mt={2} variant="h5">
         {d.title}
       </Typography>

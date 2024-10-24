@@ -21,6 +21,7 @@ export interface CaseStudy {
   results: string;
   image: string;
   caption: string;
+  slug: string;
 }
 export const CaseStudyList: CaseStudy[] = [
   {
@@ -44,6 +45,7 @@ export const CaseStudyList: CaseStudy[] = [
       "The application provided a seamless user experience with efficient data loading and a responsive design. It met accessibility standards and enhanced user engagement with features like dynamic pagination and session scheduling.",
     image: "https://images.webfluid.studio/6c210fea-5879-4485-8095-32280125b2fe.jpg",
     caption: "Psi do Futuro: Modern Web Application Enhances Accessibility and Engagement for Psychological Services",
+    slug: "psychologist-directory-application-psi-do-futuro",
   },
   {
     id: "2",
@@ -66,6 +68,7 @@ export const CaseStudyList: CaseStudy[] = [
       "The new strategies significantly reduced time-to-market for software releases. Team productivity and morale improved, boosting employee satisfaction. Enhanced customer satisfaction was achieved through early and frequent product deliveries, increasing retention rates.",
     image: "https://miro.com/blog/wp-content/uploads/2023/09/Agile-Games-1-2048x1075.png",
     caption: "InnovateTech's Journey to Agile Excellence: Streamlining Software Development for Efficiency and Innovation",
+    slug: "agile-transformation-innovate-tech",
   },
   {
     id: "3",
@@ -89,6 +92,7 @@ export const CaseStudyList: CaseStudy[] = [
     image:
       "https://res.cloudinary.com/practicaldev/image/fetch/s--cuurMzI6--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/ozrbmo3718fkoz4lf4wr.png",
     caption: "WebCo's Commitment to Inclusivity: Advancing Accessibility Standards in Web Development",
+    slug: "accessibility-features-webco",
   },
   {
     id: "4",
@@ -111,6 +115,7 @@ export const CaseStudyList: CaseStudy[] = [
       "The new design led to a significant decrease in bounce rates and an increase in booking conversions. Mobile optimization efforts resulted in more bookings from mobile users, expanding TravelExplore's customer base.",
     image: "https://cdn.dribbble.com/users/3746591/screenshots/11119793/media/fa8756a504b9294b71e1935d80d29389.jpg",
     caption: "TravelExplore Enhances User Experience: Boosting Engagement and Conversions with a Modern Website Design",
+    slug: "enhanced-user-experience-travel-explore",
   },
   {
     id: "5",
@@ -133,6 +138,7 @@ export const CaseStudyList: CaseStudy[] = [
       "The upgraded system led to significant improvements in platform performance, reducing load times and minimizing downtime. Bloggers experienced smoother content management, increasing user satisfaction and engagement.",
     image: "https://www.searchenginejournal.com/wp-content/uploads/2022/10/what-is-a-cms-635928deda3bc-sej.png",
     caption: "BlogInnovate Streamlines Content Management: Enhancing Performance and User Satisfaction",
+    slug: "streamlined-content-management-blog-innovate",
   },
   {
     id: "6",
@@ -153,6 +159,7 @@ export const CaseStudyList: CaseStudy[] = [
       "The new platform led to a significant increase in online sales. Personalized recommendations and improved checkout processes resulted in higher customer satisfaction and repeat purchases. Integrated social media shopping expanded reach and brand awareness.",
     image: "https://raisinglobal.com/cdn/shop/articles/Blog_Banner-01_1.jpg?v=1674633404",
     caption: "FashionTrends Expands E-Commerce: Boosting Sales with Advanced Online Shopping Features",
+    slug: "e-commerce-expansion-fashion-trends",
   },
   {
     id: "7",
@@ -175,6 +182,7 @@ export const CaseStudyList: CaseStudy[] = [
       "The new feature significantly enhanced user experience by streamlining the query process, reducing time spent switching contexts, and maintaining user focus. It also demonstrated the potential for further AI-driven productivity enhancements.",
     image: "https://images.webfluid.studio/pika-1702277169820-1x.png",
     caption: "Streamlining Research with Speech Prompt Integration: A New Era of User Interaction in AnythingLLM",
+    slug: "enhancing-user-experience-speech-prompt-integration-anythingllm",
   },
   // {
   //   id: '8',
@@ -199,5 +207,6 @@ export const CaseStudyList: CaseStudy[] = [
   //   image: 'https://images.webfluid.studio/mia2.PNG',
   //   caption:
   //     "Mia's Event Website: A Seamless Digital Experience for Thousands of Participants",
+  //   slug: 'digital-transformation-event-management-custom-website-development'
   // },
 ];
