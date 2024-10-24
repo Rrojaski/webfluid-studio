@@ -21,12 +21,11 @@ function Navigation() {
     setWhiteHeader(whiteHeaderRoutes.includes(p));
   }, [pathName, router]);
   const [open, setOpen] = useState(false);
-  const [openModal, setOpenModal] = useState(false);
 
   const appBarFixed = false;
   const scroll = true;
 
-  const toggleDrawer = (val) => {
+  const toggleDrawer = (val: boolean) => {
     setOpen(val);
   };
   return (
@@ -35,28 +34,28 @@ function Navigation() {
       className={"app-bar " + (scroll && allowInvisableHeader ? "invisable-header" : "") + (whiteHeader ? "white-header" : "")}>
       <Toolbar className="app-bar">
         <div className="app-bar-content">
-          <Link className="hamburger-menu-item-link" className="navigation-link" href="/">
+          <Link className="navigation-link" href="/">
             <Typography id="logo-text" variant="h5" color="inherit" sx={{ flexGrow: 1 }}>
               <span className="normal-text">Webfluid Studio</span>
             </Typography>
           </Link>
           <div className="desktop-menu-items">
-            <Link className="hamburger-menu-item-link" className="navigation-link" href="/aboutUs">
+            <Link className="navigation-link" href="/aboutUs">
               <Button className="navigation-buttons" color="inherit">
                 About Us
               </Button>
             </Link>
-            <Link className="hamburger-menu-item-link" className="navigation-link" href="/services">
+            <Link className="navigation-link" href="/services">
               <Button className="navigation-buttons" color="inherit">
                 Services
               </Button>
             </Link>
-            <Link className="hamburger-menu-item-link" className="navigation-link" href="/caseStudies">
+            <Link className="navigation-link" href="/caseStudies">
               <Button className="navigation-buttons" color="inherit">
                 Our Clients
               </Button>
             </Link>
-            <Link className="hamburger-menu-item-link" className="navigation-link" href="/contactUs">
+            <Link className="navigation-link" href="/contactUs">
               <Button
                 className={"desktop-menu-items contact-us-button " + (whiteHeader ? "contact-us-button-blue" : "")}
                 color="warning"
