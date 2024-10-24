@@ -3,3 +3,11 @@
   width: 100%;
   height: auto;
 }
+
+.hamburger-menu-item-link {
+  text-decoration: none;
+}
+
+.hamburger-menu-item-text:not(#contact-us) {
+  color: #000;
+}
