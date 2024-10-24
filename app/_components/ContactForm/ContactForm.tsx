@@ -4,8 +4,10 @@ import "./ContactForm.css";
 import { Box } from "@mui/system";
 import EmailField from "../EmailField/EmailField";
 import { useState } from "react";
+import { useForm } from "@formspree/react";
 
 function ContactForm() {
+  const [state, handleSubmit] = useForm("mpwzwbjz");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -26,32 +28,37 @@ function ContactForm() {
   const handleNameBlur = () => {
     setNameTouched(true);
   };
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+  // const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  //   event.preventDefault();
 
-    const myForm = event.target as HTMLFormElement;
-    const formData = new FormData(myForm);
+  //   const myForm = event.target as HTMLFormElement;
+  //   const formData = new FormData(myForm);
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData.toString()).toString(),
-    })
-      .then(() => {
-        setFormData({
-          name: "",
-          email: "",
-          message: "",
-        });
-        setEmail("");
-        setNameTouched(false);
-        setValidEmail(false);
-        setEmailError(false);
-        setEmailTouched(false);
-        alert("Thank you! We will be reaching out soon.");
-      })
-      .catch((error) => alert(error));
-  };
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: new URLSearchParams(formData.toString()).toString(),
+  //   })
+  //     .then(() => {
+  //       setFormData({
+  //         name: "",
+  //         email: "",
+  //         message: "",
+  //       });
+  //       setEmail("");
+  //       setNameTouched(false);
+  //       setValidEmail(false);
+  //       setEmailError(false);
+  //       setEmailTouched(false);
+  //       alert("Thank you! We will be reaching out soon.");
+  //     })
+  //     .catch((error) => alert(error));
+  // };
+
+  if (state.succeeded) {
+    return <p>Thanks for your submission!</p>;
+  }
+
   return (
     <form name="contact" onSubmit={handleSubmit}>
       <input type="hidden" name="form-name" value="contact" />
