@@ -6,6 +6,7 @@ import { ServiceType } from "../_utils/constants/ServiceType";
 import Service from "../_components/Service/Service";
 import { Color } from "../_utils/constants/CaseStudyWidget2Models";
 import CallToAction from "../_components/CallToAction/CallToAction";
+import Link from "next/link";
 
 function Services() {
   return (
@@ -38,74 +39,78 @@ function Services() {
         <Container maxWidth="xl">
           <Box className="services-box-container-2-warapper">
             <Box className="services-box-container-2">
-              <Box className="services-box-wrapper-2">
-                <Box>
-                  <DisplayWidget
-                    small
-                    isHero={true}
-                    data={{
-                      companyName: "",
-                      title: ServiceType.websites.label,
-                    }}
-                    color={Color.Blue}
-                    route={"/services/" + ServiceType.websites.icon}
-                  />
+              <Link className="services-box-container-2-link" href={"/services/" + ServiceType.websites.icon}>
+                <Box className="services-box-wrapper-2">
+                  <Box>
+                    <DisplayWidget
+                      small
+                      isHero={true}
+                      data={{
+                        companyName: "",
+                        title: ServiceType.websites.label,
+                      }}
+                      color={Color.Blue}
+                    />
+                  </Box>
+                  <Box className="services-box">
+                    <Service serviceType={ServiceType.websites} />
+                  </Box>
                 </Box>
-                <Box className="services-box">
-                  <Service serviceType={ServiceType.websites} />
+              </Link>
+              <Link className="services-box-container-2-link" href={"/services/" + ServiceType.SEO.icon}>
+                <Box className="services-box-wrapper-2">
+                  <Box>
+                    <DisplayWidget
+                      small
+                      isHero={true}
+                      data={{
+                        companyName: "",
+                        title: ServiceType.SEO.label,
+                      }}
+                      color={Color.Yellow}
+                    />
+                  </Box>
+                  <Box className="services-box">
+                    <Service serviceType={ServiceType.SEO} color="service-container-yellow" />
+                  </Box>
                 </Box>
-              </Box>
-              <Box className="services-box-wrapper-2">
-                <Box>
-                  <DisplayWidget
-                    small
-                    isHero={true}
-                    data={{
-                      companyName: "",
-                      title: ServiceType.SEO.label,
-                    }}
-                    color={Color.Yellow}
-                    route={"/services/" + ServiceType.SEO.icon}
-                  />
+              </Link>
+              <Link className="services-box-container-2-link" href={"/services/" + ServiceType.development.icon}>
+                <Box className="services-box-wrapper-2">
+                  <Box>
+                    <DisplayWidget
+                      small
+                      isHero={true}
+                      data={{
+                        companyName: "",
+                        title: ServiceType.development.label,
+                      }}
+                      color={Color.Black2}
+                    />
+                  </Box>
+                  <Box className="services-box">
+                    <Service serviceType={ServiceType.development} color="service-container-black" />
+                  </Box>
                 </Box>
-                <Box className="services-box">
-                  <Service serviceType={ServiceType.SEO} color="service-container-yellow" />
+              </Link>
+              <Link className="services-box-container-2-link" href={"/services/" + ServiceType.digitalMarketing.icon}>
+                <Box className="services-box-wrapper-2">
+                  <Box>
+                    <DisplayWidget
+                      small
+                      isHero={true}
+                      data={{
+                        companyName: "",
+                        title: ServiceType.digitalMarketing.label,
+                      }}
+                      color={Color.Purple}
+                    />
+                  </Box>
+                  <Box className="services-box">
+                    <Service serviceType={ServiceType.digitalMarketing} color="service-container-purple" />
+                  </Box>
                 </Box>
-              </Box>
-              <Box className="services-box-wrapper-2">
-                <Box>
-                  <DisplayWidget
-                    small
-                    isHero={true}
-                    data={{
-                      companyName: "",
-                      title: ServiceType.development.label,
-                    }}
-                    color={Color.Black2}
-                    route={"/services/" + ServiceType.development.icon}
-                  />
-                </Box>
-                <Box className="services-box">
-                  <Service serviceType={ServiceType.development} color="service-container-black" />
-                </Box>
-              </Box>
-              <Box className="services-box-wrapper-2">
-                <Box>
-                  <DisplayWidget
-                    small
-                    isHero={true}
-                    data={{
-                      companyName: "",
-                      title: ServiceType.digitalMarketing.label,
-                    }}
-                    color={Color.Purple}
-                    route={"/services/" + ServiceType.digitalMarketing.icon}
-                  />
-                </Box>
-                <Box className="services-box">
-                  <Service serviceType={ServiceType.digitalMarketing} color="service-container-purple" />
-                </Box>
-              </Box>
+              </Link>
             </Box>
           </Box>
         </Container>

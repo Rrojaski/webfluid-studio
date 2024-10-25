@@ -91,6 +91,15 @@
   align-items: center;
 }
 
+.services-box-container-2-link {
+  text-decoration: none;
+  color: unset;
+}
+
+.services-box-container-2-link:hover {
+  color: unset;
+}
+
 @media (max-width: 1300px) {
   .services-box-wrapper-2 {
     max-width: 800px;
