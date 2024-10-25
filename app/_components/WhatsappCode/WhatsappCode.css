@@ -42,3 +42,8 @@
 #whatsapp-code-text:hover {
   color: #2196f3 !important;
 }
+
+
+#whats-app-code-link {
+  text-decoration: none;
+}
