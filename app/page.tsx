@@ -1,7 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 import "./page.css";
-import Services from "./_views/Services/Services";
-import AboutUs from "./_views/AboutUs/AboutUs";
+import Services from "./_components/Services/Services";
+import AboutUs from "./_components/AboutUs/AboutUs";
 import MissionStatement from "./_components/MissionStatement/MissionStatement";
 import TestimonialList from "./_components/TestimonialList/TestimonialList";
 import CallToActionWhatsapp from "./_components/CallToActionWhatsapp/CallToActionWhatsapp";
