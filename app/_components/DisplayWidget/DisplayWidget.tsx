@@ -11,7 +11,7 @@ export interface DisplayWidgetData {
 
 function DisplayWidget(data: DisplayWidgetData) {
   return (
-    <Box className={"display-widget " + data.color + (data.small ? " display-widget-small" : "") + (data.route ? " display-widget-routable" : "")}>
+    <Box className={"display-widget " + data.color + (data.small ? " display-widget-small" : "")}>
       <Box className="display-widget-label">
         <Typography variant="h6" fontWeight={700}>
           {data.companyName}
