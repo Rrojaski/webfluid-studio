@@ -2,6 +2,7 @@ import { Box } from "@mui/system";
 import "./MissionStatement.css";
 import { Button, Typography } from "@mui/material";
 import BasicImage from "../BasicImage/BasicImage";
+import Link from "next/link";
 
 function MissionStatement() {
   return (
@@ -16,9 +17,11 @@ function MissionStatement() {
             unique business needs, delivering on time and ensuring client satisfaction every step of the way.
           </Typography>
           <Box id="mission-statement-actions">
-            <Button variant="outlined" color="primary">
-              Learn More
-            </Button>
+            <Link href="aboutUs">
+              <Button variant="outlined" color="primary">
+                Learn More
+              </Button>
+            </Link>
           </Box>
         </Box>
         <Box id="mission-statement-content-image">
