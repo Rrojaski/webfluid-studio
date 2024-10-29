@@ -3,39 +3,38 @@ import { Box, Container, Typography, Chip, ListItem, Divider, Grid2 } from "@mui
 import { CaseStudyList, Label } from "../_utils/constants/CaseStudyList";
 import CallToAction from "../_components/CallToAction/CallToAction";
 import CaseStudyWidget from "../_components/CaseStudyWidget/CaseStudyWidget";
+import Head from "next/head";
 
 function CaseStudies() {
-  const isHero = false;
   const LabelList = [...Object.values(Label)];
   const selectedLabel: string | null = null;
 
-  if (isHero) {
-    return (
-      <Box className="hero-case-studies-container">
-        <Typography variant="h3" mb={3}>
-          Our Clients
-        </Typography>
-        <Typography variant="h6" mb={10}>
-          We&apos;re agile, adaptable, and dependable, driven by our customers&apos; goals. Explore our Our Clients to see how our solutions deliver success.
-        </Typography>
-        <Box className="hero-case-studies-content">
-          <Grid2 container spacing={5} justifyContent="start">
-            <Grid2>
-              <Box className="case-study">
-                <CaseStudyWidget isHero={isHero} caseStudy={CaseStudyList[0]} />
-              </Box>
-            </Grid2>
-            <Grid2>
-              <Box className="case-study">
-                <CaseStudyWidget isHero={isHero} caseStudy={CaseStudyList[6]} />
-              </Box>
-            </Grid2>
-          </Grid2>
-        </Box>
-      </Box>
-    );
-  } else {
-    return (
+  return (
+    <>
+      <Head>
+        <title>Case Studies - Webfluid Studio</title>
+        <meta
+          name="description"
+          content="Explore our case studies to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions."
+        />
+        <meta name="keywords" content="Webfluid Studio, Case Studies, Website Design, Web Development, Digital Transformation" />
+        <meta name="author" content="Webfluid Studio" />
+        <meta property="og:title" content="Case Studies - Webfluid Studio" />
+        <meta
+          property="og:description"
+          content="Explore our case studies to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.webfluid.studio/caseStudies" />
+        <meta property="og:image" content="https://images.webfluid.studio/laptop-guy.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Case Studies - Webfluid Studio" />
+        <meta
+          name="twitter:description"
+          content="Explore our case studies to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions."
+        />
+        <meta name="twitter:image" content="https://images.webfluid.studio/laptop-guy.png" />
+      </Head>
       <section className="content-container">
         <Box className="case-studies-header">
           <Container maxWidth="lg">
@@ -116,8 +115,8 @@ function CaseStudies() {
           </Container>
         </Box>
       </section>
-    );
-  }
+    </>
+  );
 }
 
 export default CaseStudies;

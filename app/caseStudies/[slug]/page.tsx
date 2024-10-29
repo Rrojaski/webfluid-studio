@@ -6,6 +6,7 @@ import { Card, Typography, Divider, Grid, Tooltip } from "@mui/material";
 import { CaseStudyList } from "@/app/_utils/constants/CaseStudyList";
 import appList from "@/app/_utils/constants/AppList";
 import CallToActionContactUs from "@/app/_components/CallToActionContactUs/CallToActionContactUs";
+import Head from "next/head";
 
 function CaseStudyView({ params }: { params: { slug: string } }) {
   const caseStudy = CaseStudyList.find((x) => x.slug === params.slug);
@@ -24,95 +25,126 @@ function CaseStudyView({ params }: { params: { slug: string } }) {
   const apps = appList.filter((x) => ids.includes(x.id));
 
   return (
-    <div>
-      <Box className="case-study-view-header" sx={{ backgroundColor: "#f5f5f5", padding: "40px 0" }}>
-        <Container maxWidth="lg">
-          <div className="chip mb-3">Case Study</div>
-          <Typography variant="h3">{caseStudy.title}</Typography>
-        </Container>
-      </Box>
+    <>
+      <Head>
+        <title>Case Study - Webfluid Studio</title>
+        <meta
+          name="description"
+          content="Explore our detailed case study to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions."
+        />
+        <meta name="keywords" content="Webfluid Studio, Case Study, Website Design, Web Development, Digital Transformation" />
+        <meta name="author" content="Webfluid Studio" />
+        <meta property="og:title" content="Case Study - Webfluid Studio" />
+        <meta
+          property="og:description"
+          content="Explore our detailed case study to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={"https://www.webfluid.studio/caseStudies/" + caseStudy.slug} />
+        <meta property="og:image" content={caseStudy.image} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Case Study - Webfluid Studio" />
+        <meta
+          name="twitter:description"
+          content="Explore our detailed case study to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions."
+        />
+        <meta name="twitter:image" content={caseStudy.image} />
+      </Head>
+      <div>
+        <Box className="case-study-view-header" sx={{ backgroundColor: "#f5f5f5", padding: "40px 0" }}>
+          <Container maxWidth="lg">
+            <div className="chip mb-3">Case Study</div>
+            <Typography variant="h3">{caseStudy.title}</Typography>
+          </Container>
+        </Box>
 
-      <Container maxWidth="lg" className="d-flex flex-column justify-content-center">
-        <img className="case-study-image" src={caseStudy.image} alt={caseStudy.caption} style={{ width: "100%", borderRadius: "8px", marginBottom: "20px" }} />
+        <Container maxWidth="lg" className="d-flex flex-column justify-content-center">
+          <img
+            className="case-study-image"
+            src={caseStudy.image}
+            alt={caseStudy.caption}
+            style={{ width: "100%", borderRadius: "8px", marginBottom: "20px" }}
+          />
 
-        {apps.length ? (
-          <Box>
-            <Grid container spacing={2} sx={{ padding: "10px 0" }}>
-              {apps.map((x) => (
-                <Grid item key={x.title}>
-                  <Tooltip title={x.title}>
-                    <Card
-                      sx={{
-                        background: "#fff",
-                        borderRadius: "10px",
-                        padding: "10px",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        width: 60,
-                        height: 60,
-                      }}
-                      variant="outlined">
-                      <img width={50} src={x.icon} alt={x.title} />
-                    </Card>
-                  </Tooltip>
-                </Grid>
-              ))}
-            </Grid>
-            <Box id="case-study-chip-wrapper">
-              <div className="chip chip-blue">Developed With</div>
+          {apps.length ? (
+            <Box>
+              <Grid container spacing={2} sx={{ padding: "10px 0" }}>
+                {apps.map((x) => (
+                  <Grid item key={x.title}>
+                    <Tooltip title={x.title}>
+                      <Card
+                        sx={{
+                          background: "#fff",
+                          borderRadius: "10px",
+                          padding: "10px",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                          width: 60,
+                          height: 60,
+                        }}
+                        variant="outlined">
+                        <img width={50} src={x.icon} alt={x.title} />
+                      </Card>
+                    </Tooltip>
+                  </Grid>
+                ))}
+              </Grid>
+              <Box id="case-study-chip-wrapper">
+                <div className="chip chip-blue">Developed With</div>
+              </Box>
             </Box>
-          </Box>
-        ) : (
-          ""
-        )}
-      </Container>
-
-      <Box className="case-study-view-content" sx={{ padding: "40px 0" }}>
-        <Container maxWidth="lg">
-          <Box mb={6}>
-            <Typography variant="h4" mb={2}>
-              About the Client
-            </Typography>
-            <Divider />
-            <Typography variant="body1" mt={3}>
-              {caseStudy.clientBackground}
-            </Typography>
-          </Box>
-          <Box mb={6}>
-            <Typography variant="h4" mb={2}>
-              The Challenge
-            </Typography>
-            <Divider />
-            <Typography variant="body1" mt={3}>
-              {caseStudy.challenges}
-            </Typography>
-          </Box>
-          <Box mb={6}>
-            <Typography variant="h4" mb={2}>
-              The Solution
-            </Typography>
-            <Divider />
-            <Typography variant="body1" mt={3}>
-              {caseStudy.approach}
-            </Typography>
-            <Typography variant="body1" mt={3}>
-              {caseStudy.solution}
-            </Typography>
-          </Box>
-          <Box>
-            <Typography variant="h4" mb={2}>
-              The Result
-            </Typography>
-            <Divider />
-            <Typography variant="body1" mt={3}>
-              {caseStudy.results}
-            </Typography>
-          </Box>
+          ) : (
+            ""
+          )}
         </Container>
-      </Box>
-      <CallToActionContactUs />
-    </div>
+
+        <Box className="case-study-view-content" sx={{ padding: "40px 0" }}>
+          <Container maxWidth="lg">
+            <Box mb={6}>
+              <Typography variant="h4" mb={2}>
+                About the Client
+              </Typography>
+              <Divider />
+              <Typography variant="body1" mt={3}>
+                {caseStudy.clientBackground}
+              </Typography>
+            </Box>
+            <Box mb={6}>
+              <Typography variant="h4" mb={2}>
+                The Challenge
+              </Typography>
+              <Divider />
+              <Typography variant="body1" mt={3}>
+                {caseStudy.challenges}
+              </Typography>
+            </Box>
+            <Box mb={6}>
+              <Typography variant="h4" mb={2}>
+                The Solution
+              </Typography>
+              <Divider />
+              <Typography variant="body1" mt={3}>
+                {caseStudy.approach}
+              </Typography>
+              <Typography variant="body1" mt={3}>
+                {caseStudy.solution}
+              </Typography>
+            </Box>
+            <Box>
+              <Typography variant="h4" mb={2}>
+                The Result
+              </Typography>
+              <Divider />
+              <Typography variant="body1" mt={3}>
+                {caseStudy.results}
+              </Typography>
+            </Box>
+          </Container>
+        </Box>
+        <CallToActionContactUs />
+      </div>
+    </>
   );
 }
 
