@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
+import NextLink from "next/link";
 
 function Footer() {
   return (
@@ -36,6 +37,11 @@ function Footer() {
                 <Link href="https://github.com/webfluidstudio/" target="_blank" color="inherit" underline="none">
                   GitHub
                 </Link>
+              </Grid>
+              <Grid item xs={12} md={2}>
+                <NextLink id="sitemap-link" href="/sitemap">
+                  Sitemap
+                </NextLink>
               </Grid>
               {/* <Grid item xs={12} md={2}>
                 <ReactLink to="/blog" id="blog-button">

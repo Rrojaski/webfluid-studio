@@ -15,7 +15,7 @@ function Navigation() {
 
   useEffect(() => {
     const invisibleHeaderRoutes = [""];
-    const whiteHeaderRoutes = ["aboutUs", "services", "caseStudies", "blog", "contactUs"];
+    const whiteHeaderRoutes = ["aboutUs", "services", "caseStudies", "blog", "contactUs", "sitemap"];
     const p = pathName.split("/")[1];
     setAllowInvisableHeader(invisibleHeaderRoutes.includes(p));
     setWhiteHeader(whiteHeaderRoutes.includes(p));

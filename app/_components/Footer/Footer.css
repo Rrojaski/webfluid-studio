@@ -1,16 +1,7 @@
 .footer-container {
   width: 100%;
-  background: radial-gradient(
-      89.7% 115.09% at 3.43% 2.75%,
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0)
-    ),
-    radial-gradient(
-      79.69% 102.24% at 100% 100.11%,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0)
-    ),
-    #002395;
+  background: radial-gradient(89.7% 115.09% at 3.43% 2.75%, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)),
+    radial-gradient(79.69% 102.24% at 100% 100.11%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), #002395;
   background-blend-mode: overlay, overlay, normal;
   color: #fff;
 }
@@ -37,5 +28,14 @@
 }
 
 #blog-button:hover {
+  color: #737a82;
+}
+
+#sitemap-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+#sitemap-link:hover {
   color: #737a82;
 }
