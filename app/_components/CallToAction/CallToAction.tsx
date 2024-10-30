@@ -29,6 +29,7 @@ function CallToAction() {
             </Typography>
             <Link href="/contactUs">
               <Button
+                size="large"
                 sx={{
                   width: "fit-content",
                 }}
