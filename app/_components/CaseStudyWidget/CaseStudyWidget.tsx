@@ -12,7 +12,6 @@ export interface CaseStudyWidgetData {
     clientBackground: string;
     slug: string;
   };
-  isHero: boolean;
   showDescription?: boolean;
 }
 function CaseStudyWidget(data: CaseStudyWidgetData) {
