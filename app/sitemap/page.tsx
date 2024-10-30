@@ -7,6 +7,9 @@ import Typography from "@mui/material/Typography";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
+import { ListItemIcon } from "@mui/material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle } from "@fortawesome/free-solid-svg-icons"; // Import the circle icon
 
 interface Page {
   url: string;
@@ -42,6 +45,9 @@ const Sitemap: React.FC = () => {
         {pages.map((page, index) => (
           <ListItem key={index}>
             <Link className="sitemap-page-link" href={page.url}>
+              <ListItemIcon className="sitemap-page-icon">
+                <FontAwesomeIcon icon={faCircle} size="2xs" />
+              </ListItemIcon>
               <ListItemText primary={page.title} />
             </Link>
           </ListItem>

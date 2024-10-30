@@ -4,6 +4,13 @@
 }
 
 .sitemap-page-link {
-  color: #0035E2;
+  color: #0035e2;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sitemap-page-icon {
+    color: #000 !important;
+    min-width: 30px !important;
 }
