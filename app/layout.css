@@ -199,7 +199,8 @@ a:hover {
 
 .desktop-menu-items {
   grid-gap: 5px;
-  gap: 5px;
+  gap: 8px;
+  grid-gap: 8px;
   display: flex;
 }
 
