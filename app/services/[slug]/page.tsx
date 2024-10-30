@@ -62,7 +62,7 @@ function ServiceView({ params }: { params: { slug: string } }) {
           content={`Learn more about our ${service.label} services at Webfluid Studio. We offer custom website design, web development, and digital transformation solutions tailored to your business needs.`}
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://www.yourwebsite.com/services/${service.slug}`} />
+        <meta property="og:url" content={`https://www.webfluid.studio/services/${params.slug}`} />
         <meta property="og:image" content="https://images.webfluid.studio/laptop-guy.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${service.label} - Webfluid Studio`} />
