@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle as faCircleSolid } from "@fortawesome/free-solid-svg-icons";
 import { faCircle } from "@fortawesome/free-regular-svg-icons";
 import { ServiceType } from "../_utils/constants/ServiceType";
+import { CaseStudyList } from "../_utils/constants/CaseStudyList";
 
 interface Page {
   url: string;
@@ -56,12 +57,28 @@ const Sitemap: React.FC = () => {
             {page.url === "/services" ? (
               <List component="div" disablePadding>
                 {services.map((service) => (
-                  <ListItem key={service.id} sx={{ pl: 4 }}>
+                  <ListItem key={service.id}>
                     <Link className="sitemap-page-link" href={"/services/" + service.icon}>
                       <ListItemIcon className="sitemap-page-icon">
                         <FontAwesomeIcon icon={faCircle} size="2xs" />
                       </ListItemIcon>
                       <ListItemText primary={service.label} />
+                    </Link>
+                  </ListItem>
+                ))}
+              </List>
+            ) : (
+              ""
+            )}
+            {page.url === "/caseStudies" ? (
+              <List component="div" disablePadding>
+                {CaseStudyList.filter((x) => x.active).map((caseStudy) => (
+                  <ListItem key={caseStudy.id}>
+                    <Link className="sitemap-page-link" href={"/caseStudies/" + caseStudy.slug}>
+                      <ListItemIcon className="sitemap-page-icon">
+                        <FontAwesomeIcon icon={faCircle} size="2xs" />
+                      </ListItemIcon>
+                      <ListItemText primary={caseStudy.label} />
                     </Link>
                   </ListItem>
                 ))}
