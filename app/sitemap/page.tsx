@@ -9,7 +9,9 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import { ListItemIcon } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle } from "@fortawesome/free-solid-svg-icons"; // Import the circle icon
+import { faCircle as faCircleSolid } from "@fortawesome/free-solid-svg-icons";
+import { faCircle } from "@fortawesome/free-regular-svg-icons";
+import { ServiceType } from "../_utils/constants/ServiceType";
 
 interface Page {
   url: string;
@@ -35,6 +37,7 @@ const Sitemap: React.FC = () => {
 
     fetchPages();
   }, []);
+  const services = Object.values(ServiceType);
 
   return (
     <Container id="sitemap-container">
@@ -43,13 +46,29 @@ const Sitemap: React.FC = () => {
       </Typography>
       <List>
         {pages.map((page, index) => (
-          <ListItem key={index}>
+          <ListItem className="sitemap-list-item" key={index}>
             <Link className="sitemap-page-link" href={page.url}>
               <ListItemIcon className="sitemap-page-icon">
-                <FontAwesomeIcon icon={faCircle} size="2xs" />
+                <FontAwesomeIcon icon={faCircleSolid} size="2xs" />
               </ListItemIcon>
               <ListItemText primary={page.title} />
             </Link>
+            {page.url === "/services" ? (
+              <List component="div" disablePadding>
+                {services.map((service) => (
+                  <ListItem key={service.id} sx={{ pl: 4 }}>
+                    <Link className="sitemap-page-link" href={"/services/" + service.icon}>
+                      <ListItemIcon className="sitemap-page-icon">
+                        <FontAwesomeIcon icon={faCircle} size="2xs" />
+                      </ListItemIcon>
+                      <ListItemText primary={service.label} />
+                    </Link>
+                  </ListItem>
+                ))}
+              </List>
+            ) : (
+              ""
+            )}
           </ListItem>
         ))}
       </List>
