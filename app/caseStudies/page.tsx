@@ -63,7 +63,7 @@ function CaseStudies() {
             sx={{
               width: "100%",
             }}>
-            <Box
+            {/* <Box
               component="ul"
               sx={{
                 display: "flex",
@@ -96,7 +96,7 @@ function CaseStudies() {
                   </ListItem>
                 );
               })}
-            </Box>
+            </Box> */}
             <Typography variant="h4">Their Stories</Typography>
           </Box>
           <Grid2 container spacing={4}>
@@ -109,7 +109,7 @@ function CaseStudies() {
             ))}
           </Grid2>
         </Container>
-        <Box mt={20} mb={20}>
+        <Box mt={30} mb={20}>
           <Container maxWidth="lg">
             <CallToAction />
           </Container>
