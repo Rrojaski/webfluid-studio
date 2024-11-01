@@ -1,12 +1,12 @@
 import "./page.css";
-import { Box, Container, Typography, Chip, ListItem, Divider, Grid2 } from "@mui/material";
+import { Box, Container, Typography, Divider, Grid2 } from "@mui/material";
 import { CaseStudyList, Label } from "../_utils/constants/CaseStudyList";
 import CallToAction from "../_components/CallToAction/CallToAction";
 import CaseStudyWidget from "../_components/CaseStudyWidget/CaseStudyWidget";
 import Head from "next/head";
 
 function CaseStudies() {
-  const LabelList = [...Object.values(Label)];
+  // const LabelList = [...Object.values(Label)];
   const selectedLabel: string | null = null;
 
   return (
