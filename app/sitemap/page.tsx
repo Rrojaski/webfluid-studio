@@ -78,7 +78,7 @@ const Sitemap: React.FC = () => {
                       <ListItemIcon className="sitemap-page-icon">
                         <FontAwesomeIcon icon={faCircle} size="2xs" />
                       </ListItemIcon>
-                      <ListItemText primary={caseStudy.label} />
+                      <ListItemText primary={caseStudy.title} />
                     </Link>
                   </ListItem>
                 ))}
