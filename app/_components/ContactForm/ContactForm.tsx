@@ -33,13 +33,13 @@ function ContactForm() {
     return Math.floor(Math.random() * 4) + 1;
   };
 
-  return (
-    <Box className="success-message">
-      <img id="thank-you-image" src={"https://images.webfluid.studio/dog_" + getRandomNumber() + ".jpg"} alt="cute puppy" />
-      <Typography variant="h6">"Thank you for contacting us! We will get back to you soon." - Rex</Typography>
-    </Box>
-  );
   if (state.succeeded) {
+    return (
+      <Box className="success-message">
+        <img id="thank-you-image" src={"https://images.webfluid.studio/dog_" + getRandomNumber() + ".jpg"} alt="cute puppy" />
+        <Typography variant="h6">&quot;Thank you for contacting us! We will get back to you soon.&quot; - Rex</Typography>
+      </Box>
+    );
   }
 
   return (
