@@ -28,35 +28,18 @@ function ContactForm() {
   const handleNameBlur = () => {
     setNameTouched(true);
   };
-  // const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-  //   event.preventDefault();
 
-  //   const myForm = event.target as HTMLFormElement;
-  //   const formData = new FormData(myForm);
+  const getRandomNumber = (): number => {
+    return Math.floor(Math.random() * 4) + 1;
+  };
 
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: new URLSearchParams(formData.toString()).toString(),
-  //   })
-  //     .then(() => {
-  //       setFormData({
-  //         name: "",
-  //         email: "",
-  //         message: "",
-  //       });
-  //       setEmail("");
-  //       setNameTouched(false);
-  //       setValidEmail(false);
-  //       setEmailError(false);
-  //       setEmailTouched(false);
-  //       alert("Thank you! We will be reaching out soon.");
-  //     })
-  //     .catch((error) => alert(error));
-  // };
-
+  return (
+    <Box className="success-message">
+      <img id="thank-you-image" src={"https://images.webfluid.studio/dog_" + getRandomNumber() + ".jpg"} alt="cute puppy" />
+      <Typography variant="h6">"Thank you for contacting us! We will get back to you soon." - Rex</Typography>
+    </Box>
+  );
   if (state.succeeded) {
-    return <p>Thanks for your submission!</p>;
   }
 
   return (

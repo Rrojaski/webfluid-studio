@@ -1,0 +1,25 @@
+.success-message {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  grid-gap: 30px;
+  justify-content: center;
+  margin-top: 100px;
+}
+#thank-you-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+@media (max-width: 960px) {
+  .success-message {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .success-message {
+    flex-wrap: wrap;
+  }
+}
