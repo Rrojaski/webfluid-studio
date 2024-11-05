@@ -41,10 +41,13 @@
 }
 
 @media (max-width: 1200px) {
+}
+
+@media (max-width: 960px) {
   #cta-whatsapp {
     justify-content: center;
-    gap: 150px;
-    grid-gap: 150px;
+    gap: 120px;
+    grid-gap: 120px;
   }
   #cta-whatsapp-text,
   #cta-whatsapp-code {
@@ -62,11 +65,14 @@
   #cta-mobile-link {
     display: block;
   }
+  #cta-whatsapp-code-wrapper {
+    display: none;
+  }
 }
 
-@media (max-width: 960px) {
-  #cta-whatsapp {
-    gap: 120px;
-    grid-gap: 120px;
+@media (max-width: 460px) {
+  #cta-whatsapp-text {
+    gap: 65px;
+    grid-gap: 65px;
   }
 }

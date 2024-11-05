@@ -9,7 +9,7 @@ function CallToActionWhatsapp() {
   return (
     <Box id="cta-whatsapp">
       <Box id="cta-whatsapp-text">
-        <Typography sx={{ typography: { md: "h2", xs: "h4" } }}>
+        <Typography sx={{ typography: { md: "h2", sm: "h3", xs: "h4" } }}>
           Have a <span id="cta-whatsapp-text-highlight">BIG IDEA</span> in mind? Let&apos;s discuss what we can achieve together
         </Typography>
         <Box id="cta-whatsapp-team">
