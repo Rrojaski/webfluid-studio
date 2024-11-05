@@ -14,7 +14,7 @@ function CallToActionWhatsapp() {
         </Typography>
         <Box id="cta-whatsapp-team">
           <TeamWidget />
-          <Link href="aboutUs">
+          <Link href="contactUs">
             <Button id="cta-whatsapp-text-link" size="large" variant="contained" color="warning">
               Contact Us
             </Button>
