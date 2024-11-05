@@ -24,6 +24,22 @@
   color: #1672ec;
 }
 
+#cta-whatsapp-team {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  grid-gap: 20px;
+}
+
+#cta-whatsapp-text-link {
+  width: 139px;
+}
+
+#cta-mobile-link {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   #cta-whatsapp {
     justify-content: center;
@@ -41,5 +57,16 @@
 
   #cta-whatsapp-team {
     display: none;
+  }
+
+  #cta-mobile-link {
+    display: block;
+  }
+}
+
+@media (max-width: 960px) {
+  #cta-whatsapp {
+    gap: 120px;
+    grid-gap: 120px;
   }
 }
