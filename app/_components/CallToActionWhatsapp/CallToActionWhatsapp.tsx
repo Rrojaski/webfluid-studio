@@ -20,7 +20,7 @@ function CallToActionWhatsapp() {
             </Button>
           </Link>
         </Box>
-        <Link id="cta-mobile-link" href="aboutUs">
+        <Link id="cta-mobile-link" href="contactUs">
           <Button size="large" variant="contained" color="warning">
             Contact Us
           </Button>
