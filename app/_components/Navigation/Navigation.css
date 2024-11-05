@@ -11,3 +11,16 @@
 .hamburger-menu-item-text:not(#contact-us) {
   color: #000;
 }
+
+.desktop-menu-items {
+  grid-gap: 5px;
+  gap: 8px;
+  grid-gap: 8px;
+  display: flex;
+}
+
+@media (max-width: 840px) {
+  .desktop-menu-items {
+    display: none !important;
+  }
+}

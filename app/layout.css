@@ -197,13 +197,6 @@ a:hover {
   text-align: center;
 }
 
-.desktop-menu-items {
-  grid-gap: 5px;
-  gap: 8px;
-  grid-gap: 8px;
-  display: flex;
-}
-
 .contact-us-button {
   margin-left: 5px !important;
 }

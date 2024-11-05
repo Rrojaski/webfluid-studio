@@ -1,4 +1,3 @@
-
 .home-container {
   width: 100%;
   overflow: hidden;
@@ -332,12 +331,6 @@
 
 @media (min-width: 840px) {
   .hamburger-menu {
-    display: none !important;
-  }
-}
-
-@media (max-width: 840px) {
-  .desktop-menu-items {
     display: none !important;
   }
 }
