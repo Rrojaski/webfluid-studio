@@ -17,17 +17,17 @@ export const metadata: Metadata = {
     description: "Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio.",
     images: [
       {
-        url: "https://images.webfluid.studio/team-image.jpg",
-        alt: "Laptop Guy",
+        url: "https://images.webfluid.studio/team-image-1200x630.jpg.jpg",
+        alt: "Team around a table",
       },
     ],
-    url: "https://yourwebsite.com",
+    url: "https://webfluid.studio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Improve Your Online Presence | Webfluid Studio",
     description: "Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio.",
-    images: "https://images.webfluid.studio/team-image.jpg",
+    images: "https://images.webfluid.studio/team-image-1200x630.jpg.jpg",
   },
 };
 
