@@ -7,35 +7,39 @@ import Service from "../_components/Service/Service";
 import { Color } from "../_utils/constants/CaseStudyWidget2Models";
 import CallToAction from "../_components/CallToAction/CallToAction";
 import Link from "next/link";
-import Head from "next/head";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Services - Webfluid Studio",
+  description:
+    "Discover the range of services offered by Webfluid Studio, including custom website design, web development, and digital transformation solutions tailored to your business needs.",
+  keywords: "Webfluid Studio, Services, Website Design, Web Development, Digital Transformation",
+  authors: [{ name: "Webfluid Studio" }],
+  openGraph: {
+    title: "Our Services - Webfluid Studio",
+    description:
+      "Discover the range of services offered by Webfluid Studio, including custom website design, web development, and digital transformation solutions tailored to your business needs.",
+    type: "website",
+    url: "https://www.webfluid.studio/services",
+    images: [
+      {
+        url: "https://images.webfluid.studio/team-image-1200x630.jpg",
+        alt: "Team around a table",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Services - Webfluid Studio",
+    description:
+      "Discover the range of services offered by Webfluid Studio, including custom website design, web development, and digital transformation solutions tailored to your business needs.",
+    images: "https://images.webfluid.studio/team-image-1200x630.jpg",
+  },
+};
 
 function Services() {
   return (
     <>
-      <Head>
-        <title>Our Services - Webfluid Studio</title>
-        <meta
-          name="description"
-          content="Discover the range of services offered by Webfluid Studio, including custom website design, web development, and digital transformation solutions tailored to your business needs."
-        />
-        <meta name="keywords" content="Webfluid Studio, Services, Website Design, Web Development, Digital Transformation" />
-        <meta name="author" content="Webfluid Studio" />
-        <meta property="og:title" content="Our Services - Webfluid Studio" />
-        <meta
-          property="og:description"
-          content="Discover the range of services offered by Webfluid Studio, including custom website design, web development, and digital transformation solutions tailored to your business needs."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.webfluid.studio/services" />
-        <meta property="og:image" content="https://images.webfluid.studio/laptop-guy.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Our Services - Webfluid Studio" />
-        <meta
-          name="twitter:description"
-          content="Discover the range of services offered by Webfluid Studio, including custom website design, web development, and digital transformation solutions tailored to your business needs."
-        />
-        <meta name="twitter:image" content="https://images.webfluid.studio/laptop-guy.png" />
-      </Head>
       <section className="content-container">
         <Box className="services-header-content-content">
           <Container maxWidth="lg">
