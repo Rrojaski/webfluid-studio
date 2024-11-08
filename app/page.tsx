@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio.",
     images: [
       {
-        url: "https://images.webfluid.studio/team-image-1200x630.jpg.jpg",
+        url: "https://images.webfluid.studio/team-image-1200x630.jpg",
         alt: "Team around a table",
       },
     ],
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Improve Your Online Presence | Webfluid Studio",
     description: "Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio.",
-    images: "https://images.webfluid.studio/team-image-1200x630.jpg.jpg",
+    images: "https://images.webfluid.studio/team-image-1200x630.jpg",
   },
 };
 
