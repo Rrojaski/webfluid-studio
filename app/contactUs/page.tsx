@@ -4,35 +4,39 @@ import { Box, CardContent, Typography } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import ContactForm from "../_components/ContactForm/ContactForm";
-import Head from "next/head";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us - Webfluid Studio",
+  description:
+    "Get in touch with Webfluid Studio for custom website design and development solutions. Contact us today to discuss your project and see how we can help you enhance your online presence.",
+  keywords: "Webfluid Studio, Contact Us, Website Design, Web Development, Digital Transformation",
+  authors: [{ name: "Webfluid Studio" }],
+  openGraph: {
+    title: "Contact Us - Webfluid Studio",
+    description:
+      "Get in touch with Webfluid Studio for custom website design and development solutions. Contact us today to discuss your project and see how we can help you enhance your online presence.",
+    type: "website",
+    url: "https://www.webfluid.studio/contactUs",
+    images: [
+      {
+        url: "https://images.webfluid.studio/team-image-1200x630.jpg",
+        alt: "Team around a table",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us - Webfluid Studio",
+    description:
+      "Get in touch with Webfluid Studio for custom website design and development solutions. Contact us today to discuss your project and see how we can help you enhance your online presence.",
+    images: "https://images.webfluid.studio/team-image-1200x630.jpg",
+  },
+};
 
 function ContactUs() {
   return (
     <>
-      <Head>
-        <title>Contact Us - Webfluid Studio</title>
-        <meta
-          name="description"
-          content="Get in touch with Webfluid Studio for custom website design and development solutions. Contact us today to discuss your project and see how we can help you enhance your online presence."
-        />
-        <meta name="keywords" content="Webfluid Studio, Contact Us, Website Design, Web Development, Digital Transformation" />
-        <meta name="author" content="Webfluid Studio" />
-        <meta property="og:title" content="Contact Us - Webfluid Studio" />
-        <meta
-          property="og:description"
-          content="Get in touch with Webfluid Studio for custom website design and development solutions. Contact us today to discuss your project and see how we can help you enhance your online presence."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.webfluid.studio/contactUs" />
-        <meta property="og:image" content="https://images.webfluid.studio/laptop-guy.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Us - Webfluid Studio" />
-        <meta
-          name="twitter:description"
-          content="Get in touch with Webfluid Studio for custom website design and development solutions. Contact us today to discuss your project and see how we can help you enhance your online presence."
-        />
-        <meta name="twitter:image" content="https://images.webfluid.studio/laptop-guy.png" />
-      </Head>
       <Box mt={17} mb={35}>
         <Container maxWidth="lg" className="contact-us-container">
           <div className="contact-us-container">

@@ -6,7 +6,6 @@ import { Card, Typography, Divider, Grid, Tooltip } from "@mui/material";
 import { CaseStudyList } from "@/app/_utils/constants/CaseStudyList";
 import appList from "@/app/_utils/constants/AppList";
 import CallToActionContactUs from "@/app/_components/CallToActionContactUs/CallToActionContactUs";
-import Head from "next/head";
 import { Metadata } from "next";
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -56,30 +55,6 @@ function CaseStudyView({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      <Head>
-        <title>Case Study - Webfluid Studio</title>
-        <meta
-          name="description"
-          content="Explore our detailed case study to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions."
-        />
-        <meta name="keywords" content="Webfluid Studio, Case Study, Website Design, Web Development, Digital Transformation" />
-        <meta name="author" content="Webfluid Studio" />
-        <meta property="og:title" content="Case Study - Webfluid Studio" />
-        <meta
-          property="og:description"
-          content="Explore our detailed case study to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={"https://www.webfluid.studio/caseStudies/" + caseStudy.slug} />
-        <meta property="og:image" content={caseStudy.image} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Case Study - Webfluid Studio" />
-        <meta
-          name="twitter:description"
-          content="Explore our detailed case study to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions."
-        />
-        <meta name="twitter:image" content={caseStudy.image} />
-      </Head>
       <div>
         <Box className="case-study-view-header" sx={{ backgroundColor: "#f5f5f5", padding: "40px 0" }}>
           <Container maxWidth="lg">
