@@ -3,7 +3,35 @@ import { Box, Container, Typography, Divider, Grid2 } from "@mui/material";
 import { CaseStudyList } from "../_utils/constants/CaseStudyList";
 import CallToAction from "../_components/CallToAction/CallToAction";
 import CaseStudyWidget from "../_components/CaseStudyWidget/CaseStudyWidget";
-import Head from "next/head";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Case Studies - Webfluid Studio",
+  description:
+    "Explore our case studies to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions.",
+  keywords: "Webfluid Studio, Case Studies, Website Design, Web Development, Digital Transformation",
+  authors: [{ name: "Webfluid Studio" }],
+  openGraph: {
+    title: "Case Studies - Webfluid Studio",
+    description:
+      "Explore our case studies to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions.",
+    type: "website",
+    url: "https://www.webfluid.studio/caseStudies",
+    images: [
+      {
+        url: "https://images.webfluid.studio/team-image-1200x630.jpg",
+        alt: "Team around a table",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Case Studies - Webfluid Studio",
+    description:
+      "Explore our case studies to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions.",
+    images: "https://images.webfluid.studio/team-image-1200x630.jpg",
+  },
+};
 
 function CaseStudies() {
   // const LabelList = [...Object.values(Label)];
@@ -11,30 +39,6 @@ function CaseStudies() {
 
   return (
     <>
-      <Head>
-        <title>Case Studies - Webfluid Studio</title>
-        <meta
-          name="description"
-          content="Explore our case studies to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions."
-        />
-        <meta name="keywords" content="Webfluid Studio, Case Studies, Website Design, Web Development, Digital Transformation" />
-        <meta name="author" content="Webfluid Studio" />
-        <meta property="og:title" content="Case Studies - Webfluid Studio" />
-        <meta
-          property="og:description"
-          content="Explore our case studies to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.webfluid.studio/caseStudies" />
-        <meta property="og:image" content="https://images.webfluid.studio/laptop-guy.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Case Studies - Webfluid Studio" />
-        <meta
-          name="twitter:description"
-          content="Explore our case studies to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions."
-        />
-        <meta name="twitter:image" content="https://images.webfluid.studio/laptop-guy.png" />
-      </Head>
       <section className="content-container">
         <Box className="case-studies-header">
           <Container maxWidth="lg">
