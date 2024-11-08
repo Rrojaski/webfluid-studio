@@ -9,7 +9,9 @@ import CallToActionContactUs from "@/app/_components/CallToActionContactUs/CallT
 import Head from "next/head";
 import { Metadata } from "next";
 
-export function generateMetadata(caseStudy: CaseStudy): Metadata {
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const caseStudy = CaseStudyList.find((x) => x.slug === params.slug);
+  if (!caseStudy) return {};
   return {
     title: `Case Study - ${caseStudy.title} | Webfluid Studio`,
     description: `Explore our detailed case study on ${caseStudy.title} to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions.`,
@@ -40,7 +42,6 @@ function CaseStudyView({ params }: { params: { slug: string } }) {
   const caseStudy = CaseStudyList.find((x) => x.slug === params.slug);
   if (!caseStudy) return null;
 
-  const metadata = generateMetadata(caseStudy);
   let ids: number[] = [];
   switch (parseInt(caseStudy.id)) {
     case 1:

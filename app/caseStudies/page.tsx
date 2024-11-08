@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     url: "https://www.webfluid.studio/caseStudies",
     images: [
       {
-        url: "https://images.webfluid.studio/team-image-1200x630.jpg",
-        alt: "Team around a table",
+        url: "https://images.webfluid.studio/hugging.png",
+        alt: "Group hugging",
       },
     ],
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Case Studies - Webfluid Studio",
     description:
       "Explore our case studies to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions.",
-    images: "https://images.webfluid.studio/team-image-1200x630.jpg",
+    images: "https://images.webfluid.studio/hugging.png",
   },
 };
 
