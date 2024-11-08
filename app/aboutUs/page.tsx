@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.webfluid.studio/aboutUs",
     images: [
       {
-        url: "ttps://images.webfluid.studio/team-image-1200x630.jpg",
+        url: "https://images.webfluid.studio/team-image-1200x630.jpg",
         alt: "Team around a table",
       },
     ],
