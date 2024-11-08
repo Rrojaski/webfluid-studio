@@ -9,7 +9,37 @@ import DigitalMarketingPage from "./_components/DigitalMarketingPage/DigitalMark
 import { ServiceType } from "@/app/_utils/constants/ServiceType";
 import getIcon from "@/app/_utils/constants/GetIcon";
 import CallToActionContactUs from "@/app/_components/CallToActionContactUs/CallToActionContactUs";
-import Head from "next/head";
+import { Metadata } from "next";
+
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const service = Object.values(ServiceType).find((x) => x.icon.toString() === params.slug);
+  if (!service) return {};
+
+  return {
+    title: `${service.label} - Webfluid Studio`,
+    description: `Learn more about our ${service.label} services at Webfluid Studio. We offer custom website design, web development, and digital transformation solutions tailored to your business needs.`,
+    keywords: `Webfluid Studio, ${service.label}, Website Design, Web Development, Digital Transformation`,
+    authors: [{ name: "Webfluid Studio" }],
+    openGraph: {
+      title: `${service.label} - Webfluid Studio`,
+      description: `Learn more about our ${service.label} services at Webfluid Studio. We offer custom website design, web development, and digital transformation solutions tailored to your business needs.`,
+      type: "website",
+      url: `https://www.webfluid.studio/services/${params.slug}`,
+      images: [
+        {
+          url: "https://images.webfluid.studio/team-image-1200x630.jpg",
+          alt: "Team around a table",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${service.label} - Webfluid Studio`,
+      description: `Learn more about our ${service.label} services at Webfluid Studio. We offer custom website design, web development, and digital transformation solutions tailored to your business needs.`,
+      images: "https://images.webfluid.studio/team-image-1200x630.jpg",
+    },
+  };
+}
 
 const rendePage = (id: number) => {
   switch (id) {
@@ -25,6 +55,7 @@ const rendePage = (id: number) => {
       return;
   }
 };
+
 function ServiceView({ params }: { params: { slug: string } }) {
   if (!params.slug) return null;
   const service = Object.values(ServiceType).find((x) => x.icon.toString() === params.slug);
@@ -48,30 +79,6 @@ function ServiceView({ params }: { params: { slug: string } }) {
   }
   return (
     <>
-      <Head>
-        <title>{service.label} - Webfluid Studio</title>
-        <meta
-          name="description"
-          content={`Learn more about our ${service.label} services at Webfluid Studio. We offer custom website design, web development, and digital transformation solutions tailored to your business needs.`}
-        />
-        <meta name="keywords" content={`Webfluid Studio, ${service.label}, Website Design, Web Development, Digital Transformation`} />
-        <meta name="author" content="Webfluid Studio" />
-        <meta property="og:title" content={`${service.label} - Webfluid Studio`} />
-        <meta
-          property="og:description"
-          content={`Learn more about our ${service.label} services at Webfluid Studio. We offer custom website design, web development, and digital transformation solutions tailored to your business needs.`}
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://www.webfluid.studio/services/${params.slug}`} />
-        <meta property="og:image" content="https://images.webfluid.studio/laptop-guy.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${service.label} - Webfluid Studio`} />
-        <meta
-          name="twitter:description"
-          content={`Learn more about our ${service.label} services at Webfluid Studio. We offer custom website design, web development, and digital transformation solutions tailored to your business needs.`}
-        />
-        <meta name="twitter:image" content="https://images.webfluid.studio/laptop-guy.png" />
-      </Head>
       <div>
         <Box className="service-view-header" sx={{ backgroundColor: "#f5f5f5", padding: "40px 0" }}>
           <Container maxWidth="lg" className="service-view-header-content">
