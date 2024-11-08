@@ -3,7 +3,7 @@ import "./page.css";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import { Card, Typography, Divider, Grid, Tooltip } from "@mui/material";
-import { CaseStudy, CaseStudyList } from "@/app/_utils/constants/CaseStudyList";
+import { CaseStudyList } from "@/app/_utils/constants/CaseStudyList";
 import appList from "@/app/_utils/constants/AppList";
 import CallToActionContactUs from "@/app/_components/CallToActionContactUs/CallToActionContactUs";
 import Head from "next/head";
