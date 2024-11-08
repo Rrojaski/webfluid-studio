@@ -5,34 +5,35 @@ import AboutUs from "./_components/AboutUs/AboutUs";
 import MissionStatement from "./_components/MissionStatement/MissionStatement";
 import TestimonialList from "./_components/TestimonialList/TestimonialList";
 import CallToActionWhatsapp from "./_components/CallToActionWhatsapp/CallToActionWhatsapp";
-import Head from "next/head";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Improve Your Online Presence | Webfluid Studio",
+  description: "Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio.",
+  keywords: "online presence, user experience, digital strategy, Webfluid Studio",
+  authors: [{ name: "Webfluid Studio" }],
+  openGraph: {
+    title: "Improve Your Online Presence | Webfluid Studio",
+    description: "Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio.",
+    images: [
+      {
+        url: "https://images.webfluid.studio/laptop-guy.png",
+        alt: "Laptop Guy",
+      },
+    ],
+    url: "https://yourwebsite.com",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Improve Your Online Presence | Webfluid Studio",
+    description: "Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio.",
+    images: "https://images.webfluid.studio/laptop-guy.png",
+  },
+};
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Improve Your Online Presence | Webfluid Studio</title>
-        <meta
-          name="description"
-          content="Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio."
-        />
-        <meta name="keywords" content="online presence, user experience, digital strategy, Webfluid Studio" />
-        <meta name="author" content="Webfluid Studio" />
-        <meta property="og:title" content="Improve Your Online Presence | Webfluid Studio" />
-        <meta
-          property="og:description"
-          content="Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio."
-        />
-        <meta property="og:image" content="https://images.webfluid.studio/laptop-guy.png" />
-        <meta property="og:url" content="https://yourwebsite.com" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Improve Your Online Presence | Webfluid Studio" />
-        <meta
-          name="twitter:description"
-          content="Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio."
-        />
-        <meta name="twitter:image" content="https://images.webfluid.studio/laptop-guy.png" />
-      </Head>
       <section className="content-container">
         <div className="hero-container home-container">
           <div className="hero-text-container">
