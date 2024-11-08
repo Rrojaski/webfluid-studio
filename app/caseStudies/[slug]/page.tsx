@@ -3,15 +3,44 @@ import "./page.css";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import { Card, Typography, Divider, Grid, Tooltip } from "@mui/material";
-import { CaseStudyList } from "@/app/_utils/constants/CaseStudyList";
+import { CaseStudy, CaseStudyList } from "@/app/_utils/constants/CaseStudyList";
 import appList from "@/app/_utils/constants/AppList";
 import CallToActionContactUs from "@/app/_components/CallToActionContactUs/CallToActionContactUs";
 import Head from "next/head";
+import { Metadata } from "next";
+
+export function generateMetadata(caseStudy: CaseStudy): Metadata {
+  return {
+    title: `Case Study - ${caseStudy.title} | Webfluid Studio`,
+    description: `Explore our detailed case study on ${caseStudy.title} to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions.`,
+    keywords: "Webfluid Studio, Case Study, Website Design, Web Development, Digital Transformation",
+    authors: [{ name: "Webfluid Studio" }],
+    openGraph: {
+      title: `Case Study - ${caseStudy.title} | Webfluid Studio`,
+      description: `Explore our detailed case study on ${caseStudy.title} to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions.`,
+      type: "website",
+      url: `https://www.webfluid.studio/caseStudies/${caseStudy.slug}`,
+      images: [
+        {
+          url: caseStudy.image,
+          alt: caseStudy.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `Case Study - ${caseStudy.title} | Webfluid Studio`,
+      description: `Explore our detailed case study on ${caseStudy.title} to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions.`,
+      images: caseStudy.image,
+    },
+  };
+}
 
 function CaseStudyView({ params }: { params: { slug: string } }) {
   const caseStudy = CaseStudyList.find((x) => x.slug === params.slug);
   if (!caseStudy) return null;
 
+  const metadata = generateMetadata(caseStudy);
   let ids: number[] = [];
   switch (parseInt(caseStudy.id)) {
     case 1:
