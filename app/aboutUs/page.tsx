@@ -5,35 +5,39 @@ import "./page.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt, faLightbulb, faHandshakeAngle } from "@fortawesome/free-solid-svg-icons";
 import CallToAction from "../_components/CallToAction/CallToAction";
-import Head from "next/head";
+import { Metadata } from "next";
 
-function AboutUs() {
+export const metadata: Metadata = {
+  title: "About Us - Webfluid Studio",
+  description:
+    "Learn more about Webfluid Studio, our vision, and our team. We specialize in custom website design and development solutions tailored to your business needs.",
+  keywords: "Webfluid Studio, About Us, Website Design, Web Development, Digital Transformation",
+  authors: [{ name: "Webfluid Studio" }],
+  openGraph: {
+    title: "About Us - Webfluid Studio",
+    description:
+      "Learn more about Webfluid Studio, our vision, and our team. We specialize in custom website design and development solutions tailored to your business needs.",
+    type: "website",
+    url: "https://www.webfluid.studio/aboutUs",
+    images: [
+      {
+        url: "ttps://images.webfluid.studio/team-image-1200x630.jpg",
+        alt: "Team around a table",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us - Webfluid Studio",
+    description:
+      "Learn more about Webfluid Studio, our vision, and our team. We specialize in custom website design and development solutions tailored to your business needs.",
+    images: "https://images.webfluid.studio/team-image-1200x630.jpg",
+  },
+};
+
+export default function AboutUs() {
   return (
     <>
-      <Head>
-        <title>About Us - Webfluid Studio</title>
-        <meta
-          name="description"
-          content="Learn more about Webfluid Studio, our vision, and our team. We specialize in custom website design and development solutions tailored to your business needs."
-        />
-        <meta name="keywords" content="Webfluid Studio, About Us, Website Design, Web Development, Digital Transformation" />
-        <meta name="author" content="Webfluid Studio" />
-        <meta property="og:title" content="About Us - Webfluid Studio" />
-        <meta
-          property="og:description"
-          content="Learn more about Webfluid Studio, our vision, and our team. We specialize in custom website design and development solutions tailored to your business needs."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.webfluid.studio/aboutUs" />
-        <meta property="og:image" content="https://images.webfluid.studio/laptop-guy.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Us - Webfluid Studio" />
-        <meta
-          name="twitter:description"
-          content="Learn more about Webfluid Studio, our vision, and our team. We specialize in custom website design and development solutions tailored to your business needs."
-        />
-        <meta name="twitter:image" content="https://images.webfluid.studio/laptop-guy.png" />
-      </Head>
       <section className="content-container">
         <Box mt={15} mb={10}>
           <Container maxWidth="lg">
