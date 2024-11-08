@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function AboutUs() {
+function AboutUs() {
   return (
     <>
       <section className="content-container">
