@@ -4,8 +4,6 @@ import Typography from "@mui/material/Typography";
 import "./page.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt, faLightbulb, faHandshakeAngle } from "@fortawesome/free-solid-svg-icons";
-import { employees } from "../_utils/constants/Emloyees";
-import EmployeeDesciption from "../_components/EmployeeDesciption/EmployeeDesciption";
 import CallToAction from "../_components/CallToAction/CallToAction";
 import Head from "next/head";
 
@@ -47,9 +45,9 @@ function AboutUs() {
             </Typography>
           </Container>
           <Container maxWidth="lg" id="employee-description-wrapper">
-            {employees.map((employee, index) => (
+            {/* {employees.map((employee, index) => (
               <EmployeeDesciption key={index} employee={employee} />
-            ))}
+            ))} */}
           </Container>
         </Box>
         <Box mb={15}>

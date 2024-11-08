@@ -2,7 +2,6 @@ import "./CallToActionWhatsapp.css";
 import WhatsappCode from "../WhatsappCode/WhatsappCode";
 import { Box } from "@mui/system";
 import { Button, Typography } from "@mui/material";
-import TeamWidget from "../TeamWidget/TeamWidget";
 import Link from "next/link";
 
 function CallToActionWhatsapp() {
@@ -13,7 +12,7 @@ function CallToActionWhatsapp() {
           Have a <span id="cta-whatsapp-text-highlight">BIG IDEA</span> in mind? Let&apos;s discuss what we can achieve together
         </Typography>
         <Box id="cta-whatsapp-team">
-          <TeamWidget />
+          {/* <TeamWidget /> */}
           <Link href="contactUs">
             <Button id="cta-whatsapp-text-link" size="large" variant="contained" color="warning">
               Contact Us
