@@ -43,11 +43,11 @@ function Footer() {
                   Sitemap
                 </NextLink>
               </Grid>
-              {/* <Grid item xs={12} md={2}>
-                <ReactLink to="/blog" id="blog-button">
+              <Grid item xs={12} md={2}>
+                <NextLink href="/blog" id="blog-button">
                   Blog
-                </ReactLink>
-              </Grid> */}
+                </NextLink>
+              </Grid>
             </Grid>
           </Grid>
           <Grid mt={4} item xs={12}>

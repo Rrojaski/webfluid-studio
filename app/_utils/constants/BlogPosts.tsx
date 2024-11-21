@@ -3,7 +3,7 @@ export const Label = {
   TipsTricks: "Tips & Tricks",
   Security: "Security",
 };
-const post = (id: string, title: string, label: string, image: string, content: string, html: string) => {
+const post = (id: string, title: string, label: string, image: string, content: string, html: string, slug: string) => {
   return {
     id,
     title,
@@ -11,6 +11,7 @@ const post = (id: string, title: string, label: string, image: string, content: 
     image,
     content,
     html,
+    slug,
   };
 };
 export const BlogPosts = [
@@ -35,7 +36,8 @@ export const BlogPosts = [
       <li>Microsoft Teams</li>
       <li>WhatsApp</li>
       <li>Telegram</li>
-    </ol>`
+    </ol>`,
+    "how-to-use-message-apps-to-communicate-and-share",
   ),
   post(
     "2",
@@ -57,7 +59,8 @@ export const BlogPosts = [
       <li>Storage capacity and pricing.</li>
       <li>Security features like encryption and two-factor authentication.</li>
       <li>Integration with other tools and services.</li>
-    </ol>`
+    </ol>`,
+    "how-to-use-cloud-storage-to-keep-your-files-safe",
   ),
   post(
     "3",
@@ -79,7 +82,8 @@ export const BlogPosts = [
       <li>Keep your software and devices updated.</li>
       <li>Be cautious of phishing scams and unknown links.</li>
       <li>Regularly back up your data.</li>
-    </ol>`
+    </ol>`,
+    "best-practices-for-online-security",
   ),
   post(
     "4",
@@ -101,7 +105,8 @@ export const BlogPosts = [
       <li>Setting automatic updates for critical software.</li>
       <li>Regularly checking for and installing updates.</li>
       <li>Using update management tools for larger networks.</li>
-    </ol>`
+    </ol>`,
+    "the-importance-of-regular-software-updates",
   ),
   post(
     "5",
@@ -123,7 +128,8 @@ export const BlogPosts = [
        <li>Assess your team's specific requirements.</li>
        <li>Test different tools with free trials.</li>
        <li>Read reviews and compare features.</li>
-     </ol>`
+     </ol>`,
+    "how-to-choose-the-right-project-management-tool",
   ),
   post(
     "6",
@@ -145,7 +151,8 @@ export const BlogPosts = [
       <li>Identify processes that can benefit from automation.</li>
       <li>Choose AI tools that fit your specific needs.</li>
       <li>Train your team to effectively use AI technologies.</li>
-    </ol>`
+    </ol>`,
+    "the-benefits-of-using-ai-in-your-business",
   ),
   post(
     "7",
@@ -167,7 +174,8 @@ export const BlogPosts = [
       <li>Ensure all team members are trained on the tools.</li>
       <li>Set clear guidelines for tool usage.</li>
       <li>Regularly review and adjust tools based on team feedback.</li>
-    </ol>`
+    </ol>`,
+    "how-to-improve-team-collaboration-with-technology",
   ),
   post(
     "8",
@@ -189,7 +197,8 @@ export const BlogPosts = [
       <li>Addressing potential isolation and communication barriers.</li>
       <li>Leveraging technology to maintain productivity.</li>
       <li>Embracing flexible work policies to attract talent.</li>
-    </ol>`
+    </ol>`,
+    "the-future-of-remote-work-trends-and-predictions",
   ),
   post(
     "9",
@@ -214,6 +223,7 @@ export const BlogPosts = [
       <li><strong>Take the Conversation Offline:</strong> For complex issues, offer to continue the discussion privately to avoid a public argument.</li>
       <li><strong>Leverage Positive Reviews:</strong> Highlight positive feedback on your website and social media to outweigh the negative ones.</li>
     </ol>
-  `
+  `,
+    "how-to-improve-online-reputation-strategies-for-success",
   ),
 ];
