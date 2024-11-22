@@ -1,9 +1,9 @@
 import "./page.css";
-import { Box, Container, Grid, Typography, Chip, ListItem } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import CallToAction from "../_components/CallToAction/CallToAction";
 import BlogWidget from "../_components/BlogWidget/BlogWidget";
 import { BlogPosts, Label } from "../_utils/constants/BlogPosts";
-import { type SanityDocument } from "next-sanity";
+// import { type SanityDocument } from "next-sanity";
 
 import { client } from "@/sanity/client";
 
@@ -17,8 +17,7 @@ const options = { next: { revalidate: 30 } };
 async function Blog() {
   const LabelList = [...Object.values(Label)];
   const selectedLabel = "";
-  const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
-
+  // const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
 
   const blogPost = {
     id: BlogPosts[3].id,
