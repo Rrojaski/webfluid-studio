@@ -2,7 +2,7 @@ import "./page.css";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import CallToAction from "../_components/CallToAction/CallToAction";
 import BlogWidget from "../_components/BlogWidget/BlogWidget";
-import { BlogPosts, Label } from "../_utils/constants/BlogPosts";
+import { BlogPosts } from "../_utils/constants/BlogPosts";
 // import { type SanityDocument } from "next-sanity";
 
 // import { client } from "@/sanity/client";
