@@ -20,7 +20,6 @@ async function Blog() {
   const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
 
 
-  console.log(posts)
   const blogPost = {
     id: BlogPosts[3].id,
     title: BlogPosts[3].title,
@@ -40,7 +39,9 @@ async function Blog() {
             flexDirection: "column",
             alignItems: "center",
           }}>
-          <BlogWidget size="large" data={blogPost} route="blog" showShadow={false} />
+          <Box id="blog-wdiget-container">
+            <BlogWidget size="large" data={blogPost} route="blog" showShadow={false} />
+          </Box>
           <Container className="recent-posts-container" maxWidth="lg">
             <Box
               mt={6}
