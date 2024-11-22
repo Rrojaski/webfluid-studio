@@ -5,14 +5,14 @@ import BlogWidget from "../_components/BlogWidget/BlogWidget";
 import { BlogPosts, Label } from "../_utils/constants/BlogPosts";
 // import { type SanityDocument } from "next-sanity";
 
-import { client } from "@/sanity/client";
+// import { client } from "@/sanity/client";
 
-const POSTS_QUERY = `*[
-  _type == "post"
-  && defined(slug.current)
-]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt}`;
+// const POSTS_QUERY = `*[
+//   _type == "post"
+//   && defined(slug.current)
+// ]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt}`;
 
-const options = { next: { revalidate: 30 } };
+// const options = { next: { revalidate: 30 } };
 
 async function Blog() {
   const LabelList = [...Object.values(Label)];
