@@ -15,7 +15,7 @@ import { BlogPosts, Label } from "../_utils/constants/BlogPosts";
 // const options = { next: { revalidate: 30 } };
 
 async function Blog() {
-  const LabelList = [...Object.values(Label)];
+  // const LabelList = [...Object.values(Label)];
   const selectedLabel = "";
   // const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
 
