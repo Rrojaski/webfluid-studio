@@ -21,5 +21,6 @@ export const sanityToPost = (post: SanityDocument, largeImage = false): Post => 
     description: post.description,
     body: post.body,
     slug: post.slug.current,
+    date: new Date(post.publishedAt),
   };
 };

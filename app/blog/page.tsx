@@ -86,11 +86,12 @@ async function Blog() {
                   const d = {
                     id: element.id,
                     title: element.title,
-                    label: "",
+                    label: element.label,
                     image: element.image,
                     description: element.description,
                     body: element.body,
                     slug: element.slug,
+                    date: element.date,
                   };
                   return (
                     <Grid
@@ -109,6 +110,7 @@ async function Blog() {
                       <Typography mt={2} mb={2}>
                         {element.description?.substring(0, 150)} {element.description?.length > 150 ? ". . ." : ""}
                       </Typography>
+                      <Typography mt={2}>{new Date(element.date).toLocaleDateString("en-US", { month: "long", day: "numeric" })}</Typography>
                     </Grid>
                   );
                 })}
