@@ -20,7 +20,7 @@ async function Blog() {
   const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
   const blogPosts: Post[] = posts.map((post) => sanityToPost(post));
 
-  const blogPost: Post = blogPosts[0];
+  const blogPost: Post = sanityToPost(posts[0], true);
 
   return (
     <section className="content-container">

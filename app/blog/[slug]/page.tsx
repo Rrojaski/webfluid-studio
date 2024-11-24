@@ -14,7 +14,7 @@ const options = { next: { revalidate: 30 } };
 async function BlogPost({ params }: { params: { slug: string } }) {
   if (!params.slug) return null;
 
-  const post = sanityToPost(await client.fetch<SanityDocument>(POST_QUERY, params, options));
+  const post = sanityToPost(await client.fetch<SanityDocument>(POST_QUERY, params, options), true);
   if (!post) return null;
 
   return (
@@ -32,9 +32,7 @@ async function BlogPost({ params }: { params: { slug: string } }) {
       </Box>
       <Box mt={10} mb={18}>
         <Container maxWidth="lg">
-          <Box id="blog-post">
-          {Array.isArray(post.body) && <PortableText value={post.body} />}
-          </Box>
+          <Box id="blog-post">{Array.isArray(post.body) && <PortableText value={post.body} />}</Box>
         </Container>
       </Box>
       <CallToActionContactUs />
