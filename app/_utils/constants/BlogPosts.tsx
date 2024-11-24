@@ -3,18 +3,29 @@ export const Label = {
   TipsTricks: "Tips & Tricks",
   Security: "Security",
 };
-const post = (id: string, title: string, label: string, image: string, content: string, html: string, slug: string) => {
+
+export interface Post {
+  id: string;
+  title: string;
+  label: string;
+  image: string;
+  description: string;
+  html: string;
+  slug: string;
+}
+
+const post = (id: string, title: string, label: string, image: string, description: string, html: string, slug: string) => {
   return {
     id,
     title,
     label,
     image,
-    content,
+    description,
     html,
     slug,
   };
 };
-export const BlogPosts = [
+export const BlogPosts: Post[] = [
   post(
     "1",
     "How to Use Message Apps to Communicate, and Share",

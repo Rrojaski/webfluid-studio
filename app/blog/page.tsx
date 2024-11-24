@@ -2,29 +2,32 @@ import "./page.css";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import CallToAction from "../_components/CallToAction/CallToAction";
 import BlogWidget from "../_components/BlogWidget/BlogWidget";
-import { BlogPosts } from "../_utils/constants/BlogPosts";
-// import { type SanityDocument } from "next-sanity";
+import { BlogPosts, Post } from "../_utils/constants/BlogPosts";
+import { type SanityDocument } from "next-sanity";
 
-// import { client } from "@/sanity/client";
+import { client } from "@/sanity/client";
+import { sanityToPost } from "../_utils/SanityCMS";
 
-// const POSTS_QUERY = `*[
-//   _type == "post"
-//   && defined(slug.current)
-// ]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt}`;
+const POSTS_QUERY = `*[
+  _type == "post"
+  && defined(slug.current)
+]|order(publishedAt desc)[0...12]{_id, title, label, image,  slug, publishedAt}`;
 
-// const options = { next: { revalidate: 30 } };
+const options = { next: { revalidate: 30 } };
+
 
 async function Blog() {
   // const LabelList = [...Object.values(Label)];
   const selectedLabel = "";
-  // const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
+  const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
+  const blogPosts: Post[] = posts.map((post) => sanityToPost(post));
 
-  const blogPost = {
+  const blogPost: Post = {
     id: BlogPosts[3].id,
     title: BlogPosts[3].title,
     label: "",
     image: BlogPosts[3].image,
-    content: BlogPosts[3].html,
+    description: BlogPosts[3].html,
     html: BlogPosts[3].html,
     slug: BlogPosts[3].slug,
   };
@@ -86,36 +89,38 @@ async function Blog() {
               <Typography variant="h4">Recent Blog</Typography>
             </Box>
             <Grid container spacing={4}>
-              {BlogPosts.filter((x) => (!selectedLabel ? true : x.label === selectedLabel)).map((element, i) => {
-                const d = {
-                  id: element.id,
-                  title: element.title,
-                  label: "",
-                  image: element.image,
-                  content: element.html,
-                  html: element.html,
-                  slug: element.slug,
-                };
-                return (
-                  <Grid
-                    sx={{
-                      width: "100%",
-                    }}
-                    item
-                    sm={12}
-                    md={6}
-                    lg={4}
-                    key={i}>
-                    <BlogWidget size="small" data={d} route="blog" showShadow={false} />
-                    <Typography mt={2} variant="h5">
-                      {element.title}
-                    </Typography>
-                    <Typography mt={2} mb={2}>
-                      {element.content.substring(0, 150)} {element.content.length > 150 ? ". . ." : ""}
-                    </Typography>
-                  </Grid>
-                );
-              })}
+              {blogPosts
+                .filter((x) => (!selectedLabel ? true : x.label === selectedLabel))
+                .map((element, i) => {
+                  const d = {
+                    id: element.id,
+                    title: element.title,
+                    label: "",
+                    image: element.image,
+                    content: element.html,
+                    html: element.html,
+                    slug: element.slug,
+                  };
+                  return (
+                    <Grid
+                      sx={{
+                        width: "100%",
+                      }}
+                      item
+                      sm={12}
+                      md={6}
+                      lg={4}
+                      key={i}>
+                      <BlogWidget size="small" data={d} route="blog" showShadow={false} />
+                      <Typography mt={2} variant="h5">
+                        {element.title}
+                      </Typography>
+                      <Typography mt={2} mb={2}>
+                        {element.description?.substring(0, 150)} {element.description?.length > 150 ? ". . ." : ""}
+                      </Typography>
+                    </Grid>
+                  );
+                })}
             </Grid>
           </Container>
         </Container>
