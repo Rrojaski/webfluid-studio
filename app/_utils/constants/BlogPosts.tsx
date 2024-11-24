@@ -15,18 +15,18 @@ export interface Post {
   date: Date;
 }
 
-const post = (id: string, title: string, label: string, image: string, description: string, body: string, slug: string, date: Date) => {
-  return {
-    id,
-    title,
-    label,
-    image,
-    description,
-    body,
-    slug,
-    date,
-  };
-};
+// const post = (id: string, title: string, label: string, image: string, description: string, body: string, slug: string, date: Date) => {
+//   return {
+//     id,
+//     title,
+//     label,
+//     image,
+//     description,
+//     body,
+//     slug,
+//     date,
+//   };
+// };
 
 // export const BlogPosts = [
 //   post(
