@@ -2,19 +2,17 @@ import "./page.css";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import CallToAction from "../_components/CallToAction/CallToAction";
 import BlogWidget from "../_components/BlogWidget/BlogWidget";
-import { BlogPosts, Post } from "../_utils/constants/BlogPosts";
+import { Post } from "../_utils/constants/BlogPosts";
 import { type SanityDocument } from "next-sanity";
-
 import { client } from "@/sanity/client";
 import { sanityToPost } from "../_utils/SanityCMS";
 
 const POSTS_QUERY = `*[
   _type == "post"
   && defined(slug.current)
-]|order(publishedAt desc)[0...12]{_id, title, label, image,  slug, publishedAt}`;
+]|order(publishedAt desc)[0...12]{_id, title, label, description, image,  slug, publishedAt}`;
 
 const options = { next: { revalidate: 30 } };
-
 
 async function Blog() {
   // const LabelList = [...Object.values(Label)];
@@ -22,15 +20,8 @@ async function Blog() {
   const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
   const blogPosts: Post[] = posts.map((post) => sanityToPost(post));
 
-  const blogPost: Post = {
-    id: BlogPosts[3].id,
-    title: BlogPosts[3].title,
-    label: "",
-    image: BlogPosts[3].image,
-    description: BlogPosts[3].html,
-    html: BlogPosts[3].html,
-    slug: BlogPosts[3].slug,
-  };
+  const blogPost: Post = blogPosts[0];
+
   return (
     <section className="content-container">
       <Box mt={15} mb={20}>
@@ -97,8 +88,8 @@ async function Blog() {
                     title: element.title,
                     label: "",
                     image: element.image,
-                    content: element.html,
-                    html: element.html,
+                    description: element.description,
+                    body: element.body,
                     slug: element.slug,
                   };
                   return (

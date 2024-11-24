@@ -10,18 +10,18 @@ export interface Post {
   label: string;
   image: string;
   description: string;
-  html: string;
+  body: string;
   slug: string;
 }
 
-const post = (id: string, title: string, label: string, image: string, description: string, html: string, slug: string) => {
+const post = (id: string, title: string, label: string, image: string, description: string, body: string, slug: string) => {
   return {
     id,
     title,
     label,
     image,
     description,
-    html,
+    body,
     slug,
   };
 };
