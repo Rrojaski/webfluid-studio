@@ -80,7 +80,7 @@ function ServiceView({ params }: { params: { slug: string } }) {
   return (
     <>
       <div>
-        <Box className="service-view-header" sx={{ backgroundColor: "#f5f5f5", padding: "40px 0" }}>
+        <Box className="service-view-header" sx={{ padding: "40px 0" }}>
           <Container maxWidth="lg" className="service-view-header-content">
             <Box className={"service-container-view service-view-container-" + color}>
               <Box className="service-view-label-wrapper">
