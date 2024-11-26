@@ -4,6 +4,11 @@ export const Label = {
   Security: "Security",
 };
 
+export interface Author {
+  name: string;
+  title: string;
+  avatar: string;
+}
 export interface Post {
   id: string;
   title: string;
@@ -13,6 +18,7 @@ export interface Post {
   body: string;
   slug: string;
   date: Date;
+  author: Author;
 }
 
 // const post = (id: string, title: string, label: string, image: string, description: string, body: string, slug: string, date: Date) => {

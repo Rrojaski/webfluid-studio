@@ -13,6 +13,15 @@ export const sanityToPost = (post: SanityDocument, largeImage = false): Post => 
         ?.width(largeImage ? 1100 : 550)
         .url()
     : null;
+
+  const avatarImageUrl = post.author?.avatar ? urlFor(post.author.avatar)?.width(50).height(50).url() : null;
+
+  const author = {
+    name: post.author?.name,
+    title: post.author?.title,
+    avatar: avatarImageUrl ?? "",
+  };
+  
   return {
     id: post._id,
     title: post.title,
@@ -22,5 +31,6 @@ export const sanityToPost = (post: SanityDocument, largeImage = false): Post => 
     body: post.body,
     slug: post.slug.current,
     date: new Date(post.publishedAt),
+    author: author,
   };
 };

@@ -7,8 +7,27 @@ import CallToActionContactUs from "../../_components/CallToActionContactUs/CallT
 import { PortableText, SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
 import { sanityToPost } from "@/app/_utils/SanityCMS";
+import Author from "@/app/_components/Author/Author";
 
-const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]`;
+const POST_QUERY = `
+  *[_type == "post" && slug.current == $slug][0]{
+    title,
+    description,
+    slug,
+    publishedAt,
+    image,
+    body,
+    "author": author->{
+      name,
+      title,
+      avatar
+    },
+    "label": label->{
+      name
+    }
+  }
+`;
+
 const options = { next: { revalidate: 30 } };
 
 async function BlogPost({ params }: { params: { slug: string } }) {
@@ -19,20 +38,29 @@ async function BlogPost({ params }: { params: { slug: string } }) {
 
   return (
     <Box>
-      <Box mt={15} mb={10} sx={{ backgroundColor: "#f5f5f5", padding: "40px 0" }}>
+      <Box mt={20} mb={10}>
         <Container maxWidth="lg">
-          <div className="chip chip blue mb-3">Blog Post</div>
-          <Typography variant="h3">{post.title}</Typography>
+          <Box id="published-text-wrapper">
+            <Typography id="published-text">
+              Published {new Date(post.date).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
+            </Typography>
+            <Author {...post.author} />
+          </Box>
+          <Typography variant="h3" id="post-title">
+            {post.title}
+          </Typography>
         </Container>
       </Box>
       <Box>
-        <Container maxWidth="lg" id="blog-post-image-wrapper">
+        <Container id="blog-post-image-wrapper" maxWidth="lg" component="image">
           <img className="blog-post-image" src={post.image} alt={post.title} />
         </Container>
       </Box>
       <Box mt={10} mb={18}>
         <Container maxWidth="lg">
-          <Box id="blog-post">{Array.isArray(post.body) && <PortableText value={post.body} />}</Box>
+          <Box id="blog-post" component="article">
+            {Array.isArray(post.body) && <PortableText value={post.body} />}
+          </Box>
         </Container>
       </Box>
       <CallToActionContactUs />

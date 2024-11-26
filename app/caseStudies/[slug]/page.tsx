@@ -56,9 +56,9 @@ function CaseStudyView({ params }: { params: { slug: string } }) {
   return (
     <>
       <div>
-        <Box className="case-study-view-header" sx={{ backgroundColor: "#f5f5f5", padding: "40px 0" }}>
+        <Box className="case-study-view-header" sx={{ padding: "40px 0" }}>
           <Container maxWidth="lg">
-            <div className="chip mb-3">Case Study</div>
+            <div className="chip">Case Study</div>
             <Typography variant="h3">{caseStudy.title}</Typography>
           </Container>
         </Box>
