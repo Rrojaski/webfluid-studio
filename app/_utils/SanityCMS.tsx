@@ -1,11 +1,6 @@
-import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import { Post } from "./constants/BlogPosts";
-import imageUrlBuilder from "@sanity/image-url";
-import { client } from "@/sanity/client";
 import { SanityDocument } from "next-sanity";
 
-const { projectId, dataset } = client.config();
-const urlFor = (source: SanityImageSource) => (projectId && dataset ? imageUrlBuilder({ projectId, dataset }).image(source) : null);
 
 export const sanityToPost = (post: SanityDocument, largeImage = false): Post => {
   // const postImageUrl = post.image
@@ -24,7 +19,7 @@ export const sanityToPost = (post: SanityDocument, largeImage = false): Post => 
   const author = {
     name: "",
     title: "",
-    avatar: "",
+    avatar: largeImage ? "" : "",
   };
 
   return {
