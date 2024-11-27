@@ -37,6 +37,7 @@ export async function generateMetadata(): Promise<Metadata> {
       image: latestPost ? latestPost.image : "",
     },
   };
+}
 
 async function Blog() {
   // const LabelList = [...Object.values(Label)];
