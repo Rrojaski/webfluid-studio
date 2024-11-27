@@ -28,10 +28,10 @@ const POST_QUERY = `
   }
 `;
 
+const options = { next: { revalidate: 30 } };
 
 async function BlogPost({ params }: { params: { slug: string } }) {
   if (!params.slug) return null;
-  const options = { next: { revalidate: 30 } };
 
   const post = sanityToPost(await client.fetch<SanityDocument>(POST_QUERY, params, options), true);
   if (!post) return null;
