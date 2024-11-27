@@ -22,6 +22,8 @@ export const sanityToPost = (post: SanityDocument, largeImage = false): Post => 
     avatar: largeImage ? "" : "",
   };
 
+
+  console.log("post: ", post)
   return {
     id: post._id,
     title: post.title,
