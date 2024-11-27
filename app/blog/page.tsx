@@ -21,7 +21,7 @@ async function Blog() {
     const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
     const blogPosts: Post[] = posts.map((post) => sanityToPost(post));
 
-    const blogPost: Post = sanityToPost(posts[0], true);
+    const blogPost: Post | null = posts.length ? sanityToPost(posts[0], true) : null;
 
     return (
       <section className="content-container">
@@ -34,7 +34,7 @@ async function Blog() {
               alignItems: "center",
             }}>
             <Box id="blog-wdiget-container">
-              <BlogWidget size="large" data={blogPost} route="blog" showShadow={false} />
+              if(blogPost && (<BlogWidget size="large" data={blogPost as Post} route="blog" showShadow={false} />) )
             </Box>
             <Container className="recent-posts-container" maxWidth="lg">
               <Box
