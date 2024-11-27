@@ -35,7 +35,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title: "Blog - Webfluid Studio",
       description: latestPost ? latestPost.description : "Explore our latest blog posts on website design, web development, and digital transformation.",
-      image: latestPost ? latestPost.image : "",
+      images: latestPost ? latestPost.image : "",
     },
   };
 }
