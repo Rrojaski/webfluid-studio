@@ -6,7 +6,10 @@
   flex-wrap: wrap;
   gap: 30px;
   grid-gap: 30px;
-  
+}
+
+#published-text-wrapper-container {
+  width: fit-content;
 }
 
 #blog-post-image-wrapper {
@@ -21,9 +24,7 @@
 }
 
 .blog-post-image {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 40px;
+  max-width: 65%;
 }
 
 #blog-post h3 {
@@ -72,4 +73,20 @@
 #blog-post-image-wrapper {
   display: flex;
   justify-content: center;
+}
+
+#published-top-section {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  #published-top-section {
+    flex-direction: column;
+  }
+
+  .blog-post-image {
+    max-width: 100%;
+  }
 }

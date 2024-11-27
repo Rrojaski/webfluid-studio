@@ -38,23 +38,24 @@ async function BlogPost({ params }: { params: { slug: string } }) {
 
   return (
     <Box>
-      <Box mt={20} mb={10}>
-        <Container maxWidth="lg">
-          <Box id="published-text-wrapper">
-            <Typography id="published-text">
-              Published {new Date(post.date).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
+      <Box mt={25} mb={10}>
+        <Container maxWidth="lg" id="published-top-section">
+          <Box id="published-text-wrapper-container">
+            <Box id="published-text-wrapper">
+              <Typography id="published-text">
+                Published {new Date(post.date).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
+              </Typography>
+              <Author {...post.author} />
+            </Box>
+            <Typography id="post-title" sx={{ typography: { md: "h3", sm: "h4", xs: "h4" } }}>
+              {post.title}
             </Typography>
-            <Author {...post.author} />
           </Box>
-          <Typography variant="h3" id="post-title">
-            {post.title}
-          </Typography>
+          <img className="blog-post-image" src={post.image} alt={post.title} />
         </Container>
       </Box>
       <Box>
-        <Container id="blog-post-image-wrapper" maxWidth="lg" component="image">
-          <img className="blog-post-image" src={post.image} alt={post.title} />
-        </Container>
+        <Container id="blog-post-image-wrapper" maxWidth="lg" component="image"></Container>
       </Box>
       <Box mt={10} mb={18}>
         <Container maxWidth="lg">
