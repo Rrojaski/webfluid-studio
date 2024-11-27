@@ -55,6 +55,11 @@ function Navigation() {
                 Our Clients
               </Button>
             </Link>
+            <Link className="navigation-link" href="/blog">
+              <Button className="navigation-buttons" color="inherit">
+                Blog
+              </Button>
+            </Link>
             <Link className="navigation-link" href="/contactUs">
               <Button
                 className={"desktop-menu-items contact-us-button " + (whiteHeader ? "contact-us-button-blue" : "")}
@@ -106,6 +111,14 @@ function Navigation() {
               <Link className="hamburger-menu-item-link" href="/caseStudies">
                 <ListItemButton onClick={() => toggleDrawer(false)}>
                   <ListItemText className="hamburger-menu-item-text"> Our Clients</ListItemText>
+                </ListItemButton>
+              </Link>
+            </ListItem>
+
+            <ListItem disablePadding>
+              <Link className="hamburger-menu-item-link" href="/blog">
+                <ListItemButton onClick={() => toggleDrawer(false)}>
+                  <ListItemText className="hamburger-menu-item-text">Blog</ListItemText>
                 </ListItemButton>
               </Link>
             </ListItem>
