@@ -6,7 +6,7 @@ function TestimonialList() {
   const testimonials = [
     {
       name: "Psi do Futuro",
-      image: "https://images.webfluid.studio/female.png",
+      image: "https://images.webfluid.studio/Screenshot 2024-11-27 182401.png",
       testimonial: `"Partnering with Webfluid Studio has been a game-changer for us! Their team consistently goes above and beyond, delivering fast, reliable, and efficient service. We couldn't recommend them more!" - Laura Souza`,
     },
     {

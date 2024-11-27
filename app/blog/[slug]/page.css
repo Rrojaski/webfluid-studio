@@ -27,38 +27,127 @@
   max-width: 65%;
 }
 
-#blog-post h3 {
+#blog-post h1 {
   margin: 0;
-  margin-top: 50px;
-  font-size: 3.75rem;
-  font-weight: 400;
-  font-size: 2.125rem;
-  line-height: 1.235;
-  letter-spacing: 0.00735em;
-  margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 96px; /* 6rem to px */
+  line-height: 1.167;
+  letter-spacing: -0.01562em;
+  margin-bottom: 24px;
 }
 
 #blog-post h2 {
   margin: 0;
-  margin-top: 35px;
   font-weight: 300;
-  font-size: 3.75rem;
+  font-size: 60px; /* 3.75rem to px */
   line-height: 1.2;
   letter-spacing: -0.00833em;
+  margin-bottom: 24px;
+}
+
+#blog-post h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 48px; /* 3rem to px */
+  line-height: 1.167;
+  letter-spacing: 0em;
+  margin-bottom: 24px;
+}
+
+#blog-post h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 34px; /* 2.125rem to px */
+  line-height: 1.235;
+  letter-spacing: 0.00735em;
+  margin-bottom: 24px;
+}
+
+#blog-post h5 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px; /* 1.5rem to px */
+  line-height: 1.334;
+  letter-spacing: 0em;
   margin-bottom: 24px;
 }
 
 #blog-post p {
   margin: 0;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 20px; /* 1rem to px */
   line-height: 1.5;
   letter-spacing: 0.00938em;
   margin-top: 24px;
 }
 
-#blog-post ol {
+#blog-post h1 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 96px; /* 6rem to px */
+  line-height: 1.167;
+  letter-spacing: -0.01562em;
+  margin-bottom: 24px;
+}
+
+#blog-post h2 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 60px; /* 3.75rem to px */
+  line-height: 1.2;
+  letter-spacing: -0.00833em;
+  margin-bottom: 24px;
+  margin-top: 56px;
+
+}
+
+#blog-post h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 48px; /* 3rem to px */
+  line-height: 1.167;
+  letter-spacing: 0em;
+  margin-bottom: 24px;
+  margin-top: 56px;
+
+}
+
+#blog-post h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 34px; /* 2.125rem to px */
+  line-height: 1.235;
+  letter-spacing: 0.00735em;
+  margin-bottom: 24px;
+  margin-top: 56px;
+
+}
+
+#blog-post h5 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px; /* 1.5rem to px */
+  line-height: 1.334;
+  letter-spacing: 0em;
+  margin-bottom: 24px;
+  margin-top: 56px;
+
+}
+
+#blog-post p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
   margin-top: 24px;
+}
+
+#blog-post ul,
+#blog-post ol {
+  margin-left: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 #blog-post li {
