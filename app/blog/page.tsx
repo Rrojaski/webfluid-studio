@@ -14,6 +14,30 @@ const POSTS_QUERY = `*[
 
 const options = { next: { revalidate: 30 } };
 
+export async function generateMetadata(): Promise<Metadata> {
+  const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
+  const latestPost = posts[0];
+
+  return {
+    title: "Blog - Webfluid Studio",
+    description: latestPost ? latestPost.description : "Explore our latest blog posts on website design, web development, and digital transformation.",
+    keywords: "Webfluid Studio, Blog, Website Design, Web Development, Digital Transformation",
+    authors: [{ name: "Webfluid Studio" }],
+    openGraph: {
+      title: "Blog - Webfluid Studio",
+      description: latestPost ? latestPost.description : "Explore our latest blog posts on website design, web development, and digital transformation.",
+      type: "website",
+      url: "https://www.webfluid.studio/blog",
+      images: latestPost ? [{ url: latestPost.image, alt: latestPost.title }] : [],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Blog - Webfluid Studio",
+      description: latestPost ? latestPost.description : "Explore our latest blog posts on website design, web development, and digital transformation.",
+      image: latestPost ? latestPost.image : "",
+    },
+  };
+
 async function Blog() {
   // const LabelList = [...Object.values(Label)];
   const selectedLabel = "";
