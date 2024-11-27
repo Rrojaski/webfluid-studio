@@ -25,7 +25,7 @@ export const sanityToPost = (post: SanityDocument, largeImage = false): Post => 
   return {
     id: post._id,
     title: post.title,
-    label: post.label,
+    label: post.label.name,
     image: postImageUrl ?? "",
     description: post.description,
     body: post.body,
