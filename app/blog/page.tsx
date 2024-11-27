@@ -1,8 +1,11 @@
 import "./page.css";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import CallToAction from "../_components/CallToAction/CallToAction";
+import BlogWidget from "../_components/BlogWidget/BlogWidget";
+import { Post } from "../_utils/constants/BlogPosts";
 import { type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
+import { sanityToPost } from "../_utils/SanityCMS";
 
 const POSTS_QUERY = `*[
   _type == "post"
@@ -13,9 +16,12 @@ const options = { next: { revalidate: 30 } };
 
 async function Blog() {
   // const LabelList = [...Object.values(Label)];
+  const selectedLabel = "";
   const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
+  const blogPosts: Post[] = posts.map((post) => sanityToPost(post));
 
-  console.log(posts)
+  const blogPost: Post = sanityToPost(posts[0], true);
+
   return (
     <section className="content-container">
       <Box mt={15} mb={20}>
@@ -26,9 +32,9 @@ async function Blog() {
             flexDirection: "column",
             alignItems: "center",
           }}>
-          {/* <Box id="blog-wdiget-container">
+          <Box id="blog-wdiget-container">
             <BlogWidget size="large" data={blogPost} route="blog" showShadow={false} />
-          </Box> */}
+          </Box>
           <Container className="recent-posts-container" maxWidth="lg">
             <Box
               mt={6}
@@ -74,7 +80,7 @@ async function Blog() {
               <Typography variant="h4">Recent Blog</Typography>
             </Box>
             <Grid container spacing={4}>
-              {/* {blogPosts
+              {blogPosts
                 .filter((x) => (!selectedLabel ? true : x.label === selectedLabel))
                 .map((element, i) => {
                   const d = {
@@ -107,7 +113,7 @@ async function Blog() {
                       <Typography mt={2}>{new Date(element.date).toLocaleDateString("en-US", { month: "long", day: "numeric" })}</Typography>
                     </Grid>
                   );
-                })} */}
+                })}
             </Grid>
           </Container>
         </Container>

@@ -8,6 +8,22 @@ const urlFor = (source: SanityImageSource) => (projectId && dataset ? imageUrlBu
 const { projectId, dataset } = client.config();
 
 export const sanityToPost = (post: SanityDocument, largeImage = false): Post => {
+  const post2: Post = {
+    id: "",
+    title: "",
+    label: "",
+    image: "",
+    description: "",
+    body: "",
+    slug: "",
+    date: new Date(),
+    author: {
+      name: "",
+      title: "",
+      avatar: "",
+    },
+  };
+  return post2;
   const postImageUrl = post.image
     ? urlFor(post.image)
         ?.width(largeImage ? 1100 : 550)
@@ -21,7 +37,7 @@ export const sanityToPost = (post: SanityDocument, largeImage = false): Post => 
     title: post.author?.title,
     avatar: avatarImageUrl ?? "",
   };
-  
+
   return {
     id: post._id,
     title: post.title,
