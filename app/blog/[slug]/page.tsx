@@ -87,7 +87,7 @@ async function BlogPost({ params }: { params: { slug: string } }) {
       <Box>
         <Container id="blog-post-image-wrapper" maxWidth="lg" component="image"></Container>
       </Box>
-      <Box mt={10} mb={18}>
+      <Box mb={18}>
         <Container maxWidth="md">
           <Box id="blog-post" component="article">
             {Array.isArray(post.body) && <PortableText value={post.body} />}
