@@ -29,37 +29,6 @@ const POST_QUERY = `
   }
 `;
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const post = sanityToPost(await client.fetch<SanityDocument>(POST_QUERY, params), true);
-  if (!post) return {};
-
-  return {
-    title: `${post.title} - Webfluid Studio`,
-    description: post.description,
-    keywords: "Webfluid Studio, Blog, Post, Website Design, Web Development, Digital Transformation",
-    authors: [{ name: post.author.name }],
-    openGraph: {
-      title: `${post.title} - Webfluid Studio`,
-      description: post.description,
-      type: "article",
-      url: `https://www.webfluid.studio/blog/${post.slug}`,
-      images: [
-        {
-          url: post.image,
-          alt: post.title,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `${post.title} - Webfluid Studio`,
-      description: post.description,
-      images: post.image,
-    },
-  };
-}
-
-const options = { next: { revalidate: 30 } };
 
 async function BlogPost({ params }: { params: { slug: string } }) {
   if (!params.slug) return null;
