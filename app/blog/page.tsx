@@ -19,7 +19,7 @@ const options = { next: { revalidate: 30 } };
 
 export async function generateMetadata(): Promise<Metadata> {
   const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
-  const latestPost = posts[0];
+  const latestPost = sanityToPost(posts[0], true);
 
   return {
     title: "Blog - Webfluid Studio",
