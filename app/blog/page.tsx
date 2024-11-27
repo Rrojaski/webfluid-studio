@@ -1,20 +1,9 @@
 import "./page.css";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import CallToAction from "../_components/CallToAction/CallToAction";
-import { type SanityDocument } from "next-sanity";
-import { client } from "@/sanity/client";
-
-const POSTS_QUERY = `*[
-  _type == "post"
-  && defined(slug.current)
-]|order(publishedAt desc)[0...12]{_id, title, label, description, image,  slug, publishedAt}`;
-
-const options = { next: { revalidate: 30 } };
 
 async function Blog() {
   // const LabelList = [...Object.values(Label)];
-  const selectedLabel = "";
-  const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
 
   return (
     <section className="content-container">
