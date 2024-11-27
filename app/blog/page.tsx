@@ -10,7 +10,9 @@ import { sanityToPost } from "../_utils/SanityCMS";
 const POSTS_QUERY = `*[
   _type == "post"
   && defined(slug.current)
-]|order(publishedAt desc)[0...12]{_id, title, label, description, image,  slug, publishedAt}`;
+]|order(publishedAt desc)[0...12]{_id, title, label, description, image, slug, publishedAt, "label": label->{
+      name
+    }}`;
 
 const options = { next: { revalidate: 30 } };
 
