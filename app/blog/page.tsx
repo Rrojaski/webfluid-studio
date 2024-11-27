@@ -6,6 +6,7 @@ import { Post } from "../_utils/constants/BlogPosts";
 import { type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
 import { sanityToPost } from "../_utils/SanityCMS";
+import { Metadata } from "next";
 
 const POSTS_QUERY = `*[
   _type == "post"

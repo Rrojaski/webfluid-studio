@@ -8,6 +8,7 @@ import { PortableText, SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
 import { sanityToPost } from "@/app/_utils/SanityCMS";
 import Author from "@/app/_components/Author/Author";
+import { Metadata } from "next";
 
 const POST_QUERY = `
   *[_type == "post" && slug.current == $slug][0]{
