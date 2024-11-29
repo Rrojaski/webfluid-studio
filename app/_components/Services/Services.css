@@ -92,6 +92,12 @@
   color: unset;
 }
 
+#hero-service-title {
+  border-bottom: 5px solid #1672ec;
+  padding-bottom: 5px;
+  width: fit-content;
+}
+
 @media (max-width: 1300px) {
   .services-box-wrapper-2 {
     max-width: 550px;
@@ -158,5 +164,12 @@
 
   .services-header-content-content {
     margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 960px) {
+  #hero-service-title {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
