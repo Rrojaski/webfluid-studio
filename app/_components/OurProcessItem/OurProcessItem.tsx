@@ -1,4 +1,4 @@
-import { OutlinedInputProps, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import "./OurProcessItem.css";
 import { Box } from "@mui/system";
 import { OurProcessItemProps } from "@/app/_utils/constants/OurProcessData";
