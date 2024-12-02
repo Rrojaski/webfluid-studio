@@ -6,6 +6,8 @@ import MissionStatement from "./_components/MissionStatement/MissionStatement";
 import TestimonialList from "./_components/TestimonialList/TestimonialList";
 import CallToActionWhatsapp from "./_components/CallToActionWhatsapp/CallToActionWhatsapp";
 import { Metadata } from "next";
+import OurProcessItem from "./_components/OurProcessItem/OurProcessItem";
+import ourProccessData from "./_utils/constants/OurProcessData";
 
 export const metadata: Metadata = {
   title: "Improve Your Online Presence | Webfluid Studio",
@@ -66,6 +68,14 @@ export default function Home() {
 
           <Container maxWidth="lg" id="contact-form-whatsapp-code" className="home-section">
             <CallToActionWhatsapp />
+          </Container>
+          <Container>
+            <Typography className="hero-title" variant="h3" mb={8}>
+              Our Process
+            </Typography>
+            <Box className="our-process-container">
+              {ourProccessData && ourProccessData.map((process, index) => <OurProcessItem key={index} data={process} />)}
+            </Box>
           </Container>
         </Box>
       </section>

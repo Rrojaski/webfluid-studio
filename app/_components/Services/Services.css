@@ -92,7 +92,7 @@
   color: unset;
 }
 
-#hero-service-title {
+.hero-title {
   border-bottom: 5px solid #1672ec;
   padding-bottom: 5px;
   width: fit-content;
@@ -168,8 +168,8 @@
 }
 
 @media (max-width: 960px) {
-  #hero-service-title {
-    margin-left: auto;
-    margin-right: auto;
+  .hero-title {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
