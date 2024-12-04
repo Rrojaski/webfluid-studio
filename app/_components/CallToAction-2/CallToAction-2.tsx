@@ -21,7 +21,7 @@ function CallToAction2() {
             gap: "0px",
             textAlign: "center",
           }}>
-          <Typography className="call-to-action-title" mb={3} variant="h3">
+          <Typography mb={3} variant="h5" sx={{ typography: { md: "h3", sm: "h4", sx: "h5" } }}>
             {"Have a { project } in mind?"}
           </Typography>
           <Typography className="call-to-action-sub" mb={3} variant="h6">
