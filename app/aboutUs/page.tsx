@@ -4,8 +4,8 @@ import Typography from "@mui/material/Typography";
 import "./page.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt, faLightbulb, faHandshakeAngle } from "@fortawesome/free-solid-svg-icons";
-import CallToAction from "../_components/CallToAction/CallToAction";
 import { Metadata } from "next";
+import CallToAction2 from "../_components/CallToAction-2/CallToAction-2";
 
 export const metadata: Metadata = {
   title: "About Us - Webfluid Studio",
@@ -99,9 +99,9 @@ function AboutUs() {
             </Typography>
           </Container>
         </Box>
-        <Box mb={20}>
+        <Box mt={2} mb={25}>
           <Container maxWidth="lg">
-            <CallToAction />
+            <CallToAction2 />
           </Container>
         </Box>
       </section>

@@ -1,12 +1,12 @@
 import "./page.css";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import CallToAction from "../_components/CallToAction/CallToAction";
 import BlogWidget from "../_components/BlogWidget/BlogWidget";
 import { Post } from "../_utils/constants/BlogPosts";
 import { type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
 import { sanityToPost } from "../_utils/SanityCMS";
 import { Metadata } from "next";
+import CallToAction2 from "../_components/CallToAction-2/CallToAction-2";
 
 const POSTS_QUERY = `*[
   _type == "post"
@@ -146,9 +146,9 @@ async function Blog() {
           </Container>
         </Container>
       </Box>
-      <Box mb={20}>
+      <Box mb={25}>
         <Container maxWidth="lg">
-          <CallToAction />
+          <CallToAction2 />
         </Container>
       </Box>
     </section>

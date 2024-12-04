@@ -1,9 +1,9 @@
 import "./page.css";
 import { Box, Container, Typography, Divider, Grid2 } from "@mui/material";
 import { CaseStudyList } from "../_utils/constants/CaseStudyList";
-import CallToAction from "../_components/CallToAction/CallToAction";
 import CaseStudyWidget from "../_components/CaseStudyWidget/CaseStudyWidget";
 import { Metadata } from "next";
+import CallToAction2 from "../_components/CallToAction-2/CallToAction-2";
 
 export const metadata: Metadata = {
   title: "Case Studies - Webfluid Studio",
@@ -113,9 +113,9 @@ function CaseStudies() {
             ))}
           </Grid2>
         </Container>
-        <Box mt={30} mb={20}>
+        <Box mt={22} mb={25}>
           <Container maxWidth="lg">
-            <CallToAction />
+            <CallToAction2 />
           </Container>
         </Box>
       </section>
