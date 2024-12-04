@@ -25,7 +25,7 @@ function CallToAction2() {
             {"Have a { project } in mind?"}
           </Typography>
           <Typography className="call-to-action-sub" mb={3} variant="h6">
-            Let's discuss your project and find out how we can help your business grow.
+            Let&apos;s discuss your project and find out how we can help your business grow.
           </Typography>
           <Link href="/contactUs">
             <Button size="large" color="warning" variant="contained">
