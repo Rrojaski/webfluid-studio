@@ -1,0 +1,39 @@
+.call-to-action-wrapper-2 {
+  width: 100%;
+}
+
+.call-to-action-content {
+  gap: 30px;
+}
+
+.call-to-action-card-2 {
+  background: #0035e2 !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  padding: 50px 35px;
+}
+
+@media (max-width: 960px) {
+  .call-to-action-content {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .call-to-action-content {
+    gap: 50px;
+  }
+  .call-to-action-sub {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .call-to-action-card-2 {
+    padding: 10px;
+  }
+  .call-to-action-wrapper-2 {
+    max-width: 300px;
+  }
+}
