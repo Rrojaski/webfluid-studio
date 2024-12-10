@@ -43,7 +43,7 @@ export const CaseStudyList: CaseStudy[] = [
       "Developed the main page to list psychologists with names, prices, and images. Created a detail page to show in-depth information about each psychologist, including descriptions and other relevant details. Integrated Server Components for efficient data loading and used Tailwind CSS for rapid and consistent styling.",
     results:
       "The application provided a seamless user experience with efficient data loading and a responsive design. It met accessibility standards and enhanced user engagement with features like dynamic pagination and session scheduling.",
-    image: "https://images.webfluid.studio/6c210fea-5879-4485-8095-32280125b2fe.jpg",
+    image: "https://images.webfluid.studio/masantocreative-Bjm0gs5R684-unsplash.png",
     caption: "Psi do Futuro: Modern Web Application Enhances Accessibility and Engagement for Psychological Services",
     slug: "psychologist-directory-application-psi-do-futuro",
   },

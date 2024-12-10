@@ -13,7 +13,7 @@ const ourProccessData: OurProcessItemProps[] = [
   {
     step: 2,
     title: "Design",
-    image: "https://images.webfluid.studio/nurefsan-kosar-JticgxGJ95c-unsplash 1 (1).png",
+    image: "https://images.webfluid.studio/nurefsan-kosar-JticgxGJ95c-unsplash 1-2.png",
   },
   {
     step: 3,

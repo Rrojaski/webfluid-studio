@@ -1,6 +1,11 @@
 .case-studies-header-content {
   flex: 0 0 calc(50% - 40px);
 }
+
+.case-studies-header-content:first-of-type {
+  padding-top: 50px;
+}
+
 .case-studies-devider {
   margin: 0 40px !important;
   border-color: rgba(0, 0, 0, 1) !important;
@@ -17,13 +22,17 @@
 .case-studies-header {
   margin-top: 160px;
   margin-bottom: 120px;
-} 
+}
 
 .hero-case-studies-content {
   margin-bottom: 100px;
 }
 
-@media (max-width: 899px) {
+@media (max-width: 960px) {
+  .case-studies-header-content:first-of-type {
+    padding-top: unset;
+  }
+
   .hero-case-studies-container {
     text-align: center;
   }
