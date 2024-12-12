@@ -9,7 +9,7 @@ function OurProcessItem({ data }: { data: OurProcessItemProps }) {
   return (
     <Box className="our-process-item">
       <Typography variant="h3" className="our-process-item-step">
-        {step}.
+        0{step}
       </Typography>
       <Image className="our-process-item-image" src={image} alt={title} width={320} height={200} />
       <Typography variant="h4" className="our-process-item-title">
