@@ -22,7 +22,7 @@ function TestimonialList() {
   ];
   return (
     <Box id="testimonial-list">
-      <Typography id="testimonial-list-header" sx={{ typography: { sm: "h3", xs: "h5" } }}>
+      <Typography sx={{ typography: { sm: "h3", xs: "h5" } }} id="testimonial-list-header">
         What Our Customers Are Saying{" "}
         <span id="testimonial-list-header-highlight">
           About Us?

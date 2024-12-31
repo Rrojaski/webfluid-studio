@@ -41,10 +41,10 @@ function AboutUs() {
       <section className="content-container">
         <Box mt={15} mb={10}>
           <Container maxWidth="lg">
-            <Typography className="about-us-title" variant="h6" mb={2}>
+            <Typography variant="h6" className="about-us-title" mb={2}>
               ABOUT US
             </Typography>
-            <Typography className="about-us-subtext" variant="h3" mb={10}>
+            <Typography variant="h3" className="about-us-subtext" mb={10}>
               Linking Your Vision With <span>Skilled Precision</span>
             </Typography>
           </Container>

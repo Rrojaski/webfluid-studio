@@ -92,7 +92,7 @@ function ServiceView({ params }: { params: { slug: string } }) {
         </Box>
         <Box className="service-view-content">
           <Container maxWidth="lg">
-            <Typography className="service-description" align="justify" variant="subtitle1">
+            <Typography variant="subtitle1" className="service-description" align="justify">
               {service.description}
             </Typography>
             {rendePage(service.id)}

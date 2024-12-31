@@ -21,10 +21,10 @@ function CallToAction2() {
             gap: "0px",
             textAlign: "center",
           }}>
-          <Typography mb={3} variant="h5" sx={{ typography: { md: "h3", sm: "h4", sx: "h5" } }}>
+          <Typography variant="h5" mb={3} sx={{ typography: { md: "h3", sm: "h4", sx: "h5" } }}>
             {"Have a { project } in mind?"}
           </Typography>
-          <Typography className="call-to-action-sub" mb={3} variant="h6">
+          <Typography variant="h6" className="call-to-action-sub" mb={3}>
             Let&apos;s discuss your project and find out how we can help your business grow.
           </Typography>
           <Link href="/contactUs">

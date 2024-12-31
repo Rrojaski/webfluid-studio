@@ -9,10 +9,10 @@ function Testimonial(data: TestimonialData) {
     <Card id="testimonial-container">
       <CardContent id="testimonial-content">
         <img id="testimonial-image" src={data.testimonial.image} alt={data.testimonial.name} />
-        <Typography id="testimonial-title" sx={{ typography: { xs: "h5" } }}>
+        <Typography sx={{ typography: { xs: "h5" } }} id="testimonial-title">
           {data.testimonial.name}
         </Typography>
-        <Typography id="testimonial-description" sx={{ typography: { xs: "body1" } }}>
+        <Typography sx={{ typography: { xs: "body1" } }} id="testimonial-description">
           <span className="mb-3">⭐️⭐️⭐️⭐️⭐️</span>
           {data.testimonial.testimonial}
         </Typography>

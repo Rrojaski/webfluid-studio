@@ -45,7 +45,7 @@ function ContactForm() {
   return (
     <form name="contact" onSubmit={handleSubmit}>
       <input type="hidden" name="form-name" value="contact" />
-      <Typography className="contact-us-subheader" variant="h6">
+      <Typography variant="h6" className="contact-us-subheader" >
         Get in Touch
       </Typography>
       <Typography variant="h4">Let&apos;s Chat, Reach Out to Us</Typography>

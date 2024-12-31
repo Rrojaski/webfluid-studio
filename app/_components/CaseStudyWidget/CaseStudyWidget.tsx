@@ -27,7 +27,7 @@ function CaseStudyWidget(data: CaseStudyWidgetData) {
   return (
     <Box className="case-study-widget">
       <BlogWidget size="small" data={d} route="caseStudies" showShadow={false} />
-      <Typography mt={2} variant="h5">
+      <Typography variant="h5" mt={2} >
         {d.title}
       </Typography>
       {data.showDescription ? (

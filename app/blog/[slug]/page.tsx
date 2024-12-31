@@ -77,7 +77,7 @@ async function BlogPost({ params }: { params: { slug: string } }) {
               </Typography>
               <Author {...post.author} />
             </Box>
-            <Typography id="post-title" sx={{ typography: { md: "h3", sm: "h4", xs: "h4" } }}>
+            <Typography sx={{ typography: { md: "h3", sm: "h4", xs: "h4" } }} id="post-title">
               {post.title}
             </Typography>
           </Box>

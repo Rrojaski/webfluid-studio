@@ -21,10 +21,10 @@ function CallToAction() {
               width: "100%",
               maxWidth: "500px",
             }}>
-            <Typography className="call-to-action-title" mb={3} variant="h3">
+            <Typography variant="h3" className="call-to-action-title" mb={3}>
               Achieving Remarkable Results with the Latest Technologies
             </Typography>
-            <Typography className="call-to-action-sub" mb={3} variant="h6">
+            <Typography variant="h6" className="call-to-action-sub" mb={3}>
               Delivering Transformative Business Solutions through Cutting-Edge Innovations.
             </Typography>
             <Link href="/contactUs">

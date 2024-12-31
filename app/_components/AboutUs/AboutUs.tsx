@@ -5,7 +5,7 @@ function AboutUs() {
   return (
     <Box id="hero-about-us-container">
       <Box id="hero-about-us-container-content">
-        <Typography id="hero-about-us-container-text" sx={{ typography: { sm: "h2", xs: "h4" } }} align="center">
+        <Typography sx={{ typography: { sm: "h2", xs: "h4" } }} id="hero-about-us-container-text" align="center">
           The best software
           <span className="text-orange"> teams </span>
           ship early and often

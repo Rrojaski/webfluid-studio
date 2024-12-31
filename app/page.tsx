@@ -40,10 +40,10 @@ export default function Home() {
         <div className="hero-container home-container">
           <div className="hero-text-container">
             <div className="hero-text">
-              <Typography className="title" variant="h1" component="h1" mb={2}>
+              <Typography variant="h1" className="title" component="h1" mb={2}>
                 Improve your online presence
               </Typography>
-              <Typography className="subtext" variant="h6">
+              <Typography variant="h6" className="subtext">
                 Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio.
               </Typography>
             </div>
@@ -70,7 +70,7 @@ export default function Home() {
             <CallToActionWhatsapp />
           </Container>
           <Container>
-            <Typography className="hero-title" variant="h3" mb={8}>
+            <Typography variant="h3" className="hero-title" mb={8}>
               Our Process
             </Typography>
             <Box className="our-process-container">

@@ -13,7 +13,7 @@ function TeamWidget() {
           </Box>
         ))}
       </Box>
-      <Typography id="team-widget-text" variant="h5">
+      <Typography variant="h5" id="team-widget-text">
         Your Personal Sucess Team
       </Typography>
     </Box>

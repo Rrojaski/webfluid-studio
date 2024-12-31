@@ -9,10 +9,10 @@ export interface ServiceData {
 function Service(data: ServiceData) {
   return (
     <Box className={"service-container " + (data.inverted ? "service-container-blue" : "") + (data.isHero ? "service-container-hero " : "") + data.color}>
-      <Typography className="service-label" variant="h5" fontWeight={700}>
+      <Typography variant="h5" className="service-label" fontWeight={700}>
         {data.serviceType.label}
       </Typography>
-      <Typography className="service-description" variant="subtitle2">
+      <Typography variant="subtitle2" className="service-description">
         {data.serviceType.description}
       </Typography>
     </Box>

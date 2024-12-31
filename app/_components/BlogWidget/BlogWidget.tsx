@@ -39,7 +39,7 @@ function BlogWidget(data: BlogWidgetData) {
             />
           )}
           {data.size === "large" && (
-            <Typography className="blog-widget-title" variant="h4" fontWeight={500}>
+            <Typography variant="h4" className="blog-widget-title" fontWeight={500}>
               {data.data.title}
             </Typography>
           )}
