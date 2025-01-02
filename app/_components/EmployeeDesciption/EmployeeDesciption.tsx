@@ -12,7 +12,7 @@ function EmployeeDesciption(data: EmployeeDesciptionData) {
         <img id="employee-description-image" className="avatar" src={data.employee.avatar} alt={data.employee.name} />
       </Box>
       <Typography variant="h5">{data.employee.name}</Typography>
-      <Typography className="employee-description-sub" variant="subtitle1">
+      <Typography variant="subtitle1" className="employee-description-sub">
         {data.employee.position}
       </Typography>
     </Box>

@@ -45,7 +45,7 @@ function Services() {
           <Container maxWidth="lg">
             <Box className="services-header-content-wrapper">
               <Box className="services-header-content">
-                <Typography className="services-subtitle" variant="subtitle1" fontWeight={600}>
+                <Typography variant="subtitle1" className="services-subtitle" fontWeight={600}>
                   WE GOT THIS
                 </Typography>
                 <Typography variant="h3" fontWeight={700}>
@@ -57,7 +57,7 @@ function Services() {
               </Box>
               <Divider className="services-devider" orientation="vertical" flexItem />
               <Box className="services-header-content">
-                <Typography className="services-subtitle" variant="h6">
+                <Typography variant="h6" className="services-subtitle">
                   We help businesses navigate digital transformation, from upgrading IT infrastructure to implementing cutting-edge technologies, ensuring they
                   stay ahead in the digital age.
                 </Typography>

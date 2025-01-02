@@ -10,7 +10,7 @@ import Link from "next/link";
 function Services() {
   return (
     <Box className="hero-services-container">
-      <Typography className="hero-title" variant="h3" mb={8}>
+      <Typography variant="h3" className="hero-title" mb={8}>
         Our Services
       </Typography>
       <Box className="services-box-container">

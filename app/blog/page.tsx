@@ -132,7 +132,7 @@ async function Blog() {
                       lg={4}
                       key={i}>
                       <BlogWidget size="small" data={d} route="blog" showShadow={false} />
-                      <Typography mt={2} variant="h5">
+                      <Typography variant="h5" mt={2}>
                         {element.title}
                       </Typography>
                       <Typography mt={2} mb={2}>

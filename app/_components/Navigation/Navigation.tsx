@@ -35,7 +35,7 @@ function Navigation() {
       <Toolbar className="app-bar">
         <div className="app-bar-content">
           <Link className="navigation-link" href="/">
-            <Typography id="logo-text" variant="h5" color="inherit" sx={{ flexGrow: 1 }}>
+            <Typography variant="h5" id="logo-text"  color="inherit" sx={{ flexGrow: 1 }}>
               <span className="normal-text">Webfluid Studio</span>
             </Typography>
           </Link>
