@@ -1,13 +1,13 @@
 import { Box, Container, Typography } from "@mui/material";
 import "./page.css";
 import Services from "./_components/Services/Services";
-import AboutUs from "./_components/AboutUs/AboutUs";
 import MissionStatement from "./_components/MissionStatement/MissionStatement";
 import TestimonialList from "./_components/TestimonialList/TestimonialList";
 import CallToActionWhatsapp from "./_components/CallToActionWhatsapp/CallToActionWhatsapp";
 import { Metadata } from "next";
 import OurProcessItem from "./_components/OurProcessItem/OurProcessItem";
 import ourProccessData from "./_utils/constants/OurProcessData";
+import AboutUs2 from "./_components/AboutUs2/AboutUs2";
 
 export const metadata: Metadata = {
   title: "Improve Your Online Presence | Webfluid Studio",
@@ -57,7 +57,7 @@ export default function Home() {
           </Container>
 
           <div id="about-us">
-            <AboutUs />
+            <AboutUs2 />
           </div>
           <Container maxWidth="lg" className="home-section" id="about-us">
             <MissionStatement />
