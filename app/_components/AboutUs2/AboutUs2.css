@@ -1,27 +1,83 @@
 #aboutus2 {
-  width: 1300px;
   height: 453px;
-  background-color: red;
-  margin-left: 300px; 
-  border-top: 5px solid #1b1a1aec ;
+  border-top: 2px solid rgba(136, 127, 127, 35%) ;
 }
 
 
 .p-aboutus {
-  font-family: Arial, Helvetica, sans-serif; 
   color: #808080;
   font-size: 48px;
   font-weight: 100;
-}
 
-.text-aboutus{
-  background-color: blue;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 550px;
-  font-size: 64px;
-  padding-top: 50px;
 }
 
 #aboutus-line {
   border-top: 5px solid #1b1a1aec ;
 }
+
+/* Box de textos do centro */
+
+.container {
+  display: flex;
+  gap: 70px;
+  height: 400px;
+}
+
+.box-1 {
+  width: 610px;
+  font-size: 70px;
+  margin-top: 30px;
+  line-height: 1.1;
+}
+
+.box-1-2 {
+  color: #ED6C02;
+}
+
+.box-2 {
+  font-size: 20px;
+  width: 500px;
+  color: #000000;
+  font-weight: 10;
+  background-color: white;
+}
+
+.text-button {
+  display: flex;
+  background: white;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight:100;
+  color: #ED6C02;
+  border-radius: 4px;
+  padding: 6px 10px;
+  border: 1px solid #ED6C02;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.text-button:hover {
+  background-color: #ED6C02;
+  color: white;
+}
+
+.img-aboutus-container{
+  display: flex;
+  justify-content: flex-start;  
+  align-items: center;      
+  gap: 10px ;  
+  margin-top: 80px;
+  margin-left: 150px;
+}
+
+.img-aboutus {
+  width: 68px;
+  height: 63px;
+  border-radius: 100px;  
+}
+
+#aboutus-line {
+  border-top: 2px solid rgba(136, 127, 127, 35%) ;
+  margin-top: -60px;
+}
+
