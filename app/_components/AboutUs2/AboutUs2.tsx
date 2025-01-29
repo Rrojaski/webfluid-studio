@@ -26,15 +26,10 @@ function AboutUs2() {
             <img className="img-aboutus" src="https://images.webfluid.studio/romaura.jfif"></img>
             <img className="img-aboutus" src="https://images.webfluid.studio/roman_3.JPG"></img>
             <img className="img-aboutus" src="https://images.webfluid.studio/marcio.jfif"></img>
-            <Link href="/aboutUs">
-              <IconButton className="img-aboutus" aria-label="Go to About Us">
-                <FontAwesomeIcon icon={faPlus} />
-              </IconButton>
-            </Link>
           </div>
         </Box>
       </div>
-      <Box id="aboutus-line"></Box>
+      
     </Box>
   );
 }
