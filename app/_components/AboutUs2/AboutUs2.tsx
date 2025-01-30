@@ -1,29 +1,35 @@
-import { Box } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 import "./AboutUs2.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons/faPlus";
+import Link from "next/link";
 
 function AboutUs2() {
   return (
     <Box id="aboutus2">
       <p className="p-aboutus">About Us</p>
-      <Box>
-        <h1 className="text-aboutus">
-          The best software teams ship early and often.
+      <div className="section-principal">
+        <h1 className="box-1">
+          The best software <span className="box-1-2">teams</span> ship early and often.
         </h1>
-        <Box>
-          <p className="text-aboutus2">
-          
-          </p>
-          <button className="button-aboutus">
-
+        <Box id="box-2-1">
+          <h3 className="box-2">
+            We have assembled an organization with the core focus of technology to salve the solve the most complex challenges as efficiently as possible for
+            our customers.
+          </h3>
+          <button className="text-button">
+            <Link className="navigation-link" href="/aboutUs">
+              About Us
+            </Link>
           </button>
-          <img>
-          </img>
+          <div className="img-aboutus-container">
+            <img className="img-aboutus" src="https://images.webfluid.studio/romaura.jfif"></img>
+            <img className="img-aboutus" src="https://images.webfluid.studio/roman_3.JPG"></img>
+            <img className="img-aboutus" src="https://images.webfluid.studio/marcio.jfif"></img>
+          </div>
         </Box>
-      </Box>
-      <Box id="aboutus-line">
-                                  
-      </Box>
+      </div>
+      
     </Box>
   );
 }

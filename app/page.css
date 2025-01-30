@@ -11,23 +11,29 @@
 
 .home-section,
 #about-us #testimonials {
-  padding: 150px 0;
+  padding: 140px 0;
 }
 
 .home-section:after {
   content: "";
-  background: rgba(0, 0, 0, 0.12);
+  background: rgb(0, 0, 0, 0.4);
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 1px;
-  width: 80%;
+  height: 2px;
+  width: 95%;
 }
 
 .home-container {
   height: 74vw;
   position: relative;
+}
+
+#about-us-2{
+  width: 100%;
+  
+  
 }
 
 .hero-text-container {

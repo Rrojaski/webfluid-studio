@@ -56,9 +56,9 @@ export default function Home() {
             <Services />
           </Container>
 
-          <div id="about-us">
+          <Container maxWidth="lg" className="home-section" id="about-us-2">
             <AboutUs2 />
-          </div>
+          </Container>
           <Container maxWidth="lg" className="home-section" id="about-us">
             <MissionStatement />
           </Container>
