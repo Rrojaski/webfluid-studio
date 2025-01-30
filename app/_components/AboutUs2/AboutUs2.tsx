@@ -1,7 +1,5 @@
-import { Box, IconButton } from "@mui/material";
+import { Box } from "@mui/material";
 import "./AboutUs2.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons/faPlus";
 import Link from "next/link";
 
 function AboutUs2() {
@@ -29,7 +27,7 @@ function AboutUs2() {
           </div>
         </Box>
       </div>
-      
+
     </Box>
   );
 }
