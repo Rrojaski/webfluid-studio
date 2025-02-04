@@ -53,7 +53,6 @@ export default function RootLayout({
                     </ListItemButton>
                   </Link>
                 </ListItem>
-
                 <ListItem disablePadding>
                   <Link className="navigation-link" href="/caseStudies">
                     <ListItemButton>
