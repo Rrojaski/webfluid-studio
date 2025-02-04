@@ -28,7 +28,6 @@ export default function RootLayout({
             <div className="App">
               <Navigation />
               {children}
-
               <Footer />
               <Drawer anchor="right">
                 <ListItem disablePadding>
