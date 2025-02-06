@@ -11,31 +11,40 @@ function Navigation() {
   const pathName = usePathname();
   const router = useRouter();
   const [whiteHeader, setWhiteHeader] = useState(false);
-  const [allowInvisableHeader, setAllowInvisableHeader] = useState(true);
+  const [open, setOpen] = useState(false);
+  const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
-    const invisibleHeaderRoutes = [""];
     const whiteHeaderRoutes = ["aboutUs", "services", "caseStudies", "blog", "contactUs", "sitemap"];
     const p = pathName.split("/")[1];
-    setAllowInvisableHeader(invisibleHeaderRoutes.includes(p));
     setWhiteHeader(whiteHeaderRoutes.includes(p));
   }, [pathName, router]);
-  const [open, setOpen] = useState(false);
 
-  const appBarFixed = false;
-  const scroll = true;
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 800 && !scroll) {
+        setScroll(true)
+      } else if (window.scrollY <= 800 && scroll) {
+        setScroll(false)
+      }
+    };
+    window.removeEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [scroll]);
+
 
   const toggleDrawer = (val: boolean) => {
     setOpen(val);
   };
   return (
     <AppBar
-      position={appBarFixed ? "fixed" : "absolute"}
-      className={"app-bar " + (scroll && allowInvisableHeader ? "invisable-header" : "") + (whiteHeader ? "white-header" : "")}>
+      position={"fixed"}
+      className={"app-bar " + (!scroll && !whiteHeader ? "invisable-header " : "white-header")}>
       <Toolbar className="app-bar">
         <div className="app-bar-content">
           <Link className="navigation-link" href="/">
-            <Typography variant="h5" id="logo-text"  color="inherit" sx={{ flexGrow: 1 }}>
+            <Typography variant="h5" id="logo-text" color="inherit" sx={{ flexGrow: 1 }}>
               <span className="normal-text">Webfluid Studio</span>
             </Typography>
           </Link>
