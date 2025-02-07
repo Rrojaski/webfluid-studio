@@ -21,10 +21,14 @@ function Navigation() {
   }, [pathName, router]);
 
   useEffect(() => {
+    const calculateScrollThreshold = () => {
+      return window.innerWidth * 0.7;
+    };
+
     const onScroll = () => {
-      if (window.scrollY > 800 && !scroll) {
+      if (window.scrollY > calculateScrollThreshold() && !scroll) {
         setScroll(true)
-      } else if (window.scrollY <= 800 && scroll) {
+      } else if (window.scrollY <= calculateScrollThreshold() && scroll) {
         setScroll(false)
       }
     };
