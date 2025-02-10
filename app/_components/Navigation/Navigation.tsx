@@ -90,7 +90,7 @@ function Navigation() {
             aria-expanded={open ? "true" : undefined}
             aria-haspopup="true"
             onClick={() => toggleDrawer(true)}>
-            <FontAwesomeIcon color={whiteHeader ? "black" : "white"} size="2x" icon={faBars} />
+            <FontAwesomeIcon color={scroll || whiteHeader ? "black" : "white"} size="2x" icon={faBars} />
           </Button>
 
           <Drawer anchor="right" open={open} onClose={() => toggleDrawer(false)}>
