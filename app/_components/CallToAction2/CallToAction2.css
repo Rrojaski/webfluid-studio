@@ -1,0 +1,110 @@
+.call-to-action-wrapper-2 {
+  width: 100%;
+}
+
+.call-to-action-card-2 {
+  background: #0035E2 !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  padding: 30px 10px; 
+}
+
+#buttonaction {
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 0 black;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.textbutton {
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.part-1 {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  width: 300px;
+  margin-right: 30px; 
+}
+
+.call-to-action-sub {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 350px;
+  margin-right: 30px; 
+}
+
+.part-buttonaction {
+  padding: 20px;
+}
+
+.call-to-action-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px; 
+}
+
+.call-to-action-item {
+  display: flex;
+  align-items: center;
+}
+
+.call-to-action-item + .call-to-action-item {
+  border-left: 2px solid white; 
+  padding-left: 30px; 
+}
+
+.call-to-action-sub,
+.part-buttonaction {
+  flex-shrink: 0; 
+}
+
+#buttonaction:hover {
+  background-color: white; /* Muda o fundo para azul */
+  transform: translateY(-5px); /* Move o botão para cima ao passar o mouse */
+  box-shadow: 4px 8px 0 orangered; /* Aumenta o sombreamento */
+}
+
+#buttonaction:hover .textbutton {
+  color: black; /* Altera a cor do texto no hover */
+}
+
+
+
+
+
+
+
+
+@media (max-width: 960px) {
+  .call-to-action-content {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .call-to-action-content {
+    gap: 50px;
+  }
+  .call-to-action-sub {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .call-to-action-card-2 {
+    padding: 10px;
+  }
+  .call-to-action-wrapper-2 {
+    max-width: 300px;
+  }
+}

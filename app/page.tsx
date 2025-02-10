@@ -8,6 +8,7 @@ import { Metadata } from "next";
 import OurProcessItem from "./_components/OurProcessItem/OurProcessItem";
 import ourProccessData from "./_utils/constants/OurProcessData";
 import AboutUs2 from "./_components/AboutUs2/AboutUs2";
+import CallToAction2 from "./_components/CallToAction2/CallToAction2";
 
 export const metadata: Metadata = {
   title: "Improve Your Online Presence | Webfluid Studio",
@@ -58,6 +59,9 @@ export default function Home() {
 
           <Container maxWidth="lg" className="home-section" id="about-us-2">
             <AboutUs2 />
+          </Container>
+          <Container>
+            <CallToAction2></CallToAction2>
           </Container>
           <Container maxWidth="lg" className="home-section" id="about-us">
             <MissionStatement />

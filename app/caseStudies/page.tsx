@@ -3,7 +3,7 @@ import { Box, Container, Typography, Divider, Grid2 } from "@mui/material";
 import { CaseStudyList } from "../_utils/constants/CaseStudyList";
 import CaseStudyWidget from "../_components/CaseStudyWidget/CaseStudyWidget";
 import { Metadata } from "next";
-import CallToAction2 from "../_components/CallToAction-2/CallToAction-2";
+import CallToAction2 from "../_components/CallToAction2/CallToAction2";
 
 export const metadata: Metadata = {
   title: "Case Studies - Webfluid Studio",

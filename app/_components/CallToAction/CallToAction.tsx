@@ -6,6 +6,7 @@ import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import appList from "../../_utils/constants/AppList";
 import Link from "next/link";
 
+
 function CallToAction() {
   return (
     <Box className="call-to-action-wrapper">

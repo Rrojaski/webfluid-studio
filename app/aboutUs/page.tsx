@@ -5,7 +5,7 @@ import "./page.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt, faLightbulb, faHandshakeAngle } from "@fortawesome/free-solid-svg-icons";
 import { Metadata } from "next";
-import CallToAction2 from "../_components/CallToAction-2/CallToAction-2";
+import CallToAction2 from "../_components/CallToAction2/CallToAction2";
 
 export const metadata: Metadata = {
   title: "About Us - Webfluid Studio",
