@@ -1,7 +1,7 @@
 "use client";
 import { AppBar, Button, Drawer, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from "@mui/material";
-import "./Navigation.css";
 import Link from "next/link";
+import "./Navigation.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
