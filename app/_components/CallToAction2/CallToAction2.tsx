@@ -12,7 +12,6 @@ function CallToAction2() {
               <Typography
                 className="part-1"
                 variant="h5"
-                mb={3}
                 sx={{
                   typography: { md: "h5", sm: "h5", sx: "h5" },
                 }}

@@ -1,12 +1,12 @@
-.call-to-action-wrapper-2 {
-  width: 100%;
-}
-
 .call-to-action-card-2 {
+  display: flex;
   background: #0035E2 !important;
   color: #fff !important;
   border-radius: 10px !important;
   padding: 30px 10px; 
+  margin-top: 50px;
+  padding: 20px;
+  
 }
 
 #buttonaction {
@@ -17,6 +17,7 @@
   box-shadow: 4px 4px 0 black;
   cursor: pointer;
   transition: transform 0.2s ease;
+  
 }
 
 .textbutton {
@@ -33,6 +34,7 @@
   margin-right: 30px; 
 }
 
+
 .call-to-action-sub {
   display: flex;
   text-align: center;
@@ -47,19 +49,26 @@
 
 .call-to-action-container {
   display: flex;
+  width: 100%;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 30px; 
+  
 }
 
-.call-to-action-item {
+.call-to-action-sub {
   display: flex;
+  padding-right: 30px;
+  padding-left: 30px;
+  align-content: center;
   align-items: center;
 }
 
-.call-to-action-item + .call-to-action-item {
-  border-left: 2px solid white; 
-  padding-left: 30px; 
+.part-buttonaction{
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
 .call-to-action-sub,
@@ -68,13 +77,39 @@
 }
 
 #buttonaction:hover {
-  background-color: white; /* Muda o fundo para azul */
-  transform: translateY(-5px); /* Move o botão para cima ao passar o mouse */
-  box-shadow: 4px 8px 0 orangered; /* Aumenta o sombreamento */
+  background-color: white; 
+  transform: translateY(-5px); 
+  box-shadow: 4px 8px 0 orangered; 
+
 }
 
 #buttonaction:hover .textbutton {
-  color: black; /* Altera a cor do texto no hover */
+  color: black; 
+}
+
+.call-to-action-item {
+  height: 96px;
+  display: flex;
+  align-items: center;
+}
+
+.call-to-action-wrapper {
+  width: 100%;
+}
+
+
+@media (min-width:1138px) {
+
+  .call-to-action-container .call-to-action-item:nth-child(2) {
+    border-right: 2px solid #fff;   
+  }
+}
+
+
+@media(min-width: 805px) {
+  .call-to-action-container .call-to-action-item:nth-child(2) {
+    border-left: 2px solid white;  
+  }
 }
 
 
@@ -82,29 +117,3 @@
 
 
 
-
-
-@media (max-width: 960px) {
-  .call-to-action-content {
-    align-items: center;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 600px) {
-  .call-to-action-content {
-    gap: 50px;
-  }
-  .call-to-action-sub {
-    display: none;
-  }
-}
-
-@media (max-width: 400px) {
-  .call-to-action-card-2 {
-    padding: 10px;
-  }
-  .call-to-action-wrapper-2 {
-    max-width: 300px;
-  }
-}
