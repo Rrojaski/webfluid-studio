@@ -6,7 +6,7 @@ import { type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
 import { sanityToPost } from "../_utils/SanityCMS";
 import { Metadata } from "next";
-import CallToAction2 from "../_components/CallToAction-2/CallToAction-2";
+import CallToAction2 from "../_components/CallToAction2/CallToAction2";
 
 const POSTS_QUERY = `*[
   _type == "post"
