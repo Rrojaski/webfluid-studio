@@ -1,12 +1,11 @@
 .call-to-action-card-2 {
   display: flex;
-  background: #0035E2 !important;
+  background: #0035e2 !important;
   color: #fff !important;
   border-radius: 10px !important;
-  padding: 30px 10px; 
+  padding: 30px 10px;
   margin-top: 50px;
   padding: 20px;
-  
 }
 
 #buttonaction {
@@ -17,7 +16,6 @@
   box-shadow: 4px 4px 0 black;
   cursor: pointer;
   transition: transform 0.2s ease;
-  
 }
 
 .textbutton {
@@ -31,16 +29,15 @@
   align-items: center;
   white-space: nowrap;
   width: 300px;
-  margin-right: 30px; 
+  margin-right: 30px;
 }
-
 
 .call-to-action-sub {
   display: flex;
   text-align: center;
   align-items: center;
   width: 350px;
-  margin-right: 30px; 
+  margin-right: 30px;
 }
 
 .part-buttonaction {
@@ -53,8 +50,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 30px; 
-  
+  gap: 30px;
 }
 
 .call-to-action-sub {
@@ -65,7 +61,7 @@
   align-items: center;
 }
 
-.part-buttonaction{
+.part-buttonaction {
   display: flex;
   align-content: center;
   align-items: center;
@@ -74,18 +70,17 @@
 
 .call-to-action-sub,
 .part-buttonaction {
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 #buttonaction:hover {
-  background-color: white; 
-  transform: translateY(-5px); 
-  box-shadow: 4px 8px 0 orangered; 
-
+  background-color: white;
+  transform: translateY(-5px);
+  box-shadow: 4px 8px 0 orangered;
 }
 
 #buttonaction:hover .textbutton {
-  color: black; 
+  color: black;
 }
 
 .call-to-action-item {
@@ -98,23 +93,14 @@
   width: 100%;
 }
 
-
-@media (min-width:1138px) {
-
+@media (min-width: 1138px) {
   .call-to-action-container .call-to-action-item:nth-child(2) {
-    border-right: 2px solid #fff;   
+    border-right: 2px solid #fff;
   }
 }
 
-
-@media(min-width: 805px) {
+@media (min-width: 805px) {
   .call-to-action-container .call-to-action-item:nth-child(2) {
-    border-left: 2px solid white;  
+    border-left: 2px solid white;
   }
 }
-
-
-
-
-
-
