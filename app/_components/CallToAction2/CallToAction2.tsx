@@ -1,4 +1,3 @@
-import { Box } from "@mui/system";
 import "./CallToAction2.css";
 import { Button, Card, CardContent, Typography } from "@mui/material";
 import Link from "next/link";
