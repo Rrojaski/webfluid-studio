@@ -1,0 +1,23 @@
+.our-process-component-container {
+  width: 100%;
+  background-color: #fec800;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.our-process-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  max-width: 350px;
+  text-align: center;
+}
+
+.our-process-item img {
+  width: 178px;
+}

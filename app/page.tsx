@@ -5,10 +5,9 @@ import MissionStatement from "./_components/MissionStatement/MissionStatement";
 import TestimonialList from "./_components/TestimonialList/TestimonialList";
 import CallToActionWhatsapp from "./_components/CallToActionWhatsapp/CallToActionWhatsapp";
 import { Metadata } from "next";
-import OurProcessItem from "./_components/OurProcessItem/OurProcessItem";
-import ourProccessData from "./_utils/constants/OurProcessData";
 import AboutUs2 from "./_components/AboutUs2/AboutUs2";
 import CallToAction2 from "./_components/CallToAction2/CallToAction2";
+import OurProcess from "./_components/OurProcess/OurProcess";
 
 export const metadata: Metadata = {
   title: "Improve Your Online Presence | Webfluid Studio",
@@ -78,7 +77,7 @@ export default function Home() {
               Our Process
             </Typography>
             <Box className="our-process-container">
-              {ourProccessData && ourProccessData.map((process, index) => <OurProcessItem key={index} data={process} />)}
+              <OurProcess></OurProcess>
             </Box>
           </Container>
         </Box>
