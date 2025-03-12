@@ -44,10 +44,10 @@ function Testimonial2() {
     <Box id="testimonial2">
       {/* Seção de título */}
       <Box className="box-textimonial-1">
-        <Typography variant="h4" className="text-box-1">
+        <Typography sx={{fontWeight: 'bold !important',typography: { sm:"h2",xs:"h3"}}} className="text-box-1">
           From our <span className="text-box-1-2">community.</span>
         </Typography>
-        <Typography variant="body1" className="text-box-2">
+        <Typography sx={{typography: { sm:"h5",xs:"h5"}}} className="text-box-2">
           Here's what other subscribers had to say about Webfluid Studio.
         </Typography>
         {/* Botões do carrossel */}
@@ -69,7 +69,7 @@ function Testimonial2() {
         />
         {testimonials[currentIndex] && (
           <>
-            <Typography variant="body1" className="paragrafo">
+            <Typography sx={{typography: { sm:"h5",xs:"h5"}}} className="paragrafo">
               {testimonials[currentIndex].text}"
             </Typography>
 
@@ -80,8 +80,8 @@ function Testimonial2() {
                 alt="Profile picture"
               />
               <Box className="box-textimonial-2-3">
-                <Typography variant="h6">{testimonials[currentIndex].name}</Typography>
-                <Typography variant="body2">{testimonials[currentIndex].role}</Typography>
+                <Typography sx={{fontWeight: 'bold !important',typography: { body1: 'p'}}}>{testimonials[currentIndex].name}</Typography>
+                <Typography sx={{typography: { body1: 'p'}}}>{testimonials[currentIndex].role}</Typography>
               </Box>
             </Box>
           </>
