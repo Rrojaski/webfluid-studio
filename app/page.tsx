@@ -5,10 +5,9 @@ import MissionStatement from "./_components/MissionStatement/MissionStatement";
 import TestimonialList from "./_components/TestimonialList/TestimonialList";
 import CallToActionWhatsapp from "./_components/CallToActionWhatsapp/CallToActionWhatsapp";
 import { Metadata } from "next";
-import OurProcessItem from "./_components/OurProcessItem/OurProcessItem";
-import ourProccessData from "./_utils/constants/OurProcessData";
 import AboutUs2 from "./_components/AboutUs2/AboutUs2";
 import CallToAction2 from "./_components/CallToAction2/CallToAction2";
+import OurProcess from "./_components/OurProcess/OurProcess";
 import Testimonial2 from "./_components/Testimonial2/Testimonial2";
 
 
@@ -50,7 +49,7 @@ export default function Home() {
                 Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio.
               </Typography>
             </div>
-            <img className="laptop" src="https://images.webfluid.studio/ruliff-andrean-pd9cCvscPgQ-unsplash-removebg-preview.png" alt="laptop" />
+            <img className="laptop" src="https://images.webfluid.studio/laptop-guy.png" alt="laptop" />
           </div>
           <img id="home-wave-2" className="wave-image" src="/assets/svg/wave-2.svg" alt="Wave border" loading="eager"></img>
         </div>
@@ -77,7 +76,7 @@ export default function Home() {
               Our Process
             </Typography>
             <Box className="our-process-container">
-              {ourProccessData && ourProccessData.map((process, index) => <OurProcessItem key={index} data={process} />)}
+              <OurProcess></OurProcess>
             </Box>
           </Container>
         </Box>
