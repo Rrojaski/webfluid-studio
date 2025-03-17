@@ -104,3 +104,21 @@
     border-left: 2px solid white;
   }
 }
+
+@media (max-width: 460px) {
+  .call-to-action-item,
+  .call-to-action-item h6,
+  .call-to-action-item a {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .call-to-action-item h5 {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
