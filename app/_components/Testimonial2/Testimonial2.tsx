@@ -44,7 +44,7 @@ function Testimonial2() {
     <Box id="testimonial2">
       {/* Seção de título */}
       <Box className="box-textimonial-1">
-        <Typography sx={{fontWeight: 'bold !important',typography: { sm:"h2",xs:"h3"}}} className="text-box-1">
+        <Typography sx={{fontWeight: 'bold !important',typography: { sm:"h2",xs:"h4"}}} className="text-box-1">
           From our <span className="text-box-1-2">community.</span>
         </Typography>
         <Typography sx={{typography: { sm:"h5",xs:"h5"}}} className="text-box-2">

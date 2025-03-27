@@ -61,9 +61,9 @@ export default function Home() {
           <Container maxWidth="lg" className="home-section" id="about-us-2">
             <AboutUs2 />
           </Container>
-          <Container>
+          {/* <Container>
             <CallToAction2></CallToAction2>
-          </Container>
+          </Container> */}
           <Container>
             <Testimonial2 />
           </Container>
