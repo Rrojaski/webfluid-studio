@@ -10,6 +10,7 @@ import CallToAction2 from "./_components/CallToAction2/CallToAction2";
 import OurProcess from "./_components/OurProcess/OurProcess";
 import Testimonial2 from "./_components/Testimonial2/Testimonial2";
 
+import CallToAction3 from "./_components/CallToAction3/CallToAction3";
 
 export const metadata: Metadata = {
   title: "Improve Your Online Presence | Webfluid Studio",
@@ -78,6 +79,9 @@ export default function Home() {
             <Box className="our-process-container">
               <OurProcess></OurProcess>
             </Box>
+          </Container>
+          <Container>
+            <CallToAction3 />
           </Container>
         </Box>
       </section>
