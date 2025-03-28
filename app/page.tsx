@@ -8,6 +8,8 @@ import { Metadata } from "next";
 import AboutUs2 from "./_components/AboutUs2/AboutUs2";
 import CallToAction2 from "./_components/CallToAction2/CallToAction2";
 import OurProcess from "./_components/OurProcess/OurProcess";
+import Testimonial2 from "./_components/Testimonial2/Testimonial2";
+
 import CallToAction3 from "./_components/CallToAction3/CallToAction3";
 
 export const metadata: Metadata = {
@@ -60,15 +62,12 @@ export default function Home() {
           <Container maxWidth="lg" className="home-section" id="about-us-2">
             <AboutUs2 />
           </Container>
-          <Container>
+          {/* <Container>
             <CallToAction2></CallToAction2>
+          </Container> */}
+          <Container>
+            <Testimonial2 />
           </Container>
-          <Container maxWidth="lg" className="home-section" id="about-us">
-            <MissionStatement />
-          </Container>
-          <div id="testimonials">
-            <TestimonialList />
-          </div>
 
           <Container maxWidth="lg" id="contact-form-whatsapp-code" className="home-section">
             <CallToActionWhatsapp />
