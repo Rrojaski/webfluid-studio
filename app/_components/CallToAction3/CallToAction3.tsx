@@ -1,5 +1,6 @@
 import "./CallToAction3.css";
 import { Box, Button, Typography } from "@mui/material";
+import Link from "next/link";
 
 function CallToAction3() {
   return (
@@ -9,7 +10,9 @@ function CallToAction3() {
         Great ideas start with a simple conversation. We&apos;re here to listen, collaborate, and turn your ideas into extraordinary results. Let&apos;s create something
         unique together!
       </Typography>
-      <Button variant="outlined">Contact Us</Button>
+      <Link href="/contactUs">
+        <Button variant="outlined">Contact Us</Button>
+      </Link>
       <img className="call-to-action-3-image" src="https://images.webfluid.studio/getty-images-gEEj-X_03Cs-unsplash.svg" alt="Picture of the a group" />
     </Box>
   );
