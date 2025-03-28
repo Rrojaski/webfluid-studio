@@ -44,19 +44,19 @@ function Testimonial2() {
     <Box id="testimonial2">
       {/* Seção de título */}
       <Box className="box-textimonial-1">
-        <Typography sx={{fontWeight: 'bold !important',typography: { sm:"h2",xs:"h4"}}} className="text-box-1">
+        <Typography sx={{ fontWeight: 'bold !important', typography: { sm: "h2", xs: "h4" } }} className="text-box-1">
           From our <span className="text-box-1-2">community.</span>
         </Typography>
-        <Typography sx={{typography: { sm:"h5",xs:"h5"}}} className="text-box-2">
-          Here's what other subscribers had to say about Webfluid Studio.
+        <Typography sx={{ typography: { sm: "h5", xs: "h5" } }} className="text-box-2">
+          Here&apos;s what other subscribers had to say about Webfluid Studio.
         </Typography>
         {/* Botões do carrossel */}
         <Box className="carousel-buttons">
           <Button onClick={handleBack} className="button-1" color="primary">
-            <ArrowBack/>
+            <ArrowBack />
           </Button>
           <Button onClick={handleNext} className="button-2" color="primary">
-            <ArrowForward/>
+            <ArrowForward />
           </Button>
         </Box>
       </Box>
@@ -69,8 +69,8 @@ function Testimonial2() {
         />
         {testimonials[currentIndex] && (
           <>
-            <Typography sx={{typography: { sm:"h5",xs:"h5"}}} className="paragrafo">
-              {testimonials[currentIndex].text}"
+            <Typography sx={{ typography: { sm: "h5", xs: "h5" } }} className="paragrafo">
+            &quot;{testimonials[currentIndex].text}&quot;
             </Typography>
 
             {/* Perfil */}
@@ -80,8 +80,8 @@ function Testimonial2() {
                 alt="Profile picture"
               />
               <Box className="box-textimonial-2-3">
-                <Typography sx={{fontWeight: 'bold !important',typography: { body1: 'p'}}}>{testimonials[currentIndex].name}</Typography>
-                <Typography sx={{typography: { body1: 'p'}}}>{testimonials[currentIndex].role}</Typography>
+                <Typography sx={{ fontWeight: 'bold !important', typography: { body1: 'p' } }}>{testimonials[currentIndex].name}</Typography>
+                <Typography sx={{ typography: { body1: 'p' } }}>{testimonials[currentIndex].role}</Typography>
               </Box>
             </Box>
           </>
