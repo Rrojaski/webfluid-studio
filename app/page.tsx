@@ -47,7 +47,7 @@ export default function Home() {
                 Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio.
               </Typography>
             </div>
-            <img className="laptop" src="/assets/images/laptop-guy.png" alt="laptop" />
+            <img className="laptop" src="./assets/images/laptop-guy.png" alt="laptop" />
           </div>
           <img id="home-wave-2" className="wave-image" src="/assets/svg/wave-2.svg" alt="Wave border" loading="eager"></img>
         </div>

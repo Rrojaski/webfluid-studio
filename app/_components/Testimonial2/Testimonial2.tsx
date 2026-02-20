@@ -64,7 +64,7 @@ function Testimonial2() {
       {/* Seção do depoimento */}
       <Box className="box-testimonial-2">
         <img className="aspas-testimonial"
-          src="/assets/images/image 11.svg"
+          src="./assets/images/image 11.svg"
           alt="Illustration representing testimonials"
         />
         {testimonials[currentIndex] && (
@@ -76,7 +76,7 @@ function Testimonial2() {
             {/* Perfil */}
             <Box className="box-testimonial-2-1">
               <img
-                src="/assets/images/img-perfil.svg"
+                src="./assets/images/img-perfil.svg"
                 alt="Profile picture"
               />
               <Box className="box-textimonial-2-3">

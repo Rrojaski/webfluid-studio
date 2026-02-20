@@ -25,7 +25,7 @@ function MissionStatement() {
           </Box>
         </Box>
         <Box id="mission-statement-content-image">
-          <BasicImage id="team-image" src="/assets/images/team-image.jpg" alt="team" />
+          <BasicImage id="team-image" src="./assets/images/team-image.jpg" alt="team" />
         </Box>
       </Box>
     </Box>
