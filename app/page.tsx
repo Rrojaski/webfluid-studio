@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: "Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio.",
     images: [
       {
-        url: "/images/team-image-1200x630.jpg",
+        url: "./images/team-image-1200x630.jpg",
         alt: "Team around a table",
       },
     ],
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Improve Your Online Presence | Webfluid Studio",
     description: "Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio.",
-    images: "/images/team-image-1200x630.jpg",
+    images: "./images/team-image-1200x630.jpg",
   },
 };
 
@@ -47,7 +47,7 @@ export default function Home() {
                 Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio.
               </Typography>
             </div>
-            <img className="laptop" src="/images/laptop-guy.png" alt="laptop" />
+            <img className="laptop" src="./images/laptop-guy.png" alt="laptop" />
           </div>
           <img id="home-wave-2" className="wave-image" src="/assets/svg/wave-2.svg" alt="Wave border" loading="eager"></img>
         </div>

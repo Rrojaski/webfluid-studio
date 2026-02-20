@@ -27,7 +27,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       url: `https://www.webfluid.studio/services/${params.slug}`,
       images: [
         {
-          url: "/images/team-image-1200x630.jpg",
+          url: "./images/team-image-1200x630.jpg",
           alt: "Team around a table",
         },
       ],
@@ -36,7 +36,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       card: "summary_large_image",
       title: `${service.label} - Webfluid Studio`,
       description: `Learn more about our ${service.label} services at Webfluid Studio. We offer custom website design, web development, and digital transformation solutions tailored to your business needs.`,
-      images: "/images/team-image-1200x630.jpg",
+      images: "./images/team-image-1200x630.jpg",
     },
   };
 }

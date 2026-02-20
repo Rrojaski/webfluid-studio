@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.webfluid.studio/aboutUs",
     images: [
       {
-        url: "/images/team-image-1200x630.jpg",
+        url: "./images/team-image-1200x630.jpg",
         alt: "Team around a table",
       },
     ],
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "About Us - Webfluid Studio",
     description:
       "Learn more about Webfluid Studio, our vision, and our team. We specialize in custom website design and development solutions tailored to your business needs.",
-    images: "/images/team-image-1200x630.jpg",
+    images: "./images/team-image-1200x630.jpg",
   },
 };
 

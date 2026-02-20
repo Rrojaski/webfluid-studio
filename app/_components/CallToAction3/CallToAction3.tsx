@@ -13,7 +13,7 @@ function CallToAction3() {
       <Link href="/contactUs">
         <Button variant="outlined">Contact Us</Button>
       </Link>
-      <img className="call-to-action-3-image" src="/images/getty-images-gEEj-X_03Cs-unsplash.svg" alt="Picture of the a group" />
+      <img className="call-to-action-3-image" src="./images/getty-images-gEEj-X_03Cs-unsplash.svg" alt="Picture of the a group" />
     </Box>
   );
 }
