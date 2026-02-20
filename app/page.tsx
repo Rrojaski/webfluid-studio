@@ -8,6 +8,7 @@ import CallToAction2 from "./_components/CallToAction2/CallToAction2";
 import OurProcess from "./_components/OurProcess/OurProcess";
 import CallToAction3 from "./_components/CallToAction3/CallToAction3";
 import TestimonialList from "./_components/TestimonialList/TestimonialList";
+import laptopGuy from "./assets/images/team-image-1200x630.jpg";
 
 export const metadata: Metadata = {
   title: "Improve Your Online Presence | Webfluid Studio",
@@ -47,7 +48,7 @@ export default function Home() {
                 Enhance your online presence, user experience, and digital strategy with innovative solutions from Webfluid Studio.
               </Typography>
             </div>
-            <img className="laptop" src="./assets/images/laptop-guy.png" alt="laptop" />
+            <img className="laptop" src={laptopGuy} alt="laptop" />
           </div>
           <img id="home-wave-2" className="wave-image" src="/assets/svg/wave-2.svg" alt="Wave border" loading="eager"></img>
         </div>
