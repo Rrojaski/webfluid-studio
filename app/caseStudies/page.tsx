@@ -54,7 +54,7 @@ function CaseStudies() {
               </Box>
               <Divider className="case-studies-devider" orientation="vertical" flexItem />
               <Box className="case-studies-header-content">
-                <img src="./assets/images/imhaf-maulana-NGTkvzikPmA-unsplash-removebg-preview.png" alt="Group hugging" />
+                <img src="/assets/images/imhaf-maulana-NGTkvzikPmA-unsplash-removebg-preview.png" alt="Group hugging" />
               </Box>
             </Box>
           </Container>

@@ -21,9 +21,9 @@ function AboutUs2() {
             </Link>
           </button>
           <div className="img-aboutus-container">
-            <img className="img-aboutus" src="./assets/images/romaura.jfif"></img>
-            <img className="img-aboutus" src="./assets/images/roman_3.jfif"></img>
-            <img className="img-aboutus" src="./assets/images/marcio.jfif"></img>
+            <img className="img-aboutus" src="/assets/images/romaura.jfif"></img>
+            <img className="img-aboutus" src="/assets/images/roman_3.jfif"></img>
+            <img className="img-aboutus" src="/assets/images/marcio.jfif"></img>
           </div>
         </Box>
       </div>
