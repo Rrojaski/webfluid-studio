@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://www.webfluid.studio/caseStudies",
     images: [
       {
-        url: "/images/imhaf-maulana-NGTkvzikPmA-unsplash-removebg-preview.png",
+        url: "/assets/images/imhaf-maulana-NGTkvzikPmA-unsplash-removebg-preview.png",
         alt: "Group hugging",
       },
     ],
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Case Studies - Webfluid Studio",
     description:
       "Explore our case studies to see how Webfluid Studio has helped businesses enhance their online presence with custom website design and development solutions.",
-    images: "/images/imhaf-maulana-NGTkvzikPmA-unsplash-removebg-preview.png",
+    images: "/assets/images/imhaf-maulana-NGTkvzikPmA-unsplash-removebg-preview.png",
   },
 };
 
@@ -54,7 +54,7 @@ function CaseStudies() {
               </Box>
               <Divider className="case-studies-devider" orientation="vertical" flexItem />
               <Box className="case-studies-header-content">
-                <img src="/images/imhaf-maulana-NGTkvzikPmA-unsplash-removebg-preview.png" alt="Group hugging" />
+                <img src="/assets/images/imhaf-maulana-NGTkvzikPmA-unsplash-removebg-preview.png" alt="Group hugging" />
               </Box>
             </Box>
           </Container>

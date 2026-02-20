@@ -39,7 +39,7 @@ export interface Post {
 //     "1",
 //     "How to Use Message Apps to Communicate, and Share",
 //     Label.Features,
-//     "/images/Popular-communication-apps-for-customer-support-min.png",
+//     "/assets/images/Popular-communication-apps-for-customer-support-min.png",
 //     "Learn how to effectively use messaging apps to communicate and share information with your team and customers. Messaging apps have become a crucial tool in modern communication, providing real-time interaction and the ability to share files, images, and other media. This article will guide you through the best practices for utilizing these apps to enhance collaboration and efficiency in your professional and personal life.",
 //     `<h3>Effective Communication with Messaging Apps</h3>
 //     <p>Messaging apps have revolutionized the way we communicate in both professional and personal settings. By enabling real-time interaction and file sharing, these tools enhance collaboration and productivity.</p>
@@ -63,7 +63,7 @@ export interface Post {
 //     "2",
 //     "How to Use Cloud Storage to Keep Your Files Safe",
 //     Label.TipsTricks,
-//     "/images/03yy022DDsenwhBBYdxvwDi-3.webp",
+//     "/assets/images/03yy022DDsenwhBBYdxvwDi-3.webp",
 //     "Discover the best practices for using cloud storage solutions to ensure your files are safe and accessible from anywhere. Cloud storage services offer a convenient and secure way to store your data, providing backup and synchronization across multiple devices. This article covers the advantages of cloud storage, tips on selecting the right provider, and strategies for organizing and securing your files to prevent data loss and unauthorized access.",
 //     `<h3>Keeping Your Files Safe with Cloud Storage</h3>
 //     <p>Cloud storage provides a secure and convenient way to store and access your files from anywhere. It offers backup and synchronization across multiple devices, ensuring your data is always available when you need it.</p>
@@ -86,7 +86,7 @@ export interface Post {
 //     "3",
 //     "Best Practices for Online Security",
 //     Label.Security,
-//     "/images/cyber_safety.jpg",
+//     "/assets/images/cyber_safety.jpg",
 //     "Stay safe online by following these best practices for online security, including tips on passwords, encryption, and more. In the digital age, protecting your online presence is more important than ever. This article provides a comprehensive overview of essential security measures, such as creating strong passwords, enabling two-factor authentication, and using encryption tools to safeguard your personal and professional information from cyber threats.",
 //     `<h3>Online Security Best Practices</h3>
 //     <p>Protecting your online presence is crucial in the digital age. Follow these best practices to safeguard your personal and professional information from cyber threats.</p>
@@ -109,7 +109,7 @@ export interface Post {
 //     "4",
 //     "The Importance of Regular Software Updates",
 //     Label.Features,
-//     "/images/shutterstock_2058513980-scaled.webp",
+//     "/assets/images/shutterstock_2058513980-scaled.webp",
 //     "Understand why it is crucial to keep your software updated and how it can protect you from vulnerabilities and improve performance. Software updates often include security patches, new features, and performance improvements that can significantly enhance your device's functionality and security. This article explains the benefits of regular updates, how to manage them effectively, and the risks associated with outdated software.",
 //     `<h3>Why Regular Software Updates Matter</h3>
 //     <p>Keeping your software updated is essential for security and performance. Updates often include patches for vulnerabilities, new features, and performance enhancements.</p>
@@ -132,7 +132,7 @@ export interface Post {
 //     "5",
 //     "How to Choose the Right Project Management Tool",
 //     Label.TipsTricks,
-//     "/images/Project_Management.jpg",
+//     "/assets/images/Project_Management.jpg",
 //     "Choosing the right project management tool can make a significant difference in the success of your projects. With numerous options available, it can be challenging to find the one that fits your needs. This article explores the key features to look for in a project management tool, such as task tracking, collaboration capabilities, and integration with other software. It also provides tips on evaluating different tools based on your team’s specific requirements and workflows.",
 //     `<h3>Choosing the Right Project Management Tool</h3>
 //      <p>The right project management tool can significantly impact the success of your projects. Here’s how to choose one that fits your needs.</p>
@@ -155,7 +155,7 @@ export interface Post {
 //     "6",
 //     "The Benefits of Using AI in Your Business",
 //     Label.Features,
-//     "/images/A-Brain-Friendly-Guide-to-Using-AI-at-Work-1.png",
+//     "/assets/images/A-Brain-Friendly-Guide-to-Using-AI-at-Work-1.png",
 //     "Artificial Intelligence (AI) is revolutionizing the way businesses operate, offering numerous benefits that can improve efficiency and decision-making. This article delves into how AI can be integrated into various business processes, from automating repetitive tasks to providing advanced analytics and insights. Learn about the potential advantages of AI, such as cost savings, increased productivity, and enhanced customer experiences, and discover how to implement AI solutions in your own organization.",
 //     `<h3>The Benefits of AI in Business</h3>
 //     <p>Artificial Intelligence (AI) is transforming business operations, offering improvements in efficiency, decision-making, and customer experiences.</p>
@@ -178,7 +178,7 @@ export interface Post {
 //     "7",
 //     "How to Improve Team Collaboration with Technology",
 //     Label.TipsTricks,
-//     "/images/virtual-team-collaboration_blog.jpg",
+//     "/assets/images/virtual-team-collaboration_blog.jpg",
 //     "Effective team collaboration is essential for the success of any organization, and technology plays a vital role in facilitating this. This article explores various technological tools and platforms that can enhance team collaboration, such as project management software, communication apps, and file-sharing services. It also provides practical tips on implementing these tools to create a more connected and productive work environment.",
 //     `<h3>Enhancing Team Collaboration with Technology</h3>
 //     <p>Technology plays a crucial role in improving team collaboration. Here are some tools and tips to create a more connected and productive work environment.</p>
@@ -201,7 +201,7 @@ export interface Post {
 //     "8",
 //     "The Future of Remote Work: Trends and Predictions",
 //     Label.TipsTricks,
-//     "/images/1_4IpEtoXrvZY4oVt96v69vw.jpg",
+//     "/assets/images/1_4IpEtoXrvZY4oVt96v69vw.jpg",
 //     "Remote work has become a permanent fixture in the modern workplace, and understanding its future trends is crucial for businesses and employees alike. This article examines the latest trends and predictions for remote work, including the growing importance of digital nomadism, the role of technology in remote work, and the potential challenges and opportunities it presents. Learn how to adapt to these changes and thrive in a remote working environment.",
 //     `<h3>The Future of Remote Work</h3>
 //     <p>Remote work is here to stay, and understanding its future trends is crucial for both businesses and employees. Here are some key predictions and trends to watch.</p>
@@ -224,7 +224,7 @@ export interface Post {
 //     "9",
 //     "How to Improve Online Reputation: Strategies for Success",
 //     Label.TipsTricks,
-//     "/images/confident-handsome-young.jpg",
+//     "/assets/images/confident-handsome-young.jpg",
 //     "Your online reputation is essential for building trust and credibility with potential customers. In this article, we explore actionable strategies to improve your online reputation, from managing reviews to optimizing social media presence. Learn how to protect your brand and enhance your digital footprint.",
 //     `<h3>How to Improve Online Reputation</h3>
 //     <p>Your online reputation can make or break your business. Whether you’re a startup or an established brand, maintaining a positive online presence is crucial in today’s digital world.</p>

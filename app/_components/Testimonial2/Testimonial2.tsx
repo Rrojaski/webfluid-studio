@@ -10,20 +10,20 @@ const testimonials = [
     text: "Since we started working with this team, our presence on social media has grown significantly.",
     name: "Roberta Cross",
     role: "CEO - Relax Pools",
-    image: "/images/img-perfil-roberta.svg",
+    image: "/assets/images/img-perfil-roberta.svg",
   },
   {
     text: "Webfluid Studio transformed our website into something truly special!",
     name: "John Doe",
     role: "Founder - Tech Solutions",
-    image: "/images/img-perfil-roberta.svg",
+    image: "/assets/images/img-perfil-roberta.svg",
 
   },
   {
     text: "Amazing service and great results. Highly recommended!",
     name: "Alice Smith",
     role: "CMO - Digital Experts",
-    image: "/images/img-perfil-roberta.svg",
+    image: "/assets/images/img-perfil-roberta.svg",
   },
 ];
 
@@ -64,7 +64,7 @@ function Testimonial2() {
       {/* Seção do depoimento */}
       <Box className="box-testimonial-2">
         <img className="aspas-testimonial"
-          src="/images/image 11.svg"
+          src="/assets/images/image 11.svg"
           alt="Illustration representing testimonials"
         />
         {testimonials[currentIndex] && (
@@ -76,7 +76,7 @@ function Testimonial2() {
             {/* Perfil */}
             <Box className="box-testimonial-2-1">
               <img
-                src="/images/img-perfil.svg"
+                src="/assets/images/img-perfil.svg"
                 alt="Profile picture"
               />
               <Box className="box-textimonial-2-3">

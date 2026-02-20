@@ -36,7 +36,7 @@ function ContactForm() {
   if (state.succeeded) {
     return (
       <Box className="success-message">
-        <img id="thank-you-image" src={"/images/dog_" + getRandomNumber() + ".jpg"} alt="cute puppy" />
+        <img id="thank-you-image" src={"/assets/images/dog_" + getRandomNumber() + ".jpg"} alt="cute puppy" />
         <Typography variant="h6">&quot;Thank you for contacting us! We will get back to you soon.&quot; - Rex</Typography>
       </Box>
     );
