@@ -43,7 +43,7 @@ export const CaseStudyList: CaseStudy[] = [
       "Developed the main page to list psychologists with names, prices, and images. Created a detail page to show in-depth information about each psychologist, including descriptions and other relevant details. Integrated Server Components for efficient data loading and used Tailwind CSS for rapid and consistent styling.",
     results:
       "The application provided a seamless user experience with efficient data loading and a responsive design. It met accessibility standards and enhanced user engagement with features like dynamic pagination and session scheduling.",
-    image: "https://images.webfluid.studio/masantocreative-Bjm0gs5R684-unsplash.png",
+    image: "/images/masantocreative-Bjm0gs5R684-unsplash.png",
     caption: "Psi do Futuro: Modern Web Application Enhances Accessibility and Engagement for Psychological Services",
     slug: "psychologist-directory-application-psi-do-futuro",
   },
@@ -180,7 +180,7 @@ export const CaseStudyList: CaseStudy[] = [
       "Integrated speech-to-text functionality within AnythingLLM, enabling users to activate the feature with a key combination, speak their queries, and receive answers without switching contexts.",
     results:
       "The new feature significantly enhanced user experience by streamlining the query process, reducing time spent switching contexts, and maintaining user focus. It also demonstrated the potential for further AI-driven productivity enhancements.",
-    image: "https://images.webfluid.studio/pika-1702277169820-1x.png",
+    image: "/images/pika-1702277169820-1x.png",
     caption: "Streamlining Research with Speech Prompt Integration: A New Era of User Interaction in AnythingLLM",
     slug: "enhancing-user-experience-speech-prompt-integration-anythingllm",
   },
@@ -204,7 +204,7 @@ export const CaseStudyList: CaseStudy[] = [
   //     'Developed a custom website using a responsive design to ensure compatibility across devices. We implemented a secure, user-friendly registration system that allowed participants to quickly sign up.',
   //   results:
   //     "The new website successfully captured the essence of Mia's brand, providing visitors with a visually engaging and informative platform. The streamlined registration process and enhanced user experience contributed to increased interest and engagement from both new and returning participants.",
-  //   image: 'https://images.webfluid.studio/mia2.PNG',
+  //   image: '/images/mia2.PNG',
   //   caption:
   //     "Mia's Event Website: A Seamless Digital Experience for Thousands of Participants",
   //   slug: 'digital-transformation-event-management-custom-website-development'

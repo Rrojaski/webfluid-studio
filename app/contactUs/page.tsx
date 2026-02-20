@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://www.webfluid.studio/contactUs",
     images: [
       {
-        url: "https://images.webfluid.studio/team-image-1200x630.jpg",
+        url: "/images/team-image-1200x630.jpg",
         alt: "Team around a table",
       },
     ],
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Contact Us - Webfluid Studio",
     description:
       "Get in touch with Webfluid Studio for custom website design and development solutions. Contact us today to discuss your project and see how we can help you enhance your online presence.",
-    images: "https://images.webfluid.studio/team-image-1200x630.jpg",
+    images: "/images/team-image-1200x630.jpg",
   },
 };
 

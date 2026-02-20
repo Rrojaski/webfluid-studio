@@ -7,7 +7,7 @@ const generateEmployee = (id: number, name: string, position: string, avatar: st
   };
 };
 export const employees = [
-  generateEmployee(3, "Romaura Rojas", "Project Manager", "https://images.webfluid.studio/romaura.jfif"),
-  generateEmployee(2, "Roman Rojas", "CTO & Lead Engineer", "https://images.webfluid.studio/roman_3.JPG"),
-  generateEmployee(1, "Marcio Rodrigues", "Software Engineer", "https://images.webfluid.studio/marcio.jfif"),
+  generateEmployee(3, "Romaura Rojas", "Project Manager", "/images/romaura.jfif"),
+  generateEmployee(2, "Roman Rojas", "CTO & Lead Engineer", "/images/roman_3.jfif"),
+  generateEmployee(1, "Marcio Rodrigues", "Software Engineer", "/images/marcio.jfif"),
 ];
